@@ -20,9 +20,6 @@ public class PointTeleport : MonoBehaviour
 
     float alpha = 1.0f;
 
-    public Material gMat;
-    public Material rMat;
-
     void Start()
     {
         teleportEnabled = false;
@@ -72,8 +69,9 @@ public class PointTeleport : MonoBehaviour
     {
         if (bezier.fixedEndPointDetected)
         {
+            Vector3 endSpot = bezier.fixedEndSpot;
             teleportSprite.SetActive(true);
-            teleportSprite.transform.position = bezier.EndPoint;
+            teleportSprite.transform.position = bezier.fixedEndSpot;
             if (OVRInput.GetDown(OVRInput.Button.One)) // Teleport to the position.
                 TeleportToPosition(bezier.fixedEndSpot);
         }

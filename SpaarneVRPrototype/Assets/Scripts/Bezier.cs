@@ -7,6 +7,11 @@ public class Bezier : MonoBehaviour {
     public Vector3 fixedEndSpot;
     public Material greenMat;
 
+    private FixedTeleportSpot tp;
+
+    [SerializeField]
+    public GameObject rayCastStartPoint;
+
     public Vector3 EndPoint {
         get { return endpoint; }
     }
@@ -51,7 +56,7 @@ public class Bezier : MonoBehaviour {
 
     // The first control is the remote. The second is a forward projection. The third is a forward and downward projection.
     void UpdateControlPoints() {
-        controlPoints[0] = gameObject.transform.position; // Get Controller Position
+        controlPoints[0] = rayCastStartPoint.transform.position; // Get Controller Position
         controlPoints[1] = controlPoints[0] + (gameObject.transform.forward * extendStep * 2f / 5f);
         controlPoints[2] = controlPoints[1] + (gameObject.transform.forward * extendStep * 3f / 5f) + Vector3.up * -1f;
     }
@@ -80,9 +85,13 @@ public class Bezier : MonoBehaviour {
             if (CheckIfFixedPoint(prevPosition, nextPosition))
             {
                 fixedEndPointDetected = true;
+                if(tp)
+                tp.OnHover();
             } else
             {
                 fixedEndPointDetected = false;
+                if(tp)
+                tp.Off();
             }
 
             if (CheckColliderIntersection(prevPosition, nextPosition)) { // If the segment intersects a surface, draw the point and return.
@@ -108,6 +117,7 @@ public class Bezier : MonoBehaviour {
         return false;
     }
 
+
     public bool CheckIfFixedPoint(Vector3 start, Vector3 end)
     {
         Ray r = new Ray(start, end - start);
@@ -115,11 +125,13 @@ public class Bezier : MonoBehaviour {
         if (Physics.Raycast(r, out hit, Vector3.Distance(start, end)))
         {
             GameObject hitObject = hit.transform.gameObject;
-            if(hitObject.tag == "TeleportationSpot")
+            if (hitObject.tag == "TeleportationSpot")
             {
-                fixedEndSpot =  hitObject.transform.position;
-                return true;    
+                tp = hitObject.GetComponent<FixedTeleportSpot>();
+                fixedEndSpot = hitObject.transform.position;
+                return true;
             }
+            return false;
         }
         return false;
     }
