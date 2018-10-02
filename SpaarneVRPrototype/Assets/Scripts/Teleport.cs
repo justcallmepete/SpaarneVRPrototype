@@ -56,7 +56,7 @@ public class Teleport : MonoBehaviour {
             teleportSprite.SetActive(true);
             teleportSprite.transform.position = bezier.EndPoint;
 
-            if (OVRInput.GetDown(OVRInput.Button.Three)) // Teleport to the position.
+            if (OVRInput.GetDown(OVRInput.Button.Three)) // Teleport to the position.   
                 TeleportToPosition(bezier.EndPoint);
         } else {
             teleportSprite.SetActive(false);

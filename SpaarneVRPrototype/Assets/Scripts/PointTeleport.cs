@@ -17,6 +17,11 @@ public class PointTeleport : MonoBehaviour
     private bool fixedSpotFound;
     private float firstClickTime;
     private float doubleClickTimeLimit = 0.5f;
+    
+    [SerializeField]
+    private OVRInput.Button toggleTeleport;
+    [SerializeField]
+    private OVRInput.Button teleport;
 
     float alpha = 1.0f;
 
@@ -44,7 +49,7 @@ public class PointTeleport : MonoBehaviour
     void UpdateTeleportEnabled()
     {
 
-        if (OVRInput.GetDown(OVRInput.Button.SecondaryIndexTrigger))
+        if (OVRInput.GetDown(toggleTeleport))
         { // The trigger is pressed.
             Debug.Log("PRIMARY TRIGGER PRESSED");
             if (!firstClick)
@@ -72,7 +77,7 @@ public class PointTeleport : MonoBehaviour
             Vector3 endSpot = bezier.fixedEndSpot;
             teleportSprite.SetActive(true);
             teleportSprite.transform.position = bezier.fixedEndSpot;
-            if (OVRInput.GetDown(OVRInput.Button.One)) // Teleport to the position.
+            if (OVRInput.GetDown(teleport)) // Teleport to the position.
                 TeleportToPosition(bezier.fixedEndSpot);
         }
         else
