@@ -19,6 +19,7 @@ public class Oculus_Controller : MonoBehaviour {
     private FixedJoint controllerJoint;
 
     private bool objectGrabbed = false;
+    private bool test = false;
     private GameObject grabbedObject;
 
     private void Start()
@@ -48,10 +49,11 @@ public class Oculus_Controller : MonoBehaviour {
                     grabbedObject = hitObject;
                 }
 
-                if (controllerJoint)
+                if (controllerJoint && !test)
                 {
                     controllerJoint.connectedBody = hitObject.GetComponent<Rigidbody>();
                     hitObject.GetComponent<Rigidbody>().useGravity = false;
+                    test = true;
                 }
             }
             else
@@ -61,6 +63,7 @@ public class Oculus_Controller : MonoBehaviour {
                     controllerJoint.connectedBody = null;
                     objectGrabbed = false;
                     hitObject.GetComponent<Rigidbody>().useGravity = true;
+                    test = false;
                 }
                 //  hitObject.GetComponent<Rigidbody>().isKinematic = false;
                 //   hitObject.GetComponent<Rigidbody>().detectCollisions = false;
@@ -73,6 +76,8 @@ public class Oculus_Controller : MonoBehaviour {
         Debug.Log("Broken Joint");
         if(grabbedObject)
         grabbedObject.GetComponent<Rigidbody>().useGravity = true;
+       // objectGrabbed = false;
+        grabbedObject = null;
         objectGrabbed = false;
     }
 
