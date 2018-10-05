@@ -115,5 +115,4 @@ public class PointTeleport : MonoBehaviour
             teleportSprite.SetActive(false);
         }
     }
-
 }

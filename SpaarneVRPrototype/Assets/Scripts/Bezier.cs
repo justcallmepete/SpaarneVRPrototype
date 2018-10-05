@@ -86,7 +86,7 @@ public class Bezier : MonoBehaviour {
             {
                 fixedEndPointDetected = true;
                 if(tp)
-                tp.OnHover();
+                tp.On();
             } else
             {
                 fixedEndPointDetected = false;
@@ -125,11 +125,14 @@ public class Bezier : MonoBehaviour {
         if (Physics.Raycast(r, out hit, Vector3.Distance(start, end)))
         {
             GameObject hitObject = hit.transform.gameObject;
-            if (hitObject.tag == "TeleportationSpot")
+            if (hitObject.GetComponent<FixedTeleportSpot>())
             {
                 tp = hitObject.GetComponent<FixedTeleportSpot>();
-                fixedEndSpot = hitObject.transform.position;
-                return true;
+                if (!tp)
+                {
+                    fixedEndSpot = hitObject.transform.position;
+                    return true;
+                }
             }
             return false;
         }
