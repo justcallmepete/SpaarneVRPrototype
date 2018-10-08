@@ -9,11 +9,11 @@ public class ObjectZoneSpawner : MonoBehaviour {
     private int currentIndex = 0;
     private int limit = 5;
 
-    public Transform spawnPosition;
+   public Transform spawnPosition;
 
     private void Start()
     {
-        Instantiate(ItemToSpawn, spawnPosition, true);
+        Instantiate(ItemToSpawn, spawnPosition, false);
     }
 
     public void OnTriggerExit(Collider other)
@@ -27,9 +27,10 @@ public class ObjectZoneSpawner : MonoBehaviour {
         }
         if (interactable && !interactable.hasLeftZone && currentIndex < limit)
         {
-                Instantiate(ItemToSpawn, spawnPosition, true);
+                Instantiate(ItemToSpawn, spawnPosition, false);
                 currentIndex++;
             interactable.hasLeftZone = true;
+          //  interactable.transform.SetParent(null);
             interactable = null;
         }
     }

@@ -8,7 +8,7 @@ public class Oculus_Controller : MonoBehaviour {
 
     [SerializeField]
     private GameObject controller;
-    [SerializeField]
+    [SerializeField]   
     private OVRInput.Button Trigger;
     [SerializeField]
     public LineRenderer line;
@@ -22,9 +22,10 @@ public class Oculus_Controller : MonoBehaviour {
     private FixedJoint controllerJoint;
 
     private bool objectGrabbed = false;
-    private bool test = false;
-    private GameObject grabbedObject;
+
     private FixedTeleportSpot currentTeleportSpot;
+
+    public InteractableObject grabbedObject;
 
     private void Start()
     {
@@ -47,78 +48,38 @@ public class Oculus_Controller : MonoBehaviour {
             {
                 currentTeleportSpot = hitObject.GetComponent<FixedTeleportSpot>();
                 currentTeleportSpot.On();
-            } else
+            }
+            else
             {
-                if (currentTeleportSpot) {
+                if (currentTeleportSpot)
+                {
                     currentTeleportSpot.Off();
                     currentTeleportSpot = null;
-            }
+                }
             }
             if (hitObject.GetComponent<InteractableObject>())
             {
                 if (OVRInput.Get(OVRInput.Button.Two))
                 {
-                    //  hitObject.transform.SetParent(controller.transform);
-                    if (!controllerJoint && !objectGrabbed)
-                    {
-                        controllerJoint = controller.AddComponent<FixedJoint>();
-                        controllerJoint.breakForce = 1000;
-                        objectGrabbed = true;
-                        grabbedObject = hitObject;
-                    }
-
-                    if (controllerJoint && !test)
-                    {
-                        controllerJoint.connectedBody = hitObject.GetComponent<Rigidbody>();
-                        if (grabbedObject)
-                            grabbedObject.GetComponent<Rigidbody>().useGravity = false;
-                        test = true;
-                    }
+                    hitObject.GetComponent<InteractableObject>().OnPickUp(controller.GetComponent<Oculus_Controller>());
                 }
                 else
                 {
-                    if (controllerJoint)
-                    {
-                        controllerJoint.connectedBody = null;
-                        objectGrabbed = false;
-                        if (grabbedObject)
-                            grabbedObject.GetComponent<Rigidbody>().useGravity = true;
-                        test = false;
-                    }
-                    //  hitObject.GetComponent<Rigidbody>().isKinematic = false;
-                    //   hitObject.GetComponent<Rigidbody>().detectCollisions = false;
-                    objectGrabbed = false;
                     if (grabbedObject)
-                        grabbedObject.GetComponent<Rigidbody>().useGravity = true;
-                    // grabbedObject = null;
+                        grabbedObject.Drop();
                 }
             }
 
-            if (hitObject.GetComponent<FixedTeleportSpot>())
+            if (hitObject.GetComponent<FixedTeleportSpot>() && currentTeleportSpot)
             {
-                currentTeleportSpot = hitObject.GetComponent<FixedTeleportSpot>();
-                if (OVRInput.GetDown(OVRInput.Button.Two))
+                if (OVRInput.Get(OVRInput.Button.Two))
                     teleportComponent.TeleportToPosition(currentTeleportSpot);
             }
+        } else
+        {
+            if (currentTeleportSpot)
+                currentTeleportSpot.Off();
         }
-        //else
-        //{
-        //    if (currentTeleportSpot)
-        //    {
-        //        currentTeleportSpot.Off();
-        //        currentTeleportSpot = null;
-        //    }
-        //}
-    }
-
-    public void OnJointBreak(float breakForce)
-    {
-        Debug.Log("Broken Joint");
-        if(grabbedObject)
-        grabbedObject.GetComponent<Rigidbody>().useGravity = true;
-       // objectGrabbed = false;
-        grabbedObject = null;
-        objectGrabbed = false;
     }
 
     private void ControllerRaycast()
@@ -138,15 +99,7 @@ public class Oculus_Controller : MonoBehaviour {
     {
         startPos = controller.transform.position;
         if (hitObject)
-        {
-            line.enabled = true;
             forwardPos = hit.point;
-        }
-        else
-        {
-            //forwardPos = controller.transform.position + controller.transform.forward * 5;
-            line.enabled = false;
-        }
 
         line.SetPosition(0, startPos);
         line.SetPosition(1, forwardPos);
