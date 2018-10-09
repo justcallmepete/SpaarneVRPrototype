@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class ObjectInteractionComponent : MonoBehaviour {
 
-    [SerializeField]
-    private GameObject controller;
-
     private RaycastHit hit;
     private Vector3 forwardPos;
     private Vector3 startPos;
+	
+	private InteractableObject grabbedObject;
+	public Oculus_Controller controller;
+	
+	
 	
 	private bool isInteractable(GameObject hitObject){
 		if (hitObject && hitObject.GetComponent<InteractableObject>())
@@ -20,7 +22,14 @@ public class ObjectInteractionComponent : MonoBehaviour {
 	
 	public void SelectItem(GameObject hitObject){
 		if(isInteractable(hitObject)){
-		Debug.Log("item is interactable");
+			grabbedObject = hitObject.GetComponent<InteractableObject>();
+			grabbedObject.OnPickUp(controller);
+		}
+	}
+	
+	public void ReleaseItem(){
+		if (grabbedObject){
+			grabbedObject.Drop();
 		}
 	}
 

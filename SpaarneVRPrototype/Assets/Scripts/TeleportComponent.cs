@@ -11,6 +11,8 @@ public class TeleportComponent : MonoBehaviour
     public bool fixedSpotFound;
 	
 	private GameObject currentObject;
+	
+	private FixedTeleportSpot currentTP;
 
     void Start()
     {
@@ -19,15 +21,21 @@ public class TeleportComponent : MonoBehaviour
     }
 	
 	public void UpdateComponent(GameObject hitObject){
-		teleportEnabled = false;
 		currentObject = hitObject;
 		if (IsTeleportSpot() && !IsLastSpot()){
+			currentTP = hitObject.GetComponent<FixedTeleportSpot>();
+			if(!IsLastSpot()){
 			OnHover();
 			teleportEnabled = true;
-		} //if (IsteleportSpot() && IsLastSpot()){
-		//	OffHover();
-		//	teleportEnabled = false;
-		//}
+			} else {
+				OffHover();
+			teleportEnabled = false;
+			}
+		} 
+		if(!IsTeleportSpot() && currentTP){
+			OffHover();
+			teleportEnabled = false;
+		}
 	}
 	
 	private bool IsLastSpot(){
@@ -49,20 +57,20 @@ public class TeleportComponent : MonoBehaviour
 
     private void OnHover()
     {
-     currentObject.GetComponent<FixedTeleportSpot>().On();
+    currentTP.On();
     }
 	
 	private void OffHover(){
-		 currentObject.GetComponent<FixedTeleportSpot>().Off();
+	currentTP.Off();
 	}
 
    public void TeleportToPosition()
     {
-        if (teleportEnabled){
-			FixedTeleportSpot tp = currentObject.GetComponent<FixedTeleportSpot>();
-			gameObject.transform.position =  tp.TeleportTransform;
+        if (teleportEnabled && currentTP){
+			gameObject.transform.position =  currentTP.TeleportTransform;
 			lastTeleportSpot = currentObject;
-			tp.Off();
+			currentTP.Off();
+			currentTP = null;
 		}
     }
 }

@@ -803,10 +803,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   teleportComponent: {fileID: 95155260}
-  controller: {fileID: 56992023}
-  Trigger: 2097152
-  line: {fileID: 681704105}
+  interactionComponent: {fileID: 95155261}
+  OVRcontroller: 33554432
   grabbedObject: {fileID: 0}
+  controller: {fileID: 56992023}
+  teleportButton: 2
+  selectButton: 8192
+  line: {fileID: 681704105}
 --- !u!54 &56992028
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1035,6 +1038,7 @@ GameObject:
   - component: {fileID: 95155263}
   - component: {fileID: 95155262}
   - component: {fileID: 95155260}
+  - component: {fileID: 95155261}
   m_Layer: 2
   m_Name: PlayerController
   m_TagString: Untagged
@@ -1055,6 +1059,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lastTeleportSpot: {fileID: 0}
   fixedSpotFound: 0
+--- !u!114 &95155261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 95155259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9c0940e5a293ee409bec065b1007d41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 56992026}
 --- !u!33 &95155262
 MeshFilter:
   m_ObjectHideFlags: 0

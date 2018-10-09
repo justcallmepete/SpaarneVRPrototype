@@ -44,8 +44,11 @@ public class Oculus_Controller : MonoBehaviour {
 		if (OVRInput.Get(teleportButton))
             teleportComponent.TeleportToPosition();
        
-	   if (OVRInput.Get(selectButton))
+	   if (OVRInput.Get(selectButton)){
 		   interactionComponent.SelectItem(hitObject);
+	   } else{
+		   interactionComponent.ReleaseItem();
+	   }
     }
 
     private void ControllerRaycast()
