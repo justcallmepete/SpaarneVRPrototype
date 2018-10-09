@@ -13,44 +13,24 @@ public class InteractableObject : MonoBehaviour {
 
     private void Start()
     {
-        rb = gameObject.GetComponent<Rigidbody>();
-        rb.useGravity = true;
     }
 
-    public void OnPickUp(Oculus_Controller contr)
+    public void Select(Oculus_Controller contr)
     {
-        if (contr.grabbedObject) return;
-
-        if(!controller)
-        controller = contr;
-
-        if (controller.grabbedObject != gameObject)
-            controller.grabbedObject = this;        
-
-        if (!joint)
-            joint = gameObject.AddComponent<FixedJoint>();
-
-        if (joint)
+        // play animation?
+        Debug.Log("selected");
+        if (contr.selectedObj != this)
         {
-            joint.breakForce = 500;
-            joint.connectedBody = controller.gameObject.GetComponent<Rigidbody>();
-            rb.useGravity = false;
+            // on selection of obj do:
+            contr.selectedObj = this;
+            // outline on?
         }
     }
 
-    public void Drop()
+    public void Deselect()
     {
-        if(joint)
-        Destroy(joint);
-
-        controller.grabbedObject = null;
-        rb.useGravity = true;
-
+    // outline off?
     }
 
-    private void OnJointBreak(float breakForce)
-    {
-        rb.useGravity = true;
-        controller.grabbedObject = null;
-    }
+
 }

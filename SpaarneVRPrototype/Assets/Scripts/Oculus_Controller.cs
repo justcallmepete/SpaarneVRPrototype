@@ -8,7 +8,7 @@ public class Oculus_Controller : MonoBehaviour {
 	public ObjectInteractionComponent interactionComponent;
     public OVRInput.Controller OVRcontroller;
 
-	public InteractableObject grabbedObject;
+	public InteractableObject selectedObj;
 	private bool hasObject = false;
 
     [SerializeField]

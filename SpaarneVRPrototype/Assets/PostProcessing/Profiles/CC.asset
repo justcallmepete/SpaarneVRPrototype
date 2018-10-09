@@ -43,11 +43,11 @@ MonoBehaviour:
     m_Enabled: 1
     m_Settings:
       intensity: 0.3
-      radius: 0.3
+      radius: 0.4
       sampleCount: 16
       downsampling: 1
       forceForwardCompatibility: 0
-      ambientOnly: 1
+      ambientOnly: 0
       highPrecision: 1
   screenSpaceReflection:
     m_Enabled: 0
@@ -100,7 +100,7 @@ MonoBehaviour:
     m_Enabled: 0
     m_Settings:
       bloom:
-        intensity: 0.5
+        intensity: 0
         threshold: 1.1
         softKnee: 0.191
         radius: 1
@@ -113,15 +113,15 @@ MonoBehaviour:
     m_Settings:
       tonemapping:
         tonemapper: 2
-        neutralBlackIn: 0.042
-        neutralWhiteIn: 10.8
-        neutralBlackOut: 0.004
-        neutralWhiteOut: 12.4
-        neutralWhiteLevel: 5.3
+        neutralBlackIn: 0.0379
+        neutralWhiteIn: 9.67
+        neutralBlackOut: 0.0062
+        neutralWhiteOut: 12.06
+        neutralWhiteLevel: 12.82
         neutralWhiteClip: 10
       basic:
         postExposure: 0
-        temperature: 0
+        temperature: -5.8
         tint: 0
         hueShift: 0
         saturation: 1
@@ -134,7 +134,7 @@ MonoBehaviour:
       colorWheels:
         mode: 1
         log:
-          slope: {r: 0.8776226, g: 1, b: 0.61211395, a: -0.08391608}
+          slope: {r: 0.9004287, g: 1, b: 0.44428068, a: 0.06334841}
           power: {r: 0.9817313, g: 1, b: 0.8663074, a: -0.3916084}
           offset: {r: 1, g: 0.9403257, b: 0.9738335, a: 0.11188811}
         linear:

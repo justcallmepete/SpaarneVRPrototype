@@ -96,7 +96,27 @@ ModelImporter:
     4300028: pCylinder51
     4300030: ThrashBag
     2186277476908879412: ImportLogs
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AiShinyMetal1
+    second: {fileID: 2100000, guid: 8750e4e2b6454fe49b3cdb40868ede4a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface10
+    second: {fileID: 2100000, guid: 6200dacf2de18594c85b3d6cc99a98fe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface8
+    second: {fileID: 2100000, guid: 8e62192d1b5ec204aae79e68fcdb984c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface9
+    second: {fileID: 2100000, guid: 099749a5bdb5d224d8320e689e2ab84f, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

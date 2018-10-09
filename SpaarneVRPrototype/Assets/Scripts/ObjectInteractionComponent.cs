@@ -23,13 +23,13 @@ public class ObjectInteractionComponent : MonoBehaviour {
 	public void SelectItem(GameObject hitObject){
 		if(isInteractable(hitObject)){
 			grabbedObject = hitObject.GetComponent<InteractableObject>();
-			grabbedObject.OnPickUp(controller);
+			grabbedObject.Select(controller);
 		}
 	}
 	
 	public void ReleaseItem(){
 		if (grabbedObject){
-			grabbedObject.Drop();
+			grabbedObject.Deselect();
 		}
 	}
 
