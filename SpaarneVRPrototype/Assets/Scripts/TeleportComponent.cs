@@ -4,35 +4,65 @@ using UnityEngine;
 
 public class TeleportComponent : MonoBehaviour
 {
-    public bool TeleportEnabled
-    {
-        get { return teleportEnabled; }
-    }
 
     public GameObject lastTeleportSpot = null;
 
     private bool teleportEnabled;
     public bool fixedSpotFound;
+	
+	private GameObject currentObject;
 
     void Start()
     {
         teleportEnabled = false;
         fixedSpotFound = false;
     }
+	
+	public void UpdateComponent(GameObject hitObject){
+		teleportEnabled = false;
+		currentObject = hitObject;
+		if (IsTeleportSpot() && !IsLastSpot()){
+			OnHover();
+			teleportEnabled = true;
+		} //if (IsteleportSpot() && IsLastSpot()){
+		//	OffHover();
+		//	teleportEnabled = false;
+		//}
+	}
+	
+	private bool IsLastSpot(){
+		if(currentObject == lastTeleportSpot){
+			return true;
+		} else{
+			return false;
+		}
+	}
+	
+	private bool IsTeleportSpot(){
+		if (currentObject && currentObject.GetComponent<FixedTeleportSpot>()){
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
 
-    public bool OnHover(GameObject teleportSpot)
+    private void OnHover()
     {
-        bool isSameObject = (teleportSpot != lastTeleportSpot) ? true : false;
-        return isSameObject;
+     currentObject.GetComponent<FixedTeleportSpot>().On();
     }
+	
+	private void OffHover(){
+		 currentObject.GetComponent<FixedTeleportSpot>().Off();
+	}
 
-   public void TeleportToPosition(FixedTeleportSpot teleportSpot)
+   public void TeleportToPosition()
     {
-        if (teleportSpot.gameObject != lastTeleportSpot)
-        {
-            gameObject.transform.position = teleportSpot.TeleportTransform;
-            lastTeleportSpot = teleportSpot.gameObject;
-            teleportSpot.Off();
-        }
+        if (teleportEnabled){
+			FixedTeleportSpot tp = currentObject.GetComponent<FixedTeleportSpot>();
+			gameObject.transform.position =  tp.TeleportTransform;
+			lastTeleportSpot = currentObject;
+			tp.Off();
+		}
     }
 }

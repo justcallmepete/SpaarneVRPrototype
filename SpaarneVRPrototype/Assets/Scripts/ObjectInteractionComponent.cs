@@ -10,27 +10,19 @@ public class ObjectInteractionComponent : MonoBehaviour {
     private RaycastHit hit;
     private Vector3 forwardPos;
     private Vector3 startPos;
-
-    private GameObject hitObject;
-
-    public void UpdateComponent()
-    {
-
-    }
-
-    private void ControllerRaycast()
-    {
-        Ray r = new Ray(controller.transform.position, controller.transform.forward);
-        forwardPos = startPos + controller.transform.forward * 10;
-        if (Physics.Raycast(r, out hit))
-        {
-            hitObject = hit.transform.gameObject;
-        }
-        else
-        {
-            hitObject = null;
-        }
-    }
+	
+	private bool isInteractable(GameObject hitObject){
+		if (hitObject && hitObject.GetComponent<InteractableObject>())
+			return true;
+		else
+			return false;
+	}
+	
+	public void SelectItem(GameObject hitObject){
+		if(isInteractable(hitObject)){
+		Debug.Log("item is interactable");
+		}
+	}
 
 
 }
