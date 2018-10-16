@@ -5,37 +5,30 @@ using UnityEngine;
 public class Oculus_Controller : MonoBehaviour {
 	
     public TeleportComponent teleportComponent;
-	public ObjectInteractionComponent interactionComponent;
     public OVRInput.Controller OVRcontroller;
-
-	public InteractableObject selectedObj;
-	private bool hasObject = false;
 
     [SerializeField]
     private GameObject controller;
     [SerializeField]   
     private OVRInput.Button teleportButton;
-	[SerializeField]
-	private OVRInput.Button selectButton;
     [SerializeField]
-    private LineRenderer line;
-	private Rigidbody rb;
+    private OVRInput.Button selectButton;
 
     private RaycastHit hit;
     private Vector3 startPos;
     private Vector3 forwardPos;
     private GameObject hitObject;
 
-    private void Start()
-    {
-        rb = controller.GetComponent<Rigidbody>();
-    }
+    public GameObject LineTarget;
+    public GameObject FollowLineTarget;
+    public GameObject LineTargetFollowUp;
+    public Material LineTargetM;
+    public Material LineTargetFollowUpM;
 
     private void Update()
     {
         ControllerRaycast();
 		teleportComponent.UpdateComponent(hitObject);
-        UpdateLineRenderer();
         HandleInput();
     }
 
@@ -43,12 +36,6 @@ public class Oculus_Controller : MonoBehaviour {
     {
 		if (OVRInput.Get(teleportButton))
             teleportComponent.TeleportToPosition();
-       
-	   if (OVRInput.Get(selectButton)){
-		   interactionComponent.SelectItem(hitObject);
-	   } else{
-		   interactionComponent.ReleaseItem();
-	   }
     }
 
     private void ControllerRaycast()
@@ -57,20 +44,33 @@ public class Oculus_Controller : MonoBehaviour {
         forwardPos = startPos + controller.transform.forward * 10;
         if (Physics.Raycast(r, out hit))
         {
+            LineTarget.SetActive(true);
+            LineTargetFollowUp.SetActive(true);
+            FollowLineTarget.transform.position = new Vector3(hit.point.x, hit.point.y + 10, hit.point.z);
+            if (hit.transform.tag == "Teleport")
+            {
+                LineTarget.transform.LookAt(FollowLineTarget.transform);
+                LineTargetFollowUp.transform.localScale = new Vector3(LineTargetFollowUp.transform.localScale.x, 35f, LineTargetFollowUp.transform.localScale.z);
+                LineTargetM.color = Color.green;
+                LineTargetFollowUpM.color = Color.green;
+            }
+            else
+            {
+                LineTarget.transform.LookAt(controller.transform);
+                LineTargetFollowUp.transform.localScale = new Vector3(LineTargetFollowUp.transform.localScale.x, 22f + ((Vector3.Magnitude(hit.point - controller.transform.position))* 3f ), LineTargetFollowUp.transform.localScale.z);
+                LineTargetM.color = Color.white;
+                LineTargetFollowUpM.color = Color.white;
+            }
             hitObject = hit.transform.gameObject;
-        } else
-        {
+            LineTarget.transform.position = hit.point;
+            float scale = 0.03f + (0.003f * Vector3.Magnitude(hit.point - controller.transform.position));
+            LineTarget.transform.localScale = new Vector3(scale, scale, scale);
+          //  LineTargetFollowUp.transform.position = new Vector3(0, 0, 2);
+            } else
+            {
             hitObject = null;
-        }
-    }
-
-    private void UpdateLineRenderer()
-    {
-        startPos = controller.transform.position;
-        if (hitObject)
-            forwardPos = hit.point;
-
-        line.SetPosition(0, startPos);
-        line.SetPosition(1, forwardPos);
+            LineTarget.SetActive(false);
+            LineTargetFollowUp.SetActive(false);
+            }
     }
 }

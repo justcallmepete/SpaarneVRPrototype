@@ -17,14 +17,6 @@ public class InteractableObject : MonoBehaviour {
 
     public void Select(Oculus_Controller contr)
     {
-        // play animation?
-        Debug.Log("selected");
-        if (contr.selectedObj != this)
-        {
-            // on selection of obj do:
-            contr.selectedObj = this;
-            // outline on?
-        }
     }
 
     public void Deselect()
