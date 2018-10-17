@@ -8,7 +8,6 @@ public class TeleportComponent : MonoBehaviour
     public GameObject lastTeleportSpot = null;
 
     private bool teleportEnabled;
-    public bool fixedSpotFound;
 	
 	private GameObject currentObject;
 	
@@ -17,9 +16,8 @@ public class TeleportComponent : MonoBehaviour
     void Start()
     {
         teleportEnabled = false;
-        fixedSpotFound = false;
     }
-	
+    	
 	public void UpdateComponent(GameObject hitObject){
 		currentObject = hitObject;
 		if (IsTeleportSpot() && !IsLastSpot()){
@@ -64,7 +62,7 @@ public class TeleportComponent : MonoBehaviour
 	currentTP.Off();
 	}
 
-   public void TeleportToPosition()
+   public void TeleportToPosition(GameObject hitobject)
     {
         if (teleportEnabled && currentTP){
 			gameObject.transform.position =  currentTP.TeleportTransform;
