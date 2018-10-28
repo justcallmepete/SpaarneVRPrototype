@@ -1,0 +1,246 @@
+fileFormatVersion: 2
+guid: 2f077e72dd4cb02419dcd0de3a5fe963
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Big_Sticker
+    100002: Door
+    100004: Door_Collection
+    100006: Door_Top_Hinge
+    100008: DoorBumper_Left
+    100010: DoorBumper_Right
+    100012: Doorframe_Hinges
+    100014: Doorknob_Back
+    100016: Doorknob_Front
+    100018: Frame
+    100020: //RootNode
+    100022: pCube39
+    100024: pCube40
+    100026: pCube41
+    100028: pCube42
+    100030: pCube43
+    100032: pCube44
+    100034: pCube45
+    100036: pCylinder12
+    100038: pCylinder13
+    100040: pCylinder14
+    100042: pCylinder5
+    100044: pCylinder6
+    100046: Small_Sticker
+    100048: Window_Pane
+    100050: Window_Pane_Glass1
+    100052: Isolation_Door_01
+    400000: Big_Sticker
+    400002: Door
+    400004: Door_Collection
+    400006: Door_Top_Hinge
+    400008: DoorBumper_Left
+    400010: DoorBumper_Right
+    400012: Doorframe_Hinges
+    400014: Doorknob_Back
+    400016: Doorknob_Front
+    400018: Frame
+    400020: //RootNode
+    400022: pCube39
+    400024: pCube40
+    400026: pCube41
+    400028: pCube42
+    400030: pCube43
+    400032: pCube44
+    400034: pCube45
+    400036: pCylinder12
+    400038: pCylinder13
+    400040: pCylinder14
+    400042: pCylinder5
+    400044: pCylinder6
+    400046: Small_Sticker
+    400048: Window_Pane
+    400050: Window_Pane_Glass1
+    400052: Isolation_Door_01
+    2100000: DoorBumperMaterial
+    2100002: Sticker_Mat
+    2100004: lambert5
+    2100006: Door_Top_Hinge_Mat
+    2100008: Window_Pane_Mat
+    2100010: Glass_Mat
+    2100012: Door_Mat
+    2100014: DoorKnob
+    2100016: hinge
+    2300000: Big_Sticker
+    2300002: Door
+    2300004: DoorBumper_Left
+    2300006: DoorBumper_Right
+    2300008: Frame
+    2300010: pCube39
+    2300012: pCube40
+    2300014: pCube41
+    2300016: pCube42
+    2300018: pCube43
+    2300020: pCube44
+    2300022: pCube45
+    2300024: pCylinder12
+    2300026: pCylinder13
+    2300028: pCylinder14
+    2300030: pCylinder5
+    2300032: pCylinder6
+    2300034: Small_Sticker
+    2300036: Window_Pane
+    2300038: Window_Pane_Glass1
+    3300000: Big_Sticker
+    3300002: Door
+    3300004: DoorBumper_Left
+    3300006: DoorBumper_Right
+    3300008: Frame
+    3300010: pCube39
+    3300012: pCube40
+    3300014: pCube41
+    3300016: pCube42
+    3300018: pCube43
+    3300020: pCube44
+    3300022: pCube45
+    3300024: pCylinder12
+    3300026: pCylinder13
+    3300028: pCylinder14
+    3300030: pCylinder5
+    3300032: pCylinder6
+    3300034: Small_Sticker
+    3300036: Window_Pane
+    3300038: Window_Pane_Glass1
+    4300000: DoorBumper_Left
+    4300002: DoorBumper_Right
+    4300004: Big_Sticker
+    4300006: Small_Sticker
+    4300008: Frame
+    4300010: pCube41
+    4300012: pCube43
+    4300014: pCylinder14
+    4300016: pCube42
+    4300018: pCube45
+    4300020: pCube44
+    4300022: Window_Pane
+    4300024: Window_Pane_Glass1
+    4300026: Door
+    4300028: pCube39
+    4300030: pCylinder12
+    4300032: pCube40
+    4300034: pCylinder13
+    4300036: pCylinder5
+    4300038: pCylinder6
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DoorBumperMaterial
+    second: {fileID: 2100000, guid: 72e570fc431cd854ab9f7de7e888ecb8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DoorKnob
+    second: {fileID: 2100000, guid: 72e570fc431cd854ab9f7de7e888ecb8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Door_Mat
+    second: {fileID: 2100000, guid: a34e4975bde6dbf46a1cdbc49a4966b2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sticker_Mat
+    second: {fileID: 2100000, guid: 7c750c33446859646bf74e33f7bde34b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Window_Pane_Mat
+    second: {fileID: 2100000, guid: 5fbaee08f4c441b40aac1d0b942271db, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hinge
+    second: {fileID: 2100000, guid: 72e570fc431cd854ab9f7de7e888ecb8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert5
+    second: {fileID: 2100000, guid: 51789353f5621fc40a3997be0d31cfb8, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 100
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
