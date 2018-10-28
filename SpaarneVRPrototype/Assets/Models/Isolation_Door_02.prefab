@@ -234,7 +234,7 @@ GameObject:
   - component: {fileID: 4321430937831588}
   - component: {fileID: 95021389534312430}
   m_Layer: 0
-  m_Name: Isolation_Door_02V6
+  m_Name: Isolation_Door_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
