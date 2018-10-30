@@ -20,12 +20,12 @@ public class FixedTeleportSpot : MonoBehaviour {
         teleportTransform = teleportDestination.position + Vector3.up * .5f;
     }
 
-    public void On()
+    public void OutlineOn()
     {
         if (!outline.activeInHierarchy) outline.SetActive(true);
     }
 
-    public void Off()
+    public void OutlineOff()
     {
         if (outline.activeInHierarchy) outline.SetActive(false);
     }

@@ -2,15 +2,40 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InteractionGloveBox : MonoBehaviour {
+public class InteractionGloveBox : Interaction {
+    public ThrashStatus thrash;
+    public bool UnlockedBox;
+    public string size;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public override void Handle()
+    {
+        base.Handle();
+        if (!UnlockedBox)
+        {
+            warningSystem.SetWarning("You havent opened the box yet and already want to dispose of it?");
+        }else
+        {
+            if (thrash.LidOpen)
+            {
+                if (size == "S") { this.transform.parent.GetComponent<GloveBoxHolderStats>().posS = false; }
+                if (size == "M") { this.transform.parent.GetComponent<GloveBoxHolderStats>().posM = false; }
+                if (size == "L") { this.transform.parent.GetComponent<GloveBoxHolderStats>().posL = false; }
+                this.gameObject.SetActive(false);
+            }else
+            {
+                warningSystem.SetWarning("You cant throw this away if the garbage bin is closed.");
+            }
+        }
+    }
+
+    public override void Interact()
+    {
+        base.Interact();
+        if (!UnlockedBox)
+        {
+            InteractionTaskA = "null";
+            UnlockedBox = true;
+            //maybe tearing sound for the opening of the box and after that display the glove hanging from the bottom. 
+        }
+    }
 }

@@ -15,6 +15,7 @@ TagManager:
   - Head
   - Destructable
   - Teleport
+  - Interaction
   layers:
   - Default
   - TransparentFX

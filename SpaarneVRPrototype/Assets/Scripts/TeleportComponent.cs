@@ -55,11 +55,11 @@ public class TeleportComponent : MonoBehaviour
 
     private void OnHover()
     {
-    currentTP.On();
+    currentTP.OutlineOn();
     }
 	
 	private void OffHover(){
-	currentTP.Off();
+	currentTP.OutlineOff();
 	}
 
    public void TeleportToPosition(GameObject hitobject)
@@ -67,7 +67,7 @@ public class TeleportComponent : MonoBehaviour
         if (teleportEnabled && currentTP){
 			gameObject.transform.position =  currentTP.TeleportTransform;
 			lastTeleportSpot = currentObject;
-			currentTP.Off();
+			currentTP.OutlineOff();
 			currentTP = null;
 		}
     }

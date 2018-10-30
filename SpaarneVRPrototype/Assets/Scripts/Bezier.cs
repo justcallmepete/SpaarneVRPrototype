@@ -86,12 +86,12 @@ public class Bezier : MonoBehaviour {
             {
                 fixedEndPointDetected = true;
                 if(tp)
-                tp.On();
+                tp.OutlineOn();
             } else
             {
                 fixedEndPointDetected = false;
                 if(tp)
-                tp.Off();
+                tp.OutlineOff();
             }
 
             if (CheckColliderIntersection(prevPosition, nextPosition)) { // If the segment intersects a surface, draw the point and return.
