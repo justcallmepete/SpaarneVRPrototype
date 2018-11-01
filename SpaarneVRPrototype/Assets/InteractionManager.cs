@@ -9,6 +9,15 @@ public class InteractionManager : MonoBehaviour {
     public GameObject LastHighlightedTeleporter;
     public Interaction SelectedInteraction;
 
+    [SerializeField]
+    private OVRInput.Button teleportButton;
+    [SerializeField]
+    private OVRInput.Button selectButton;
+
+    private KeyCode teleportButtonKey = KeyCode.Mouse0;
+    private KeyCode selectButtonKey = KeyCode.Mouse1;
+
+
     public GameObject InteractionCanvas;
     public void Start()
     {
@@ -20,7 +29,7 @@ public class InteractionManager : MonoBehaviour {
     {
         if (InteractionCanvas.activeInHierarchy == true)
         {
-            if (Input.GetKeyDown("b") && SelectedInteraction.InteractionTaskA != "null")
+            if (OVRInput.GetDown(selectButton) || Input.GetKeyDown(selectButtonKey) && SelectedInteraction.InteractionTaskA != "null")
             {
                 SelectedInteraction.Interact();
                 InteractionCanvas.transform.GetChild(0).transform.GetChild(0).transform.GetComponent<Text>().text = SelectedInteraction.InteractionTaskA;
@@ -30,7 +39,7 @@ public class InteractionManager : MonoBehaviour {
                     InteractionCanvas.transform.GetChild(0).gameObject.SetActive(false);
                 }
             }
-            else if (Input.GetKeyDown("a") && SelectedInteraction.InteractionTaskB != "null")
+            else if (OVRInput.GetDown(teleportButton) || Input.GetKeyDown(teleportButtonKey) && SelectedInteraction.InteractionTaskB != "null")
             {
                 SelectedInteraction.Handle();
                 InteractionCanvas.transform.GetChild(0).transform.GetChild(0).transform.GetComponent<Text>().text = SelectedInteraction.InteractionTaskA;
@@ -44,7 +53,7 @@ public class InteractionManager : MonoBehaviour {
         }
         else
         {
-            if (Input.GetKeyDown("a") && SelectedInteraction != null)
+            if (OVRInput.GetDown(teleportButton) || Input.GetKeyDown(teleportButtonKey) && SelectedInteraction != null)
             {
                 LastHighlightedInteraction = SelectedInteraction.gameObject; 
                 InteractionCanvas.SetActive(true);
