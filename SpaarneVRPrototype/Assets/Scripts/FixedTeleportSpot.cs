@@ -9,8 +9,8 @@ public class FixedTeleportSpot : MonoBehaviour {
         get { return teleportTransform; }
     }
 
-    [SerializeField]
-    private GameObject outline;
+    
+    public GameObject outline;
     public Transform teleportDestination;
     private Vector3 teleportTransform;
 

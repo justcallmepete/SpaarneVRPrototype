@@ -110,12 +110,14 @@ public class Oculus_Controller : MonoBehaviour
             LineTarget.transform.localScale = new Vector3(scale, scale, scale);
 
             //Disabled the highlight of the last highlighted teleporter. 
-            if (hit.transform.gameObject != interactionManager.LastHighlightedTeleporter)
+            if (interactionManager.LastHighlightedTeleporter)
             {
-                interactionManager.LastHighlightedTeleporter.GetComponent<FixedTeleportSpot>().OutlineOff();
-                interactionManager.LastHighlightedTeleporter = null;
+                if (hit.transform.gameObject != interactionManager.LastHighlightedTeleporter)
+                {
+                    interactionManager.LastHighlightedTeleporter.GetComponent<FixedTeleportSpot>().OutlineOff();
+                    interactionManager.LastHighlightedTeleporter = null;
+                }
             }
-
             
         }
         else
