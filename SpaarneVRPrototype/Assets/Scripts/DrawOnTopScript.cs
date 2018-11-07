@@ -14,7 +14,6 @@ public class DrawOnTopScript : MonoBehaviour {
         if (startCheck == false)
         {
             startCheck = true;
-            Debug.Log("Updated material val");
             Image image = GetComponent<Image>();
             Material existingGlobalMat = image.materialForRendering;
             Material updatedMaterial = new Material(existingGlobalMat);

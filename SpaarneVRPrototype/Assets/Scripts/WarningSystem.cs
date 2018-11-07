@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class WarningSystem : MonoBehaviour {
     public GameObject warningHolder;
     public Text warningText;
-    public float Timer;
-    public float fadeCol;
+    private float Timer;
+    private float fadeCol;
 
     private void Update()
     {
