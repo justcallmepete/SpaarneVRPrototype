@@ -35,7 +35,7 @@ public class InteractionGloveBox : Interaction {
         {
             InteractionTaskA = "null";
             UnlockedBox = true;
-            //maybe tearing sound for the opening of the box and after that display the glove hanging from the bottom. 
+            transform.GetChild(0).gameObject.SetActive(true);
         }
     }
 }

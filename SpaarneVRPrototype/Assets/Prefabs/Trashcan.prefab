@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 4027027588660714}
   - component: {fileID: 114873066730529624}
   m_Layer: 0
-  m_Name: TrashCan
+  m_Name: Trashcan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1371,6 +1371,8 @@ MonoBehaviour:
   InteractionTaskA: null
   InteractionTaskB: Open Bin
   thrash: {fileID: 114873066730529624}
+  Gloves: {fileID: 0}
+  MouthMask: {fileID: 0}
 --- !u!114 &114873066730529624
 MonoBehaviour:
   m_ObjectHideFlags: 1

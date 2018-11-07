@@ -55,7 +55,7 @@ public class PrikBordStats : MonoBehaviour {
             else
             {
                 guidePost.transform.position = guidePost.transform.GetChild(0).GetComponent<InteractionGuideSelect>().startPos;
-                gameSettings.procedure[guidePost.transform.GetChild(0).GetComponent<InteractionGuideSelect>().number] = false;
+                gameSettings.guide[guidePost.transform.GetChild(0).GetComponent<InteractionGuideSelect>().number] = false;
                 guidePost.transform.GetChild(0).GetComponent<InteractionGuideSelect>().InteractionTaskB = "Select Guide";
             }
         }

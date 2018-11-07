@@ -13,7 +13,6 @@ public class InteractionBottleHandSanitizer : Interaction {
             warningSystem.SetWarning("You really want to throw away a fresh and unopend bottle?");
         }else if (thrash.LidOpen)
         {
-
             this.transform.parent.GetComponent<HandSanitizerStatus>().InPosition = false;
             this.transform.parent.transform.gameObject.SetActive(false);
         } else

@@ -27,6 +27,17 @@ public class InteractionManager : MonoBehaviour {
 
     public void Update()
     {
+        if(SelectedInteraction != null)
+        {
+            if (SelectedInteraction.InteractionTaskB == "null")
+            {
+                InteractionCanvas.transform.GetChild(1).gameObject.SetActive(false);
+            }
+            if (SelectedInteraction.InteractionTaskA == "null")
+            {
+                InteractionCanvas.transform.GetChild(0).gameObject.SetActive(false);
+            }
+        }
         if (InteractionCanvas.activeInHierarchy == true)
         {
             if (OVRInput.GetDown(selectButton) || Input.GetKeyDown(selectButtonKey) && SelectedInteraction.InteractionTaskA != "null")

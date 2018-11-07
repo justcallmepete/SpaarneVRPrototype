@@ -17,8 +17,10 @@ public class InteractionGloveBoxPlacement : Interaction{
                 gloveBoxHolderStats.transform.GetChild(0).gameObject.SetActive(true);
                 gloveBoxHolderStats.transform.GetChild(0).GetComponent<InteractionGloveBox>().UnlockedBox = false;
                 gloveBoxHolderStats.transform.GetChild(0).GetComponent<InteractionGloveBox>().InteractionTaskA = "Open The Box";
+                gloveBoxHolderStats.transform.GetChild(0).transform.GetChild(0).gameObject.SetActive(false);
                 gloveBoxHolderStats.posS = true;
-                this.gameObject.SetActive(false); 
+                this.gameObject.SetActive(false);
+                 
             }
         }else if(size == "M")
         {
