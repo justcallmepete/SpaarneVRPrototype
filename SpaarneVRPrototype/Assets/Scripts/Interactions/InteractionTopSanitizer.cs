@@ -2,9 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InteractionTopSanitizer : Interaction {
+public class InteractionTopSanitizer : Interaction
+{
     public SingleVariable Gloves;
     public SingleVariable WashedHands;
+
+    public override void Start()
+    {
+        base.Start();
+        InteractionTaskB = "Wash hands";
+    }
 
     public override void Handle()
     {
@@ -14,7 +21,15 @@ public class InteractionTopSanitizer : Interaction {
             warningSystem.SetWarning("You cant wash your hands with gloves on.");
         }else
         {
-            WashedHands.task = true;
+            if (WashedHands.task)
+            {
+                warningSystem.SetWarning("You just washed your hands...");
+            }
+            else
+            {
+                WashedHands.task = true;
+            }
+           
         }
     }
 }

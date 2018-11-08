@@ -8,10 +8,12 @@ public class QuestOne : MonoBehaviour
     public PersonPosition PersonP;
     public SingleVariable mouthMask;
     public SingleVariable WashedHands;
-    public bool WashedHandsBeforeLeaving;
-    public bool WashedHandsAfterRemovingMask;
-    public bool PutOnMaskBeforeEntering;
-    public bool RemovedMaskBeforeLeaving;
+    public bool WashedHandsBeforeLeaving = false;
+    public bool WashedHandsAfterRemovingMask = false;
+    public bool PutOnMaskBeforeEntering = false;
+    public bool RemovedMaskBeforeLeaving = false;
+    public bool WasinRoom = false;
+    public bool warned = false;
     // Use this for initialization
 	void Start ()
     {
@@ -21,6 +23,11 @@ public class QuestOne : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
+        if(!PersonP.inRoom && WasinRoom && !WashedHandsBeforeLeaving && !warned)
+        {
+            warningSystem.SetWarning("You left the room with out washing hands. High risk of being infected.");
+            warned = true;
+        }
         //Arogene Isolatie
         if (!PutOnMaskBeforeEntering)
         {
@@ -32,22 +39,26 @@ public class QuestOne : MonoBehaviour
         }
         else
         {
-            if (PersonP.inTube || PersonP.inRoom && !mouthMask.task)
+            if (PersonP.inTube && !mouthMask.task || PersonP.inRoom && !mouthMask.task)
             { 
                 if (!RemovedMaskBeforeLeaving)
                 {
                     RemovedMaskBeforeLeaving = true;
-                    warningSystem.SetWarning("You removed your mask before leaving the room. High risk of being infected.");
+                    warningSystem.SetWarning("You removed or dindt have a mask in the room. High risk of being infected.");
                 }
             }else if (!RemovedMaskBeforeLeaving)
             {
                 //Before exiting the room Wash Hands
                 if (!WashedHandsBeforeLeaving)
                 {
-                    if (PersonP.inRoom && WashedHands.task)
+                    if (PersonP.inRoom)
                     {
-                        WashedHandsBeforeLeaving = true;
-                        WashedHands.task = false;
+                            WasinRoom = true;
+                        if (WashedHands.task)
+                        {
+                            WashedHandsBeforeLeaving = true;
+                            WashedHands.task = false;
+                        }
                     }
                 }
                 else if(!PersonP.inRoom && !PersonP.inTube && !mouthMask.task)
