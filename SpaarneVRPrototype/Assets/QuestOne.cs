@@ -28,13 +28,23 @@ public class QuestOne : MonoBehaviour
             warningSystem.SetWarning("You left the room with out washing hands. High risk of being infected.");
             warned = true;
         }
+
+
         //Arogene Isolatie
         if (!PutOnMaskBeforeEntering)
         {
             if (!PersonP.inTube && !PersonP.inRoom && mouthMask.task)
-            { 
+            {
                 //Put on a mask before entering the room. 
                 PutOnMaskBeforeEntering = true;
+            }
+            else if (PersonP.inTube && !mouthMask.task || PersonP.inRoom && !mouthMask.task)
+            {
+                if (!RemovedMaskBeforeLeaving)
+                {
+                    RemovedMaskBeforeLeaving = true;
+                    warningSystem.SetWarning("You removed or dindt have a mask in the room. High risk of being infected.");
+                }
             }
         }
         else
