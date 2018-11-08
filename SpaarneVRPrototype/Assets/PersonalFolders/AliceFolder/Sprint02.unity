@@ -343,7 +343,11 @@ Transform:
   - {fileID: 1860661600}
   - {fileID: 1539079317}
   m_Father: {fileID: 0}
+<<<<<<< Updated upstream:SpaarneVRPrototype/Assets/PersonalFolders/AliceFolder/Sprint02.unity
   m_RootOrder: 8
+=======
+  m_RootOrder: 15
+>>>>>>> Stashed changes:SpaarneVRPrototype/Assets/PersonalFolders/alice/Sprint02.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &26632313
 GameObject:
@@ -1345,7 +1349,11 @@ Transform:
   m_Children:
   - {fileID: 1835104289}
   m_Father: {fileID: 0}
+<<<<<<< Updated upstream:SpaarneVRPrototype/Assets/PersonalFolders/AliceFolder/Sprint02.unity
   m_RootOrder: 6
+=======
+  m_RootOrder: 13
+>>>>>>> Stashed changes:SpaarneVRPrototype/Assets/PersonalFolders/alice/Sprint02.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &124067338
 GameObject:
@@ -3785,6 +3793,95 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 462384467}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< Updated upstream:SpaarneVRPrototype/Assets/PersonalFolders/AliceFolder/Sprint02.unity
+=======
+--- !u!1001 &465066371
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4662490811788726, guid: 93f6f27900af6ce449c09d464628f2a5, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.55409
+      objectReference: {fileID: 0}
+    - target: {fileID: 4662490811788726, guid: 93f6f27900af6ce449c09d464628f2a5, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 4662490811788726, guid: 93f6f27900af6ce449c09d464628f2a5, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -2.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 4662490811788726, guid: 93f6f27900af6ce449c09d464628f2a5, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4662490811788726, guid: 93f6f27900af6ce449c09d464628f2a5, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4662490811788726, guid: 93f6f27900af6ce449c09d464628f2a5, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4662490811788726, guid: 93f6f27900af6ce449c09d464628f2a5, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4662490811788726, guid: 93f6f27900af6ce449c09d464628f2a5, type: 2}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4662490811788726, guid: 93f6f27900af6ce449c09d464628f2a5, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4662490811788726, guid: 93f6f27900af6ce449c09d464628f2a5, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 4662490811788726, guid: 93f6f27900af6ce449c09d464628f2a5, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0.75
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 93f6f27900af6ce449c09d464628f2a5, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1 &472568281
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 100012, guid: 1fe7471f8de610142bdddac2e0135e1d,
+    type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 472568282}
+  m_Layer: 0
+  m_Name: sanitizer_allparts_new
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &472568282
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 400012, guid: 1fe7471f8de610142bdddac2e0135e1d,
+    type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 472568281}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.1096, z: 0.0312}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1444589795}
+  - {fileID: 1238787273}
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> Stashed changes:SpaarneVRPrototype/Assets/PersonalFolders/alice/Sprint02.unity
 --- !u!1001 &473786611
 Prefab:
   m_ObjectHideFlags: 0
@@ -4063,7 +4160,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4054082467996128, guid: 66052b853332bcc47a5c2c07f1c81214, type: 2}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream:SpaarneVRPrototype/Assets/PersonalFolders/AliceFolder/Sprint02.unity
       value: 11
+=======
+      value: 24
+>>>>>>> Stashed changes:SpaarneVRPrototype/Assets/PersonalFolders/alice/Sprint02.unity
       objectReference: {fileID: 0}
     - target: {fileID: 1901300053775192, guid: 66052b853332bcc47a5c2c07f1c81214, type: 2}
       propertyPath: m_Name
@@ -4845,7 +4946,11 @@ Transform:
   m_LocalScale: {x: 0.03, y: 0.03, z: 0.03}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< Updated upstream:SpaarneVRPrototype/Assets/PersonalFolders/AliceFolder/Sprint02.unity
   m_RootOrder: 9
+=======
+  m_RootOrder: 16
+>>>>>>> Stashed changes:SpaarneVRPrototype/Assets/PersonalFolders/alice/Sprint02.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &620047075 stripped
 GameObject:
@@ -5015,6 +5120,75 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 639374647}
   m_Mesh: {fileID: 4300004, guid: f408e2cad5a7c0d499f3cc998bd4bfd1, type: 3}
+<<<<<<< Updated upstream:SpaarneVRPrototype/Assets/PersonalFolders/AliceFolder/Sprint02.unity
+=======
+--- !u!1001 &647341645
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 4618ba892f4e56b4e8ee334ce7bdb073, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.6506994
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 4618ba892f4e56b4e8ee334ce7bdb073, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 4618ba892f4e56b4e8ee334ce7bdb073, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.8969702
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 4618ba892f4e56b4e8ee334ce7bdb073, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.03006752
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 4618ba892f4e56b4e8ee334ce7bdb073, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.71058196
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 4618ba892f4e56b4e8ee334ce7bdb073, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.025181027
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 4618ba892f4e56b4e8ee334ce7bdb073, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7025206
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 4618ba892f4e56b4e8ee334ce7bdb073, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 4618ba892f4e56b4e8ee334ce7bdb073, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.018633334
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 4618ba892f4e56b4e8ee334ce7bdb073, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.05218092
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 4618ba892f4e56b4e8ee334ce7bdb073, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.018408375
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 4618ba892f4e56b4e8ee334ce7bdb073, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 269.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 4618ba892f4e56b4e8ee334ce7bdb073, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -4.4750004
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 4618ba892f4e56b4e8ee334ce7bdb073, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0.42200002
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4618ba892f4e56b4e8ee334ce7bdb073, type: 3}
+  m_IsPrefabAsset: 0
+>>>>>>> Stashed changes:SpaarneVRPrototype/Assets/PersonalFolders/alice/Sprint02.unity
 --- !u!1 &654008552
 GameObject:
   m_ObjectHideFlags: 0
@@ -5209,7 +5383,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400020, guid: 2f077e72dd4cb02419dcd0de3a5fe963, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream:SpaarneVRPrototype/Assets/PersonalFolders/AliceFolder/Sprint02.unity
       value: 1
+=======
+      value: 6
+>>>>>>> Stashed changes:SpaarneVRPrototype/Assets/PersonalFolders/alice/Sprint02.unity
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f077e72dd4cb02419dcd0de3a5fe963, type: 3}
@@ -5562,6 +5740,118 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< Updated upstream:SpaarneVRPrototype/Assets/PersonalFolders/AliceFolder/Sprint02.unity
+=======
+--- !u!4 &721067445
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 721067444}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -1.68, y: 0.9362, z: 3.78}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 731861642}
+  - {fileID: 1612349438}
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!1 &722739839
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 100012, guid: d952dfbba0984c14bb3af1c355429b9b,
+    type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 722739840}
+  - component: {fileID: 722739842}
+  - component: {fileID: 722739841}
+  m_Layer: 0
+  m_Name: pCylinder39
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &722739840
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 400012, guid: d952dfbba0984c14bb3af1c355429b9b,
+    type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 722739839}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.3508181, y: -0.44213867, z: 0.7429339}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 152954525}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &722739841
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 2300012, guid: d952dfbba0984c14bb3af1c355429b9b,
+    type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 722739839}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: 8750e4e2b6454fe49b3cdb40868ede4a, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &722739842
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 3300012, guid: d952dfbba0984c14bb3af1c355429b9b,
+    type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 722739839}
+  m_Mesh: {fileID: 4300008, guid: d952dfbba0984c14bb3af1c355429b9b, type: 3}
+--- !u!1 &724858762
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 100012, guid: f408e2cad5a7c0d499f3cc998bd4bfd1,
+    type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 724858763}
+  - component: {fileID: 724858765}
+  - component: {fileID: 724858764}
+  m_Layer: 0
+  m_Name: pCylinder86
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+>>>>>>> Stashed changes:SpaarneVRPrototype/Assets/PersonalFolders/alice/Sprint02.unity
 --- !u!4 &724858763
 Transform:
   m_ObjectHideFlags: 0
@@ -5620,6 +5910,232 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 724858762}
   m_Mesh: {fileID: 4300006, guid: f408e2cad5a7c0d499f3cc998bd4bfd1, type: 3}
+<<<<<<< Updated upstream:SpaarneVRPrototype/Assets/PersonalFolders/AliceFolder/Sprint02.unity
+=======
+--- !u!1 &730587970 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 9685992ca611a7d4089b9cd646f5b40f,
+    type: 3}
+  m_PrefabInternal: {fileID: 967632518}
+--- !u!4 &730587971 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 9685992ca611a7d4089b9cd646f5b40f,
+    type: 3}
+  m_PrefabInternal: {fileID: 967632518}
+--- !u!64 &730587972
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 730587970}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 9685992ca611a7d4089b9cd646f5b40f, type: 3}
+--- !u!114 &730587973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 730587970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 700ef25b50c2e824db8664bf0e251995, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warningSystem: {fileID: 0}
+  InteractionTaskA: null
+  InteractionTaskB: Remove seal and place pump
+--- !u!1 &731861641
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 659a24365934e04479c01a768ea03b3a,
+    type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 731861642}
+  - component: {fileID: 731861643}
+  m_Layer: 0
+  m_Name: aprons
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &731861642
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 659a24365934e04479c01a768ea03b3a,
+    type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 731861641}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0.06469965, y: -0.0021899939, z: 0.4124}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 708760903}
+  - {fileID: 45860023}
+  - {fileID: 510811891}
+  m_Father: {fileID: 721067445}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!64 &731861643
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 731861641}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 0}
+--- !u!1 &741941221
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 741941223}
+  - component: {fileID: 741941222}
+  m_Layer: 0
+  m_Name: Reflection Probe
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!215 &741941222
+ReflectionProbe:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 741941221}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Type: 0
+  m_Mode: 0
+  m_RefreshMode: 0
+  m_TimeSlicingMode: 0
+  m_Resolution: 128
+  m_UpdateFrequency: 0
+  m_BoxSize: {x: 10, y: 10, z: 10}
+  m_BoxOffset: {x: 0, y: 0, z: 0}
+  m_NearClip: 0.3
+  m_FarClip: 1000
+  m_ShadowDistance: 100
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IntensityMultiplier: 1
+  m_BlendDistance: 1
+  m_HDR: 1
+  m_BoxProjection: 0
+  m_RenderDynamicObjects: 0
+  m_UseOcclusionCulling: 1
+  m_Importance: 1
+  m_CustomBakedTexture: {fileID: 0}
+--- !u!4 &741941223
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 741941221}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.317924, y: 0.44321528, z: 0.407}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 29
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &742714668
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 100020, guid: d952dfbba0984c14bb3af1c355429b9b,
+    type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 742714669}
+  - component: {fileID: 742714671}
+  - component: {fileID: 742714670}
+  m_Layer: 0
+  m_Name: pCylinder57
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &742714669
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 400020, guid: d952dfbba0984c14bb3af1c355429b9b,
+    type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 742714668}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.28029352, y: -0.43431398, z: 0.7048952}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 152954525}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &742714670
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 2300020, guid: d952dfbba0984c14bb3af1c355429b9b,
+    type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 742714668}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: 8750e4e2b6454fe49b3cdb40868ede4a, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &742714671
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 3300020, guid: d952dfbba0984c14bb3af1c355429b9b,
+    type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 742714668}
+  m_Mesh: {fileID: 4300014, guid: d952dfbba0984c14bb3af1c355429b9b, type: 3}
+>>>>>>> Stashed changes:SpaarneVRPrototype/Assets/PersonalFolders/alice/Sprint02.unity
 --- !u!1 &743787424
 GameObject:
   m_ObjectHideFlags: 0
@@ -5904,6 +6420,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4131283600380136, guid: eb6ed098e65a61845ad091e0eb321831, type: 2}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream:SpaarneVRPrototype/Assets/PersonalFolders/AliceFolder/Sprint02.unity
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 114936386344463330, guid: eb6ed098e65a61845ad091e0eb321831,
@@ -5927,6 +6444,9 @@ Prefab:
         type: 2}
       propertyPath: _headPoseRelativeOffsetTranslation.y
       value: 0
+=======
+      value: 23
+>>>>>>> Stashed changes:SpaarneVRPrototype/Assets/PersonalFolders/alice/Sprint02.unity
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb6ed098e65a61845ad091e0eb321831, type: 2}
@@ -6007,6 +6527,137 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 755391209}
   m_Mesh: {fileID: 4300006, guid: f408e2cad5a7c0d499f3cc998bd4bfd1, type: 3}
+<<<<<<< Updated upstream:SpaarneVRPrototype/Assets/PersonalFolders/AliceFolder/Sprint02.unity
+=======
+--- !u!1001 &756697349
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400010, guid: 16092a095b50c426faf9319bb8e0dea9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.18146801
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: 16092a095b50c426faf9319bb8e0dea9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0009997487
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: 16092a095b50c426faf9319bb8e0dea9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: 16092a095b50c426faf9319bb8e0dea9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: 16092a095b50c426faf9319bb8e0dea9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: 16092a095b50c426faf9319bb8e0dea9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: 16092a095b50c426faf9319bb8e0dea9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: 16092a095b50c426faf9319bb8e0dea9, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: 16092a095b50c426faf9319bb8e0dea9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 16092a095b50c426faf9319bb8e0dea9, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a34eebd7888984030a432c6d64f1c4c8, type: 2}
+    - target: {fileID: 2300004, guid: 16092a095b50c426faf9319bb8e0dea9, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d8a356fbe85a743ce894152c84784b60, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 16092a095b50c426faf9319bb8e0dea9, type: 3}
+  m_IsPrefabAsset: 0
+--- !u!1001 &757658384
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2091282801}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.9704168
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.39847264
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.008819333
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2a38e9ea0f1ed1c4d886ad49a59925ab, type: 2}
+    - target: {fileID: 400000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 10.020002
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 10.020002
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_Name
+      value: GloveBox
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_TagString
+      value: Interaction
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 10.020002
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+  m_IsPrefabAsset: 0
+>>>>>>> Stashed changes:SpaarneVRPrototype/Assets/PersonalFolders/alice/Sprint02.unity
 --- !u!1 &763552292
 GameObject:
   m_ObjectHideFlags: 0
@@ -6476,6 +7127,40 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 793569685}
   m_Mesh: {fileID: 4300010, guid: f408e2cad5a7c0d499f3cc998bd4bfd1, type: 3}
+<<<<<<< Updated upstream:SpaarneVRPrototype/Assets/PersonalFolders/AliceFolder/Sprint02.unity
+=======
+--- !u!1 &797727514
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 797727515}
+  m_Layer: 0
+  m_Name: HandSanitizerFullStorage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &797727515
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 797727514}
+  m_LocalRotation: {x: -0, y: -0.17597385, z: -0, w: 0.98439485}
+  m_LocalPosition: {x: -2.146, y: 0.482, z: 3.796}
+  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_Children:
+  - {fileID: 1244162492}
+  - {fileID: 530842495}
+  - {fileID: 1739592828}
+  m_Father: {fileID: 0}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: -20.271002, z: 0}
+>>>>>>> Stashed changes:SpaarneVRPrototype/Assets/PersonalFolders/alice/Sprint02.unity
 --- !u!1 &798625485
 GameObject:
   m_ObjectHideFlags: 0
@@ -7116,7 +7801,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4053645153201656, guid: ff5207782f0445c49987931c3c12f1c8, type: 2}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream:SpaarneVRPrototype/Assets/PersonalFolders/AliceFolder/Sprint02.unity
       value: 2
+=======
+      value: 27
+>>>>>>> Stashed changes:SpaarneVRPrototype/Assets/PersonalFolders/alice/Sprint02.unity
       objectReference: {fileID: 0}
     - target: {fileID: 114127653413413992, guid: ff5207782f0445c49987931c3c12f1c8,
         type: 2}
@@ -7126,6 +7815,119 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff5207782f0445c49987931c3c12f1c8, type: 2}
   m_IsPrefabAsset: 0
+<<<<<<< Updated upstream:SpaarneVRPrototype/Assets/PersonalFolders/AliceFolder/Sprint02.unity
+=======
+--- !u!1001 &887993714
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400014, guid: 1f1fa32e6e0f44c65aa27e6d0d27b628, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.3256998
+      objectReference: {fileID: 0}
+    - target: {fileID: 400014, guid: 1f1fa32e6e0f44c65aa27e6d0d27b628, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.83990103
+      objectReference: {fileID: 0}
+    - target: {fileID: 400014, guid: 1f1fa32e6e0f44c65aa27e6d0d27b628, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.9159998
+      objectReference: {fileID: 0}
+    - target: {fileID: 400014, guid: 1f1fa32e6e0f44c65aa27e6d0d27b628, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400014, guid: 1f1fa32e6e0f44c65aa27e6d0d27b628, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400014, guid: 1f1fa32e6e0f44c65aa27e6d0d27b628, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400014, guid: 1f1fa32e6e0f44c65aa27e6d0d27b628, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400014, guid: 1f1fa32e6e0f44c65aa27e6d0d27b628, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300008, guid: 1f1fa32e6e0f44c65aa27e6d0d27b628, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1d3a7af58317a4660b75c3a021f46801, type: 2}
+    - target: {fileID: 2300006, guid: 1f1fa32e6e0f44c65aa27e6d0d27b628, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6ec2c8bd3e33b4276b745583e00fc2df, type: 2}
+    - target: {fileID: 2300002, guid: 1f1fa32e6e0f44c65aa27e6d0d27b628, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6ec2c8bd3e33b4276b745583e00fc2df, type: 2}
+    - target: {fileID: 2300000, guid: 1f1fa32e6e0f44c65aa27e6d0d27b628, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6ec2c8bd3e33b4276b745583e00fc2df, type: 2}
+    - target: {fileID: 2300004, guid: 1f1fa32e6e0f44c65aa27e6d0d27b628, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6ec2c8bd3e33b4276b745583e00fc2df, type: 2}
+    - target: {fileID: 400012, guid: 1f1fa32e6e0f44c65aa27e6d0d27b628, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.014
+      objectReference: {fileID: 0}
+    - target: {fileID: 400012, guid: 1f1fa32e6e0f44c65aa27e6d0d27b628, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.053
+      objectReference: {fileID: 0}
+    - target: {fileID: 400012, guid: 1f1fa32e6e0f44c65aa27e6d0d27b628, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0043033
+      objectReference: {fileID: 0}
+    - target: {fileID: 400012, guid: 1f1fa32e6e0f44c65aa27e6d0d27b628, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 400012, guid: 1f1fa32e6e0f44c65aa27e6d0d27b628, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 400012, guid: 1f1fa32e6e0f44c65aa27e6d0d27b628, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: 1f1fa32e6e0f44c65aa27e6d0d27b628, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: 1f1fa32e6e0f44c65aa27e6d0d27b628, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.052
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: 1f1fa32e6e0f44c65aa27e6d0d27b628, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.0043033
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: 1f1fa32e6e0f44c65aa27e6d0d27b628, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: 1f1fa32e6e0f44c65aa27e6d0d27b628, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: 1f1fa32e6e0f44c65aa27e6d0d27b628, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.99
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1f1fa32e6e0f44c65aa27e6d0d27b628, type: 3}
+  m_IsPrefabAsset: 0
+>>>>>>> Stashed changes:SpaarneVRPrototype/Assets/PersonalFolders/alice/Sprint02.unity
 --- !u!21 &888188668
 Material:
   serializedVersion: 6
@@ -7311,6 +8113,71 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 915071944}
   m_Mesh: {fileID: 4300008, guid: f408e2cad5a7c0d499f3cc998bd4bfd1, type: 3}
+<<<<<<< Updated upstream:SpaarneVRPrototype/Assets/PersonalFolders/AliceFolder/Sprint02.unity
+=======
+--- !u!1001 &915274977
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.7536
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.5511
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.7536
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 98421e44709f2ff46882c04df19a45a3, type: 2}
+    - target: {fileID: 400000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.81249803
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.81249803
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.81249803
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+  m_IsPrefabAsset: 0
+>>>>>>> Stashed changes:SpaarneVRPrototype/Assets/PersonalFolders/alice/Sprint02.unity
 --- !u!1 &918244416
 GameObject:
   m_ObjectHideFlags: 0
@@ -8279,9 +9146,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1464058913}
   m_Father: {fileID: 0}
+<<<<<<< Updated upstream:SpaarneVRPrototype/Assets/PersonalFolders/AliceFolder/Sprint02.unity
   m_RootOrder: 12
+=======
+  m_RootOrder: 25
+>>>>>>> Stashed changes:SpaarneVRPrototype/Assets/PersonalFolders/alice/Sprint02.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1048703015
 Prefab:
@@ -8466,6 +9338,39 @@ Transform:
   m_Father: {fileID: 1703183364}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream:SpaarneVRPrototype/Assets/PersonalFolders/AliceFolder/Sprint02.unity
+=======
+--- !u!1 &1064029388
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1064029389}
+  m_Layer: 0
+  m_Name: HandSanInHolder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1064029389
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1064029388}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.967, y: 1.085, z: 4.024}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1237204842}
+  - {fileID: 145323257}
+  m_Father: {fileID: 0}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> Stashed changes:SpaarneVRPrototype/Assets/PersonalFolders/alice/Sprint02.unity
 --- !u!1 &1065069723
 GameObject:
   m_ObjectHideFlags: 0
@@ -9319,7 +10224,11 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< Updated upstream:SpaarneVRPrototype/Assets/PersonalFolders/AliceFolder/Sprint02.unity
   m_RootOrder: 13
+=======
+  m_RootOrder: 26
+>>>>>>> Stashed changes:SpaarneVRPrototype/Assets/PersonalFolders/alice/Sprint02.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1152696680
 MonoBehaviour:
@@ -13116,6 +14025,91 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1270271715182832, guid: 66052b853332bcc47a5c2c07f1c81214,
     type: 2}
   m_PrefabInternal: {fileID: 490088954}
+--- !u!1 &1464058912
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1464058913}
+  - component: {fileID: 1464058916}
+  - component: {fileID: 1464058915}
+  - component: {fileID: 1464058914}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1464058913
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1464058912}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.544, y: 0.57, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1040627986}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1464058914
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1464058912}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1464058915
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1464058912}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: a34eebd7888984030a432c6d64f1c4c8, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1464058916
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1464058912}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1467381009
 GameObject:
   m_ObjectHideFlags: 0
@@ -13192,6 +14186,79 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1467381009}
   m_Mesh: {fileID: 4300008, guid: f408e2cad5a7c0d499f3cc998bd4bfd1, type: 3}
+<<<<<<< Updated upstream:SpaarneVRPrototype/Assets/PersonalFolders/AliceFolder/Sprint02.unity
+=======
+--- !u!1001 &1477922281
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.681
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.4647
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.836
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_RootOrder
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2a38e9ea0f1ed1c4d886ad49a59925ab, type: 2}
+    - target: {fileID: 400000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.1366003
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.1366003
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_Name
+      value: GloveBoxPlacement
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_TagString
+      value: Interaction
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.1366
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+  m_IsPrefabAsset: 0
+>>>>>>> Stashed changes:SpaarneVRPrototype/Assets/PersonalFolders/alice/Sprint02.unity
 --- !u!1 &1478047987
 GameObject:
   m_ObjectHideFlags: 0
@@ -14535,7 +15602,11 @@ Transform:
   - {fileID: 1738550861}
   - {fileID: 1478047988}
   m_Father: {fileID: 0}
+<<<<<<< Updated upstream:SpaarneVRPrototype/Assets/PersonalFolders/AliceFolder/Sprint02.unity
   m_RootOrder: 5
+=======
+  m_RootOrder: 12
+>>>>>>> Stashed changes:SpaarneVRPrototype/Assets/PersonalFolders/alice/Sprint02.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1637262205
 GameObject:
@@ -14578,6 +15649,40 @@ Transform:
   m_Father: {fileID: 1478047988}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream:SpaarneVRPrototype/Assets/PersonalFolders/AliceFolder/Sprint02.unity
+=======
+--- !u!1 &1644306851
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 100012, guid: 1fe7471f8de610142bdddac2e0135e1d,
+    type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1644306852}
+  m_Layer: 0
+  m_Name: Sanitizer_All_Parts_Model
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1644306852
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 400012, guid: 1fe7471f8de610142bdddac2e0135e1d,
+    type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1644306851}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.84, y: 0.0009997487, z: 1.7818439}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1773028449}
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> Stashed changes:SpaarneVRPrototype/Assets/PersonalFolders/alice/Sprint02.unity
 --- !u!1 &1653772343
 GameObject:
   m_ObjectHideFlags: 0
@@ -15863,6 +16968,264 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &1774572729
 MeshFilter:
+<<<<<<< Updated upstream:SpaarneVRPrototype/Assets/PersonalFolders/AliceFolder/Sprint02.unity
+=======
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 3300016, guid: f408e2cad5a7c0d499f3cc998bd4bfd1,
+    type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1774572726}
+  m_Mesh: {fileID: 4300002, guid: f408e2cad5a7c0d499f3cc998bd4bfd1, type: 3}
+--- !u!1 &1782312150
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 100020, guid: f408e2cad5a7c0d499f3cc998bd4bfd1,
+    type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1782312151}
+  - component: {fileID: 1782312153}
+  - component: {fileID: 1782312152}
+  m_Layer: 0
+  m_Name: pCylinder88
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1782312151
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 400020, guid: f408e2cad5a7c0d499f3cc998bd4bfd1,
+    type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1782312150}
+  m_LocalRotation: {x: -0.5, y: -0.5, z: -0.5, w: 0.5}
+  m_LocalPosition: {x: 0.033340428, y: -0.025488041, z: -0.29413438}
+  m_LocalScale: {x: 0.0033103994, y: 0.00042768675, z: -0.0033103994}
+  m_Children: []
+  m_Father: {fileID: 1637262206}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &1782312152
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 2300016, guid: f408e2cad5a7c0d499f3cc998bd4bfd1,
+    type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1782312150}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: 8750e4e2b6454fe49b3cdb40868ede4a, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1782312153
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 3300016, guid: f408e2cad5a7c0d499f3cc998bd4bfd1,
+    type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1782312150}
+  m_Mesh: {fileID: 4300002, guid: f408e2cad5a7c0d499f3cc998bd4bfd1, type: 3}
+--- !u!1 &1789299908
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 100038, guid: d952dfbba0984c14bb3af1c355429b9b,
+    type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1789299909}
+  - component: {fileID: 1789299910}
+  m_Layer: 0
+  m_Name: TrashCan
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1789299909
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 400038, guid: d952dfbba0984c14bb3af1c355429b9b,
+    type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1789299908}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -3.24, y: 0.53904, z: 3.86}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 152954525}
+  - {fileID: 1507893159}
+  - {fileID: 1790633507}
+  - {fileID: 749018751}
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!114 &1789299910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1789299908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8444467c99bceb24f9e98bce268b7548, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LidOpen: 0
+  changeState: 0
+  Lid: {fileID: 749018750}
+--- !u!1 &1790633506
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 100032, guid: d952dfbba0984c14bb3af1c355429b9b,
+    type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1790633507}
+  - component: {fileID: 1790633509}
+  - component: {fileID: 1790633508}
+  - component: {fileID: 1790633511}
+  - component: {fileID: 1790633510}
+  m_Layer: 0
+  m_Name: ThrashBag
+  m_TagString: Interaction
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1790633507
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 400032, guid: d952dfbba0984c14bb3af1c355429b9b,
+    type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1790633506}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.045473903, y: 0.016530126, z: 0.019987702}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1789299909}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &1790633508
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 2300028, guid: d952dfbba0984c14bb3af1c355429b9b,
+    type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1790633506}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: 8e62192d1b5ec204aae79e68fcdb984c, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1790633509
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 3300028, guid: d952dfbba0984c14bb3af1c355429b9b,
+    type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1790633506}
+  m_Mesh: {fileID: 4300030, guid: d952dfbba0984c14bb3af1c355429b9b, type: 3}
+--- !u!114 &1790633510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1790633506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 435c846b9a093964eaa0fdd8f82470e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warningSystem: {fileID: 0}
+  InteractionTaskA: null
+  InteractionTaskB: Open Bin
+  thrash: {fileID: 1789299910}
+--- !u!64 &1790633511
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1790633506}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300030, guid: d952dfbba0984c14bb3af1c355429b9b, type: 3}
+--- !u!1 &1794385634
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1794385635}
+  m_Layer: 0
+  m_Name: HeadPumpClosed
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1794385635
+Transform:
+>>>>>>> Stashed changes:SpaarneVRPrototype/Assets/PersonalFolders/alice/Sprint02.unity
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 3300016, guid: f408e2cad5a7c0d499f3cc998bd4bfd1,
     type: 3}
@@ -16251,6 +17614,114 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1848087363}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< Updated upstream:SpaarneVRPrototype/Assets/PersonalFolders/AliceFolder/Sprint02.unity
+=======
+--- !u!1001 &1848172860
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.681
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.4647
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_RootOrder
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2a38e9ea0f1ed1c4d886ad49a59925ab, type: 2}
+    - target: {fileID: 400000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.1366003
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.1366003
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_Name
+      value: GloveBoxPlacement
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_TagString
+      value: Interaction
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.1366
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+  m_IsPrefabAsset: 0
+--- !u!1 &1848172861 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 41b900b1cb8ed3240ac853f40d0bb98a,
+    type: 3}
+  m_PrefabInternal: {fileID: 1848172860}
+--- !u!114 &1848172862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1848172861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22711ba7bda56d149b69a4aa817bac3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warningSystem: {fileID: 0}
+  InteractionTaskA: Place it in the holder
+  InteractionTaskB: Throw away
+  size: S
+  gloveBoxHolderStats: {fileID: 2091282798}
+--- !u!64 &1848172863
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1848172861}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+>>>>>>> Stashed changes:SpaarneVRPrototype/Assets/PersonalFolders/alice/Sprint02.unity
 --- !u!1 &1860661599
 GameObject:
   m_ObjectHideFlags: 0
@@ -16498,6 +17969,67 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1870015263}
   m_Mesh: {fileID: 4300002, guid: f408e2cad5a7c0d499f3cc998bd4bfd1, type: 3}
+<<<<<<< Updated upstream:SpaarneVRPrototype/Assets/PersonalFolders/AliceFolder/Sprint02.unity
+=======
+--- !u!1001 &1871876676
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: d9b87f10e32ea754592a6bf1da45b45d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.7306993
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: d9b87f10e32ea754592a6bf1da45b45d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.456
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: d9b87f10e32ea754592a6bf1da45b45d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.9169997
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: d9b87f10e32ea754592a6bf1da45b45d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: d9b87f10e32ea754592a6bf1da45b45d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: d9b87f10e32ea754592a6bf1da45b45d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: d9b87f10e32ea754592a6bf1da45b45d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: d9b87f10e32ea754592a6bf1da45b45d, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: d9b87f10e32ea754592a6bf1da45b45d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.08219276
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: d9b87f10e32ea754592a6bf1da45b45d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.08219276
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: d9b87f10e32ea754592a6bf1da45b45d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.08219276
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: d9b87f10e32ea754592a6bf1da45b45d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d9b87f10e32ea754592a6bf1da45b45d, type: 3}
+  m_IsPrefabAsset: 0
+>>>>>>> Stashed changes:SpaarneVRPrototype/Assets/PersonalFolders/alice/Sprint02.unity
 --- !u!1001 &1874032063
 Prefab:
   m_ObjectHideFlags: 0
@@ -17137,7 +18669,11 @@ Transform:
   - {fileID: 1590037940}
   - {fileID: 1223385694}
   m_Father: {fileID: 0}
+<<<<<<< Updated upstream:SpaarneVRPrototype/Assets/PersonalFolders/AliceFolder/Sprint02.unity
   m_RootOrder: 7
+=======
+  m_RootOrder: 14
+>>>>>>> Stashed changes:SpaarneVRPrototype/Assets/PersonalFolders/alice/Sprint02.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1924839299
 GameObject:
@@ -17453,7 +18989,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400034, guid: f408e2cad5a7c0d499f3cc998bd4bfd1, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream:SpaarneVRPrototype/Assets/PersonalFolders/AliceFolder/Sprint02.unity
       value: 3
+=======
+      value: 8
+>>>>>>> Stashed changes:SpaarneVRPrototype/Assets/PersonalFolders/alice/Sprint02.unity
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f408e2cad5a7c0d499f3cc998bd4bfd1, type: 3}
@@ -17683,6 +19223,94 @@ Material:
     - _UseUIAlphaClip: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
+<<<<<<< Updated upstream:SpaarneVRPrototype/Assets/PersonalFolders/AliceFolder/Sprint02.unity
+=======
+--- !u!1001 &2004828018
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.756
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.5511
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.078
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_RootOrder
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2a38e9ea0f1ed1c4d886ad49a59925ab, type: 2}
+    - target: {fileID: 400000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.81249803
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.81249803
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.81249803
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+      propertyPath: m_Name
+      value: Glovebox_Model (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 41b900b1cb8ed3240ac853f40d0bb98a, type: 3}
+  m_IsPrefabAsset: 0
+--- !u!1 &2007034233 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100006, guid: b093354fb13f867489c07e13393daf80,
+    type: 3}
+  m_PrefabInternal: {fileID: 1070842675}
+--- !u!64 &2007034237
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2007034233}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300006, guid: b093354fb13f867489c07e13393daf80, type: 3}
+>>>>>>> Stashed changes:SpaarneVRPrototype/Assets/PersonalFolders/alice/Sprint02.unity
 --- !u!1 &2015632036
 GameObject:
   m_ObjectHideFlags: 0
@@ -18144,6 +19772,149 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2051722567}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< Updated upstream:SpaarneVRPrototype/Assets/PersonalFolders/AliceFolder/Sprint02.unity
+=======
+--- !u!1 &2065029019
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2065029020}
+  m_Layer: 0
+  m_Name: HeadPump
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &2065029020
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2065029019}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.0031641, y: 0.07243001, z: -0.0019699968}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1130952162}
+  - {fileID: 785793027}
+  - {fileID: 1982934809}
+  m_Father: {fileID: 1237204842}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2091282797
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 100008, guid: d9b87f10e32ea754592a6bf1da45b45d,
+    type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2091282801}
+  - component: {fileID: 2091282800}
+  - component: {fileID: 2091282799}
+  - component: {fileID: 2091282798}
+  - component: {fileID: 2091282802}
+  m_Layer: 0
+  m_Name: GloveBoxHolder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2091282798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2091282797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da8ac965df5b7954bb2d6a49cb5991c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  posS: 0
+  posM: 1
+  posL: 1
+--- !u!23 &2091282799
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 2300000, guid: d9b87f10e32ea754592a6bf1da45b45d,
+    type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2091282797}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: d9b87f10e32ea754592a6bf1da45b45d, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &2091282800
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 3300000, guid: d9b87f10e32ea754592a6bf1da45b45d,
+    type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2091282797}
+  m_Mesh: {fileID: 4300000, guid: d9b87f10e32ea754592a6bf1da45b45d, type: 3}
+--- !u!4 &2091282801
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 400008, guid: d9b87f10e32ea754592a6bf1da45b45d,
+    type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2091282797}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -2.4177105, y: 1.206, z: 4.15}
+  m_LocalScale: {x: 0.11343311, y: 0.11343311, z: 0.11343311}
+  m_Children:
+  - {fileID: 1936905435}
+  - {fileID: 573101772}
+  - {fileID: 1373487086}
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!64 &2091282802
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2091282797}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: d9b87f10e32ea754592a6bf1da45b45d, type: 3}
+>>>>>>> Stashed changes:SpaarneVRPrototype/Assets/PersonalFolders/alice/Sprint02.unity
 --- !u!1 &2094321789
 GameObject:
   m_ObjectHideFlags: 0
