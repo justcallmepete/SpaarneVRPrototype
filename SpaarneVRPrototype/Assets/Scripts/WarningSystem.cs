@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class WarningSystem : MonoBehaviour {
+    public GameSettings gameSettings;
     public GameObject warningHolder;
     public Text warningText;
     public GameObject Holder1;
@@ -15,6 +16,8 @@ public class WarningSystem : MonoBehaviour {
 
     private void Start()
     {
+        
+
         if (Holder1.activeInHierarchy)
         {
             warningHolder = Holder1;
@@ -29,6 +32,10 @@ public class WarningSystem : MonoBehaviour {
         warningText.text = "test";
         Timer = 0f;
         fadeCol = 1f;
+        if (GameObject.Find("GameSettings").transform.GetComponent<GameSettings>())
+        {
+            gameSettings = GameObject.Find("GameSettings").transform.GetComponent<GameSettings>();
+        }
     }
 
     private void Update()
@@ -46,14 +53,40 @@ public class WarningSystem : MonoBehaviour {
 
     }
 
-    public void SetWarning(string textMessage)
+    public void SetWarning(string textMessage, bool quest = false)
     {
-        warningHolder.SetActive(true);
+        if (gameSettings != null)
+        {
+            if (gameSettings.guide[0])
+            {
+                warningHolder.SetActive(false);
+            }
+            else if (gameSettings.guide[1])
+            {
+                warningHolder.SetActive(true);
+                if (quest)
+                {
+                    warningText.text = "You made a mistake in the protocol.";
+                }
+                else
+                {
+                    warningText.text = "That wont work.";
+                }
+            }
+            else if (gameSettings.guide[2] || gameSettings.guide[3])
+            {
+                warningHolder.SetActive(true);
+                warningText.text = textMessage;
+            }
+        }
+        else
+        {
+            warningHolder.SetActive(true);
+            warningText.text = textMessage;
+        }
         Timer = 0f;
-        fadeCol = 1f;
-        warningText.text = textMessage;
+        fadeCol = 1f;   
         warningText.color = new Vector4(1f, 0f, 0f, fadeCol);
-
     }
 
 }
