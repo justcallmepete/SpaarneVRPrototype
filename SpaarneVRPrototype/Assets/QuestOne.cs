@@ -17,7 +17,7 @@ public class QuestOne : MonoBehaviour
     // Use this for initialization
 	void Start ()
     {
-		
+        warningSystem = GameObject.Find("Manager").GetComponent<WarningSystem>();
 	}
 	
 	// Update is called once per frame
