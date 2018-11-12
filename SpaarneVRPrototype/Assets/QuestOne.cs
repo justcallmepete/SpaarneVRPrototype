@@ -25,7 +25,7 @@ public class QuestOne : MonoBehaviour
     {
         if(!PersonP.inRoom && WasinRoom && !WashedHandsBeforeLeaving && !warned)
         {
-            warningSystem.SetWarning("You left the room with out washing hands. High risk of being infected.");
+            warningSystem.SetWarning("You left the room with out washing hands. High risk of being infected." , true);
             warned = true;
         }
 
@@ -43,7 +43,7 @@ public class QuestOne : MonoBehaviour
                 if (!RemovedMaskBeforeLeaving)
                 {
                     RemovedMaskBeforeLeaving = true;
-                    warningSystem.SetWarning("You removed or dindt have a mask in the room. High risk of being infected.");
+                    warningSystem.SetWarning("You removed or dindt have a mask in the room. High risk of being infected." , true);
                 }
             }
         }
@@ -54,7 +54,7 @@ public class QuestOne : MonoBehaviour
                 if (!RemovedMaskBeforeLeaving)
                 {
                     RemovedMaskBeforeLeaving = true;
-                    warningSystem.SetWarning("You removed or dindt have a mask in the room. High risk of being infected.");
+                    warningSystem.SetWarning("You removed or dindt have a mask in the room. High risk of being infected." , true);
                 }
             }else if (!RemovedMaskBeforeLeaving)
             {
@@ -87,7 +87,7 @@ public class QuestOne : MonoBehaviour
 
             if (WashedHandsAfterRemovingMask)
             {
-                warningSystem.SetWarning("Congratulations you finished Arogene Islolation.");
+                warningSystem.SetWarning("Congratulations you finished Arogene Islolation." , true);
             }
 
 

@@ -17,7 +17,7 @@ public class Oculus_Controller : MonoBehaviour
 
     public AudioClip TeleportTargetSound;
     public AudioSource Sound;
-
+    
 
 
     public InteractionManager interactionManager;
@@ -100,11 +100,13 @@ public class Oculus_Controller : MonoBehaviour
 
 
             }
-            
+
 
 
             //positions and scales the targeting point and line. 
-            LineTarget.transform.position = hit.point;
+            
+                LineTarget.transform.position += ((hit.point - LineTarget.transform.position) * 10f * Time.deltaTime);
+          
             FollowLineTarget.transform.position = new Vector3(hit.point.x, hit.point.y + 10, hit.point.z);
             float scale = 0.03f + (0.003f * Vector3.Magnitude(hit.point - controller.transform.position));
             LineTarget.transform.localScale = new Vector3(scale, scale, scale);
