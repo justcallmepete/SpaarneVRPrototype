@@ -5,10 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MainMenu.unity
     guid: d28b0fc59f81ef94a8388c78e3146a2f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Hospital_Wing.unity
     guid: 3cf3b2343369457429b619da2804965c
+  - enabled: 1
+    path: Assets/PersonalFolders/Peter/Performance_Testing/Performance_Test.unity
+    guid: 20e4bc16b7135384dbad19da58699725
   m_configObjects: {}
