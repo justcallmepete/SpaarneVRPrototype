@@ -8,7 +8,7 @@ public class InteractionManager : MonoBehaviour {
     public GameObject LastTeleportedToPoint;
     public GameObject LastHighlightedTeleporter;
     public Interaction SelectedInteraction;
-
+    public string LastActivity;
     [SerializeField]
     private OVRInput.Button teleportButton;
     [SerializeField]
@@ -42,6 +42,7 @@ public class InteractionManager : MonoBehaviour {
         {
             if (OVRInput.GetDown(selectButton) || Input.GetKeyDown(selectButtonKey) && SelectedInteraction.InteractionTaskA != "null")
             {
+                LastActivity = SelectedInteraction.InteractionTaskA;
                 SelectedInteraction.Interact();
                 InteractionCanvas.transform.GetChild(0).transform.GetChild(0).transform.GetComponent<Text>().text = SelectedInteraction.InteractionTaskA;
                 InteractionCanvas.transform.GetChild(1).transform.GetChild(0).transform.GetComponent<Text>().text = SelectedInteraction.InteractionTaskB;
@@ -52,6 +53,7 @@ public class InteractionManager : MonoBehaviour {
             }
             else if (OVRInput.GetDown(teleportButton) || Input.GetKeyDown(teleportButtonKey) && SelectedInteraction.InteractionTaskB != "null")
             {
+                LastActivity = SelectedInteraction.InteractionTaskB;
                 SelectedInteraction.Handle();
                 InteractionCanvas.transform.GetChild(0).transform.GetChild(0).transform.GetComponent<Text>().text = SelectedInteraction.InteractionTaskA;
                 InteractionCanvas.transform.GetChild(1).transform.GetChild(0).transform.GetComponent<Text>().text = SelectedInteraction.InteractionTaskB;

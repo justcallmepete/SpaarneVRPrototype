@@ -9,6 +9,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 96fa80d5e7084b4418be1edaf7ee130c, type: 3}
-  m_Name: Scriptable
+  m_Name: LastTask
   m_EditorClassIdentifier: 
   task: LastTask

@@ -38,10 +38,18 @@ public class InteractionThrashBag : Interaction {
             if (InteractionTaskB == "Remove Mouth Mask")
             {
                 MouthMask.task = false;
+                if (Gloves.task)
+                {
+                    InteractionTaskB = "Remove Gloves";
+                }
             }
             else if (InteractionTaskB == "Remove Gloves")
             {
                 Gloves.task = false;
+                if (MouthMask.task)
+                {
+                    InteractionTaskB = "Remove Mouth Mask";
+                }
             }
         }else
         {

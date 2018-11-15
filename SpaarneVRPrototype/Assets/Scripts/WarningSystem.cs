@@ -29,7 +29,6 @@ public class WarningSystem : MonoBehaviour {
 
         }
         Timer = 0;
-        warningText.text = "test";
         Timer = 0f;
         fadeCol = 1f;
         if (GameObject.Find("GameSettings").transform.GetComponent<GameSettings>())
