@@ -95,7 +95,7 @@ public class InteractionManager : MonoBehaviour {
     {
         if (LastHighlightedTeleporter != LastTeleportedToPoint && LastHighlightedTeleporter != null)
         {
-            playerRig.transform.position = LastHighlightedTeleporter.GetComponent<FixedTeleportSpot>().TeleportTransform;
+            playerRig.transform.position = new Vector3(LastHighlightedTeleporter.GetComponent<FixedTeleportSpot>().TeleportTransform.x, playerRig.transform.position.y, LastHighlightedTeleporter.GetComponent<FixedTeleportSpot>().TeleportTransform.z);
             LastTeleportedToPoint = LastHighlightedTeleporter;
             LastTeleportedToPoint.GetComponent<FixedTeleportSpot>().OutlineOff();
         }

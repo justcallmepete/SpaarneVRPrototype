@@ -38,7 +38,7 @@ public class Oculus_Controller : MonoBehaviour
 
     public void HandleInput()
     {
-        if (OVRInput.Get(teleportButton))
+        if (OVRInput.GetDown(teleportButton))
         {
             interactionManager.TeleportToPosition(playerRig);
         }
@@ -97,15 +97,13 @@ public class Oculus_Controller : MonoBehaviour
                     interactionManager.LastHighlightedTeleporter = hit.transform.gameObject;
                     interactionManager.LastHighlightedTeleporter.GetComponent<FixedTeleportSpot>().OutlineOn();
                 }
-
-
             }
 
 
 
             //positions and scales the targeting point and line. 
             
-                LineTarget.transform.position += ((hit.point - LineTarget.transform.position) * 10f * Time.deltaTime);
+           LineTarget.transform.position += ((hit.point - LineTarget.transform.position) * 10f * Time.deltaTime);
           
             FollowLineTarget.transform.position = new Vector3(hit.point.x, hit.point.y + 10, hit.point.z);
             float scale = 0.03f + (0.003f * Vector3.Magnitude(hit.point - controller.transform.position));

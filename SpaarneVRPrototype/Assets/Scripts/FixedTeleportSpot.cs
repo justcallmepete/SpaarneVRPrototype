@@ -11,13 +11,12 @@ public class FixedTeleportSpot : MonoBehaviour {
 
     
     public GameObject outline;
-    public Transform teleportDestination;
+    public GameObject teleportDestination;
     private Vector3 teleportTransform;
 
     private void Start()
     {
-        //teleportTransform = gameObject.transform.position + Vector3.up * 0.5f;
-        teleportTransform = teleportDestination.position + Vector3.up * .5f;
+        teleportTransform = teleportDestination.transform.position;
     }
 
     public void OutlineOn()
