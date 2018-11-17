@@ -14,7 +14,11 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/PersonalFolders/Peter/Performance_Testing/Performance_Test.unity
     guid: 20e4bc16b7135384dbad19da58699725
-  - enabled: 1
+  - enabled: 0
     path: Assets/PersonalFolders/Peter/Performance_Testing/Hospital_Wing_Optimization.unity
     guid: 653cdc248b8c1a843a744f04e0c60bec
+  - enabled: 1
+    path: Assets/PersonalFolders/Peter/Performance_Testing/Hospital_Wing_Optimization
+      1.unity
+    guid: 836cef938df53d7468fe289c2579af8a
   m_configObjects: {}
