@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.XR;
 
 public class Oculus_Controller : MonoBehaviour
 {
@@ -23,12 +24,29 @@ public class Oculus_Controller : MonoBehaviour
     public InteractionManager interactionManager;
 
     public GameObject playerRig;
+    public GameObject MouseRig;
 
     public GameObject LineTarget;
     public GameObject FollowLineTarget;
     public GameObject LineTargetFollowUp;
     public Material LineTargetM;
     public Material LineTargetFollowUpM;
+
+    private void Start()
+    {
+        if (!XRSettings.enabled)
+        {
+            Debug.Log("No vr");
+            playerRig.SetActive(false);
+            controller = MouseRig.transform.GetChild(0).gameObject;
+            playerRig = MouseRig;
+            playerRig.SetActive(true);
+        }else
+        {
+            playerRig.SetActive(true);
+            MouseRig.SetActive(false);
+        }
+    }
 
     private void Update()
     {
@@ -51,6 +69,12 @@ public class Oculus_Controller : MonoBehaviour
       
         if (Physics.Raycast(r, out hit))
         {
+            //positions and scales the targeting point and line. 
+
+            LineTarget.transform.position += ((hit.point - LineTarget.transform.position) * 10f * Time.deltaTime);
+            FollowLineTarget.transform.position = new Vector3(hit.point.x, hit.point.y + 10, hit.point.z);
+            float scale = 0.03f + (0.003f * Vector3.Magnitude(hit.point - controller.transform.position));
+            LineTarget.transform.localScale = new Vector3(scale, scale, scale);
 
             LineTarget.SetActive(true);
             LineTargetFollowUp.SetActive(true);
@@ -64,17 +88,18 @@ public class Oculus_Controller : MonoBehaviour
                 {
                     LineTarget.transform.LookAt(controller.transform);
                     LineTargetFollowUp.transform.localScale = new Vector3(LineTargetFollowUp.transform.localScale.x, 22f + ((Vector3.Magnitude(hit.point - controller.transform.position)) * 3f), LineTargetFollowUp.transform.localScale.z);
-                    LineTargetM.color = Color.white;
-                    LineTargetFollowUpM.color = Color.white;
-
+                    LineTargetM.color = new Color(Color.black.r, Color.black.g, Color.black.b,0.6f);
+                    LineTargetFollowUpM.color = new Color(Color.black.r, Color.black.g, Color.black.b, 0.6f);
+                    
                 }
                 else
                 {
                     LineTarget.transform.LookAt(controller.transform);
                     LineTargetFollowUp.transform.localScale = new Vector3(LineTargetFollowUp.transform.localScale.x, 22f + ((Vector3.Magnitude(hit.point - controller.transform.position)) * 3f), LineTargetFollowUp.transform.localScale.z);
-                    LineTargetM.color = Color.red;
-                    LineTargetFollowUpM.color = Color.red;
+                    LineTargetM.color = Color.green;
+                    LineTargetFollowUpM.color = Color.green;
                     interactionManager.GetInteractionScript(hit.transform.gameObject);
+                    LineTarget.transform.localScale = new Vector3(LineTarget.transform.localScale.x + 0.01f, LineTarget.transform.localScale.y + 0.01f, LineTarget.transform.localScale.z + 0.01f);
                 }
 
             }
@@ -83,8 +108,9 @@ public class Oculus_Controller : MonoBehaviour
                 interactionManager.LastHighlightedTeleporter = hit.transform.gameObject;
                 LineTarget.transform.LookAt(FollowLineTarget.transform);
                 LineTargetFollowUp.transform.localScale = new Vector3(LineTargetFollowUp.transform.localScale.x, 35f, LineTargetFollowUp.transform.localScale.z);
-                LineTargetM.color = Color.green;
-                LineTargetFollowUpM.color = Color.green;
+                LineTargetM.color = Color.white;
+                LineTargetFollowUpM.color = Color.white;
+                LineTarget.transform.localScale = new Vector3(LineTarget.transform.localScale.x + 0.01f, LineTarget.transform.localScale.y + 0.01f, LineTarget.transform.localScale.z + 0.01f);
 
                 if (!Sound.isPlaying)
                 {
@@ -101,13 +127,7 @@ public class Oculus_Controller : MonoBehaviour
 
 
 
-            //positions and scales the targeting point and line. 
-            
-           LineTarget.transform.position += ((hit.point - LineTarget.transform.position) * 10f * Time.deltaTime);
-          
-            FollowLineTarget.transform.position = new Vector3(hit.point.x, hit.point.y + 10, hit.point.z);
-            float scale = 0.03f + (0.003f * Vector3.Magnitude(hit.point - controller.transform.position));
-            LineTarget.transform.localScale = new Vector3(scale, scale, scale);
+
 
             //Disabled the highlight of the last highlighted teleporter. 
             if (interactionManager.LastHighlightedTeleporter)

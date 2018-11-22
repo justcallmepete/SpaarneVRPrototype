@@ -40,7 +40,7 @@ public class InteractionManager : MonoBehaviour {
         }
         if (InteractionCanvas.activeInHierarchy == true)
         {
-            if (OVRInput.GetDown(selectButton) || Input.GetKeyDown(selectButtonKey) && SelectedInteraction.InteractionTaskA != "null")
+            if (OVRInput.GetDown(selectButton) && SelectedInteraction.InteractionTaskA != "null" || Input.GetKeyDown(selectButtonKey) && SelectedInteraction.InteractionTaskA != "null")
             {
                 LastActivity = SelectedInteraction.InteractionTaskA;
                 SelectedInteraction.Interact();
@@ -66,7 +66,7 @@ public class InteractionManager : MonoBehaviour {
         }
         else
         {
-            if (OVRInput.GetDown(teleportButton) || Input.GetKeyDown(teleportButtonKey) && SelectedInteraction != null)
+            if (OVRInput.GetDown(teleportButton) && SelectedInteraction != null || Input.GetKeyDown(teleportButtonKey) && SelectedInteraction != null)
             {
                 LastHighlightedInteraction = SelectedInteraction.gameObject; 
                 InteractionCanvas.SetActive(true);

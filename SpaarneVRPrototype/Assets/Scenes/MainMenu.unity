@@ -749,7 +749,7 @@ Prefab:
     - target: {fileID: 114162766608957694, guid: a79140d06e52b9342a6af02639f73170,
         type: 2}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114162584519260364, guid: a79140d06e52b9342a6af02639f73170,
         type: 2}
@@ -759,7 +759,7 @@ Prefab:
     - target: {fileID: 114276972788773986, guid: a79140d06e52b9342a6af02639f73170,
         type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114052756631011150, guid: a79140d06e52b9342a6af02639f73170,
         type: 2}
@@ -782,7 +782,25 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 4769405157921430, guid: a79140d06e52b9342a6af02639f73170, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 4769405157921430, guid: a79140d06e52b9342a6af02639f73170, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 4769405157921430, guid: a79140d06e52b9342a6af02639f73170, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 114276972788773986, guid: a79140d06e52b9342a6af02639f73170,
+        type: 2}
+      propertyPath: MouseRig
+      value: 
+      objectReference: {fileID: 1606739738}
+    m_RemovedComponents:
+    - {fileID: 114162766608957694, guid: a79140d06e52b9342a6af02639f73170, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: a79140d06e52b9342a6af02639f73170, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &151368533 stripped
@@ -3151,6 +3169,11 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 18276c3a7646cef4fb7780928e75e1b4, type: 3}
+--- !u!1 &1082148622 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1556112178153190, guid: 1bf0ec8bab9e71d4a8ebb0c9671acdfa,
+    type: 2}
+  m_PrefabInternal: {fileID: 1239836846}
 --- !u!1 &1132867518
 GameObject:
   m_ObjectHideFlags: 0
@@ -3415,6 +3438,11 @@ Prefab:
       propertyPath: m_ReceiveShadows
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114776981920156968, guid: 1bf0ec8bab9e71d4a8ebb0c9671acdfa,
+        type: 2}
+      propertyPath: teleportDestination
+      value: 
+      objectReference: {fileID: 1082148622}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1bf0ec8bab9e71d4a8ebb0c9671acdfa, type: 2}
   m_IsPrefabAsset: 0
@@ -4353,6 +4381,11 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300002, guid: 18276c3a7646cef4fb7780928e75e1b4, type: 3}
+--- !u!1 &1606739738 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1603590230026568, guid: a79140d06e52b9342a6af02639f73170,
+    type: 2}
+  m_PrefabInternal: {fileID: 119171277}
 --- !u!1 &1607594434
 GameObject:
   m_ObjectHideFlags: 0
