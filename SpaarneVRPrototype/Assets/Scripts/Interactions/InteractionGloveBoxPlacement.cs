@@ -6,9 +6,15 @@ public class InteractionGloveBoxPlacement : Interaction{
     public string size;
     public GloveBoxHolderStats gloveBoxHolderStats;
 
-    public override void Interact()
+    public override void Start()
     {
-        base.Interact();
+        base.Start();
+        InteractionTask = "Move to glovebox holder.";  
+    }
+
+    public override void Handle()
+    {
+        base.Handle();
         if(size == "S")
         {
             if (gloveBoxHolderStats.posS) {
@@ -16,7 +22,7 @@ public class InteractionGloveBoxPlacement : Interaction{
             } else{
                 gloveBoxHolderStats.transform.GetChild(0).gameObject.SetActive(true);
                 gloveBoxHolderStats.transform.GetChild(0).GetComponent<InteractionGloveBox>().UnlockedBox = false;
-                gloveBoxHolderStats.transform.GetChild(0).GetComponent<InteractionGloveBox>().InteractionTaskA = "Open The Box";
+                gloveBoxHolderStats.transform.GetChild(0).GetComponent<InteractionGloveBox>().InteractionTask = "Open The Box";
                 gloveBoxHolderStats.transform.GetChild(0).transform.GetChild(0).gameObject.SetActive(false);
                 gloveBoxHolderStats.posS = true;
                 this.gameObject.SetActive(false);
@@ -24,17 +30,25 @@ public class InteractionGloveBoxPlacement : Interaction{
             }
         }else if(size == "M")
         {
+            if (gloveBoxHolderStats.posM)
+            {
+                warningSystem.SetWarning("There is already a box of size M gloves in the holder.");
+            }
+            else
+            {
+                gloveBoxHolderStats.transform.GetChild(1).gameObject.SetActive(true);
+                gloveBoxHolderStats.transform.GetChild(1).GetComponent<InteractionGloveBox>().UnlockedBox = false;
+                gloveBoxHolderStats.transform.GetChild(1).GetComponent<InteractionGloveBox>().InteractionTask = "Open The Box";
+                gloveBoxHolderStats.transform.GetChild(1).transform.GetChild(0).gameObject.SetActive(false);
+                gloveBoxHolderStats.posM = true;
+                this.gameObject.SetActive(false);
 
-        }else if(size == "L")
+            }
+        }
+        else if(size == "L")
         {
 
         }
-    }
-
-    public override void Handle()
-    {
-        base.Handle();
-        warningSystem.SetWarning("Why would you throw away a unused box of gloves?");
     }
 
 }

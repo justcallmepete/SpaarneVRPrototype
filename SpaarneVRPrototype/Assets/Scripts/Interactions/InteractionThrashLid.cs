@@ -9,11 +9,11 @@ public class InteractionThrashLid : Interaction {
     {
         if (thrash.LidOpen)
         {
-            InteractionTaskB = "Close Lid";
+            InteractionTask = "Close Lid";
         }
         else
         {
-            InteractionTaskB = "Open Lid";
+            InteractionTask = "Open Lid";
         }
     }
 
@@ -23,12 +23,12 @@ public class InteractionThrashLid : Interaction {
         if(thrash.LidOpen)
         {
             thrash.CloseLid();
-            InteractionTaskB = "Open Lid";
+            InteractionTask = "Open Lid";
         }
         else
         {
             thrash.OpenLid();
-            InteractionTaskB = "Close Lid";
+            InteractionTask = "Close Lid";
         }
        
     }

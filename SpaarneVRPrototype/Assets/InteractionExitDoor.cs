@@ -9,7 +9,7 @@ public class InteractionExitDoor : Interaction {
     {
         base.Start();
         gameSettings = GameObject.Find("GameSettings").GetComponent<GameSettings>();
-        InteractionTaskB = "Leave Room";
+        InteractionTask = "Leave Room";
     }
 
     public override void Handle()

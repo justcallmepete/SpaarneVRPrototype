@@ -10,7 +10,7 @@ public class InteractionTopSanitizer : Interaction
     public override void Start()
     {
         base.Start();
-        InteractionTaskB = "Wash hands";
+        InteractionTask = "Wash hands";
     }
 
     public override void Handle()

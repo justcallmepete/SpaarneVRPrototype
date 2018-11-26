@@ -8,7 +8,7 @@ public class InteractionDoor : Interaction {
     public override void Start()
     {
         base.Start();
-        InteractionTaskB = "Open door";
+        InteractionTask = "Open door";
 
     }
 
@@ -22,14 +22,14 @@ public class InteractionDoor : Interaction {
                 warningSystem.SetWarning("Close other door first. We dont want disease spread.");
             }else
             {
-                InteractionTaskB = "Close door";
+                InteractionTask = "Close door";
                 doorIsOpen = true;
                 transform.parent.parent.transform.Rotate(new Vector3(0, 1, 0), -90f);
             }
         }
         else
         {
-            InteractionTaskB = "Open door";
+            InteractionTask = "Open door";
             doorIsOpen = false;
             transform.parent.parent.transform.Rotate(new Vector3(0, 1, 0), 90f);
 

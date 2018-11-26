@@ -3,18 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class InteractionOpenPackage : Interaction {
-    public ThrashStatus thrash;
+    public AllThrashStatus thrash;
 
     public override void Start()
     {
         base.Start();
-        InteractionTaskB = "Throw Away";
+        InteractionTask = "Throw Away";
+        thrash = GameObject.Find("AllThrash").GetComponent<AllThrashStatus>();
     }
 
     public override void Handle()
     {
         base.Handle();
-        if (thrash.LidOpen)
+        if (thrash.isThereACanOpen())
         {
             gameObject.SetActive(false);
         }else

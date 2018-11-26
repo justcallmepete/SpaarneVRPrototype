@@ -10,22 +10,15 @@ public class InteractionThrashBag : Interaction {
     {
         if (Gloves.task)
         {
-            InteractionTaskB = "Remove Gloves";
-            if (MouthMask.task)
-            {
-                InteractionTaskA = "Remove Mouth Mask";
-            }else
-            {
-                InteractionTaskA = "null";
-            }
-        }else if(MouthMask.task)
+            InteractionTask = "Remove Gloves";
+        }
+        else if (MouthMask.task)
         {
-            InteractionTaskB = "Remove Mouth Mask";
-            InteractionTaskA = "null";
+            InteractionTask = "Remove Mouth Mask";
         }
         else
         {
-            InteractionTaskB = "null";
+            InteractionTask = "null";
 
         }
 
@@ -35,39 +28,19 @@ public class InteractionThrashBag : Interaction {
         base.Handle();
         if (thrash.LidOpen)
         {
-            if (InteractionTaskB == "Remove Mouth Mask")
+            if (InteractionTask == "Remove Gloves")
             {
-                MouthMask.task = false;
-                if (Gloves.task)
-                {
-                    InteractionTaskB = "Remove Gloves";
-                }
-            }
-            else if (InteractionTaskB == "Remove Gloves")
-            {
-                Gloves.task = false;
+               Gloves.task = false;
                 if (MouthMask.task)
                 {
-                    InteractionTaskB = "Remove Mouth Mask";
+                    InteractionTask = "Remove Mouth Mask";
                 }
             }
+            else if (InteractionTask == "Remove Mouth Mask")
+                {
+                    MouthMask.task = false;
+                } 
         }else
-        {
-            warningSystem.SetWarning("You cant throw stuff in a closed bin.");
-        }
-    }
-
-    public override void Interact()
-    {
-        base.Interact();
-        if (thrash.LidOpen)
-        {
-            if (InteractionTaskA == "Remove Mouth Mask")
-            {
-                MouthMask.task = false;
-            }
-        }
-        else
         {
             warningSystem.SetWarning("You cant throw stuff in a closed bin.");
         }

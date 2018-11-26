@@ -13,8 +13,7 @@ public class Oculus_Controller : MonoBehaviour
     private GameObject controller;
     [SerializeField]
     private OVRInput.Button teleportButton;
-    [SerializeField]
-    private OVRInput.Button selectButton;
+    private KeyCode teleportButtonKey = KeyCode.Mouse0;
 
     public AudioClip TeleportTargetSound;
     public AudioSource Sound;
@@ -32,6 +31,8 @@ public class Oculus_Controller : MonoBehaviour
     public Material LineTargetM;
     public Material LineTargetFollowUpM;
 
+    public CursorLockMode wantedMode;
+
     private void Start()
     {
         if (!XRSettings.enabled)
@@ -41,7 +42,10 @@ public class Oculus_Controller : MonoBehaviour
             controller = MouseRig.transform.GetChild(0).gameObject;
             playerRig = MouseRig;
             playerRig.SetActive(true);
-        }else
+            Cursor.lockState = wantedMode;
+            Cursor.visible = (CursorLockMode.Locked != wantedMode);
+        }
+        else
         {
             playerRig.SetActive(true);
             MouseRig.SetActive(false);
@@ -56,7 +60,7 @@ public class Oculus_Controller : MonoBehaviour
 
     public void HandleInput()
     {
-        if (OVRInput.GetDown(teleportButton))
+        if (OVRInput.GetDown(teleportButton) || Input.GetKeyDown(teleportButtonKey))
         {
             interactionManager.TeleportToPosition(playerRig);
         }

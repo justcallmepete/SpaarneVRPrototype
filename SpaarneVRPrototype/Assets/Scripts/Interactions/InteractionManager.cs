@@ -9,13 +9,10 @@ public class InteractionManager : MonoBehaviour {
     public GameObject LastHighlightedTeleporter;
     public Interaction SelectedInteraction;
     public string LastActivity;
+
     [SerializeField]
     private OVRInput.Button teleportButton;
-    [SerializeField]
-    private OVRInput.Button selectButton;
-
     private KeyCode teleportButtonKey = KeyCode.Mouse0;
-    private KeyCode selectButtonKey = KeyCode.Mouse1;
 
 
     public GameObject InteractionCanvas;
@@ -29,35 +26,19 @@ public class InteractionManager : MonoBehaviour {
     {
         if(SelectedInteraction != null)
         {
-            if (SelectedInteraction.InteractionTaskB == "null")
-            {
-                InteractionCanvas.transform.GetChild(1).gameObject.SetActive(false);
-            }
-            if (SelectedInteraction.InteractionTaskA == "null")
+            if (SelectedInteraction.InteractionTask == "null")
             {
                 InteractionCanvas.transform.GetChild(0).gameObject.SetActive(false);
             }
         }
         if (InteractionCanvas.activeInHierarchy == true)
         {
-            if (OVRInput.GetDown(selectButton) && SelectedInteraction.InteractionTaskA != "null" || Input.GetKeyDown(selectButtonKey) && SelectedInteraction.InteractionTaskA != "null")
+            if (OVRInput.GetDown(teleportButton) || Input.GetKeyDown(teleportButtonKey) && SelectedInteraction.InteractionTask != "null")
             {
-                LastActivity = SelectedInteraction.InteractionTaskA;
-                SelectedInteraction.Interact();
-                InteractionCanvas.transform.GetChild(0).transform.GetChild(0).transform.GetComponent<Text>().text = SelectedInteraction.InteractionTaskA;
-                InteractionCanvas.transform.GetChild(1).transform.GetChild(0).transform.GetComponent<Text>().text = SelectedInteraction.InteractionTaskB;
-                if (SelectedInteraction.InteractionTaskA == "null")
-                {
-                    InteractionCanvas.transform.GetChild(0).gameObject.SetActive(false);
-                }
-            }
-            else if (OVRInput.GetDown(teleportButton) || Input.GetKeyDown(teleportButtonKey) && SelectedInteraction.InteractionTaskB != "null")
-            {
-                LastActivity = SelectedInteraction.InteractionTaskB;
+                LastActivity = SelectedInteraction.InteractionTask;
                 SelectedInteraction.Handle();
-                InteractionCanvas.transform.GetChild(0).transform.GetChild(0).transform.GetComponent<Text>().text = SelectedInteraction.InteractionTaskA;
-                InteractionCanvas.transform.GetChild(1).transform.GetChild(0).transform.GetComponent<Text>().text = SelectedInteraction.InteractionTaskB;
-                if ( SelectedInteraction.InteractionTaskB == "null")
+                InteractionCanvas.transform.GetChild(0).transform.GetChild(0).transform.GetComponent<Text>().text = SelectedInteraction.InteractionTask;
+                if ( SelectedInteraction.InteractionTask == "null")
                 {
                     InteractionCanvas.transform.GetChild(1).gameObject.SetActive(false);
                 }
@@ -70,22 +51,14 @@ public class InteractionManager : MonoBehaviour {
             {
                 LastHighlightedInteraction = SelectedInteraction.gameObject; 
                 InteractionCanvas.SetActive(true);
-                if (SelectedInteraction.InteractionTaskA != "null")
+                if (SelectedInteraction.InteractionTask != "null")
                 {
                     InteractionCanvas.transform.GetChild(0).gameObject.SetActive(true);
-                    InteractionCanvas.transform.GetChild(0).transform.GetChild(0).transform.GetComponent<Text>().text = SelectedInteraction.InteractionTaskA;
-                }else
-                {
-                    InteractionCanvas.transform.GetChild(0).gameObject.SetActive(false);
-                }
-                if (SelectedInteraction.InteractionTaskB != "null")
-                {
-                    InteractionCanvas.transform.GetChild(1).gameObject.SetActive(true);
-                    InteractionCanvas.transform.GetChild(1).transform.GetChild(0).transform.GetComponent<Text>().text = SelectedInteraction.InteractionTaskB;
+                    InteractionCanvas.transform.GetChild(0).transform.GetChild(0).transform.GetComponent<Text>().text = SelectedInteraction.InteractionTask;
 
                 } else
                 {
-                    InteractionCanvas.transform.GetChild(1).gameObject.SetActive(false);
+                    InteractionCanvas.transform.GetChild(0).gameObject.SetActive(false);
                 }
             }
         }

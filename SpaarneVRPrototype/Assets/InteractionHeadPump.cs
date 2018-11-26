@@ -8,7 +8,7 @@ public class InteractionHeadPump : Interaction {
     public override void Start()
     {
         base.Start();
-        InteractionTaskB = "Wash hands";
+        InteractionTask = "Wash hands";
 
     }
 

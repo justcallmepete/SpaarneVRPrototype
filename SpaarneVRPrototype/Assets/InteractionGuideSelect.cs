@@ -17,7 +17,7 @@ public class InteractionGuideSelect : Interaction {
     public override void Handle()
     {
         base.Handle();
-        if(InteractionTaskB != "Select Guide")
+        if(InteractionTask != "Select Guide")
         {
             prikBordStats.ResetPositionGuide(this.transform.parent.gameObject);
         }else

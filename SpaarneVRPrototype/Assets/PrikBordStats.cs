@@ -23,13 +23,13 @@ public class PrikBordStats : MonoBehaviour {
             {
                 mover.transform.localPosition = positionProcedure;
                 gameSettings.procedure[mover.transform.GetChild(0).GetComponent<InteractionProcedureSelect>().number] = true;
-                mover.transform.GetChild(0).GetComponent<InteractionProcedureSelect>().InteractionTaskB = "Reset Choice";
+                mover.transform.GetChild(0).GetComponent<InteractionProcedureSelect>().InteractionTask = "Reset Choice";
             }
             else
             {
                 procedurePost.transform.position = procedurePost.transform.GetChild(0).GetComponent<InteractionProcedureSelect>().startPos;
                 gameSettings.procedure[procedurePost.transform.GetChild(0).GetComponent<InteractionProcedureSelect>().number] = false;
-                procedurePost.transform.GetChild(0).GetComponent<InteractionProcedureSelect>().InteractionTaskB = "Select Procedure";
+                procedurePost.transform.GetChild(0).GetComponent<InteractionProcedureSelect>().InteractionTask = "Select Procedure";
             }
         }
     }
@@ -38,7 +38,7 @@ public class PrikBordStats : MonoBehaviour {
     {
         gameSettings.procedure[reseter.transform.GetChild(0).GetComponent<InteractionProcedureSelect>().number] = false;
         reseter.transform.position = reseter.transform.GetChild(0).GetComponent<InteractionProcedureSelect>().startPos;
-        reseter.transform.GetChild(0).GetComponent<InteractionProcedureSelect>().InteractionTaskB = "Select Procedure";
+        reseter.transform.GetChild(0).GetComponent<InteractionProcedureSelect>().InteractionTask = "Select Procedure";
     }
 
     public void MoveIntoPositionGuide(GameObject mover)
@@ -50,13 +50,13 @@ public class PrikBordStats : MonoBehaviour {
             {
                 mover.transform.localPosition = positionGuide;
                 gameSettings.guide[mover.transform.GetChild(0).GetComponent<InteractionGuideSelect>().number] = true;
-                mover.transform.GetChild(0).GetComponent<InteractionGuideSelect>().InteractionTaskB = "Reset Choice";
+                mover.transform.GetChild(0).GetComponent<InteractionGuideSelect>().InteractionTask = "Reset Choice";
             }
             else
             {
                 guidePost.transform.position = guidePost.transform.GetChild(0).GetComponent<InteractionGuideSelect>().startPos;
                 gameSettings.guide[guidePost.transform.GetChild(0).GetComponent<InteractionGuideSelect>().number] = false;
-                guidePost.transform.GetChild(0).GetComponent<InteractionGuideSelect>().InteractionTaskB = "Select Guide";
+                guidePost.transform.GetChild(0).GetComponent<InteractionGuideSelect>().InteractionTask = "Select Guide";
             }
         }
     }
@@ -65,7 +65,7 @@ public class PrikBordStats : MonoBehaviour {
     {
         gameSettings.guide[reseter.transform.GetChild(0).GetComponent<InteractionGuideSelect>().number] = false;
         reseter.transform.position = reseter.transform.GetChild(0).GetComponent<InteractionGuideSelect>().startPos;
-        reseter.transform.GetChild(0).GetComponent<InteractionGuideSelect>().InteractionTaskB = "Select Guide";
+        reseter.transform.GetChild(0).GetComponent<InteractionGuideSelect>().InteractionTask = "Select Guide";
 
     }
 }

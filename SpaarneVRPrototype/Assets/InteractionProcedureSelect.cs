@@ -18,7 +18,7 @@ public class InteractionProcedureSelect : Interaction {
     public override void Handle()
     {
         base.Handle();
-        if(InteractionTaskB != "Select Procedure") {
+        if(InteractionTask != "Select Procedure") {
             prikBordStats.ResetPositionProcedure(this.transform.parent.gameObject);
         } else
         {
