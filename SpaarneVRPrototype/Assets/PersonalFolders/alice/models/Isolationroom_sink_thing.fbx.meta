@@ -1,0 +1,213 @@
+fileFormatVersion: 2
+guid: 09c72f3b1ba6c4de794652c31626be2f
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: BAs1
+    100002: Door_5
+    100004: Door_7
+    100006: Door_handle_letf
+    100008: Door_handle_letf 1
+    100010: Door_handle_letf1
+    100012: Door_handle_letf2
+    100014: Door_handle_letf3
+    100016: Door_handle_letf4
+    100018: Fosset
+    100020: //RootNode
+    100022: pCylinder11
+    100024: pCylinder11 1
+    100026: pCylinder12
+    100028: pCylinder12 1
+    100030: pCylinder14
+    100032: pCylinder18
+    100034: right_door3
+    100036: right_door3 1
+    100038: right_door4
+    100040: right_door5
+    100042: right_door6
+    100044: right_door7
+    100046: Sink
+    100048: Small_doors
+    100050: Stankskydd
+    100052: Tabletop
+    400000: BAs1
+    400002: Door_5
+    400004: Door_7
+    400006: Door_handle_letf
+    400008: Door_handle_letf 1
+    400010: Door_handle_letf1
+    400012: Door_handle_letf2
+    400014: Door_handle_letf3
+    400016: Door_handle_letf4
+    400018: Fosset
+    400020: //RootNode
+    400022: pCylinder11
+    400024: pCylinder11 1
+    400026: pCylinder12
+    400028: pCylinder12 1
+    400030: pCylinder14
+    400032: pCylinder18
+    400034: right_door3
+    400036: right_door3 1
+    400038: right_door4
+    400040: right_door5
+    400042: right_door6
+    400044: right_door7
+    400046: Sink
+    400048: Small_doors
+    400050: Stankskydd
+    400052: Tabletop
+    2100000: lambert12
+    2100002: StingrayPBS7
+    2100004: StingrayPBS8
+    2100006: lambert1
+    2300000: BAs1
+    2300002: Door_handle_letf
+    2300004: Door_handle_letf 1
+    2300006: Door_handle_letf1
+    2300008: Door_handle_letf2
+    2300010: Door_handle_letf3
+    2300012: Door_handle_letf4
+    2300014: pCylinder11
+    2300016: pCylinder11 1
+    2300018: pCylinder12
+    2300020: pCylinder12 1
+    2300022: pCylinder14
+    2300024: pCylinder18
+    2300026: right_door3
+    2300028: right_door3 1
+    2300030: right_door4
+    2300032: right_door5
+    2300034: right_door6
+    2300036: right_door7
+    2300038: Sink
+    2300040: Stankskydd
+    2300042: Tabletop
+    3300000: BAs1
+    3300002: Door_handle_letf
+    3300004: Door_handle_letf 1
+    3300006: Door_handle_letf1
+    3300008: Door_handle_letf2
+    3300010: Door_handle_letf3
+    3300012: Door_handle_letf4
+    3300014: pCylinder11
+    3300016: pCylinder11 1
+    3300018: pCylinder12
+    3300020: pCylinder12 1
+    3300022: pCylinder14
+    3300024: pCylinder18
+    3300026: right_door3
+    3300028: right_door3 1
+    3300030: right_door4
+    3300032: right_door5
+    3300034: right_door6
+    3300036: right_door7
+    3300038: Sink
+    3300040: Stankskydd
+    3300042: Tabletop
+    4300000: right_door3
+    4300002: Door_handle_letf
+    4300004: pCylinder11
+    4300006: pCylinder12
+    4300008: right_door3
+    4300010: Door_handle_letf
+    4300012: pCylinder11
+    4300014: pCylinder12
+    4300016: right_door4
+    4300018: right_door5
+    4300020: Door_handle_letf2
+    4300022: Door_handle_letf1
+    4300024: Door_handle_letf3
+    4300026: right_door7
+    4300028: right_door6
+    4300030: Door_handle_letf4
+    4300032: Sink
+    4300034: Tabletop
+    4300036: Stankskydd
+    4300038: pCylinder14
+    4300040: pCylinder18
+    4300042: BAs1
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 100
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
