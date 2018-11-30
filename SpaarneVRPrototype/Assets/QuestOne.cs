@@ -34,7 +34,7 @@ public class QuestOne : MonoBehaviour
         //Check if the person left the room with out washing hands. 
         if(!PersonP.inRoom && WasinRoom && !WashedHandsBeforeLeaving && !warned)
         {
-            warningSystem.SetWarning("You left the room with out washing hands. High risk of being infected." , true);
+            warningSystem.SetWarning("You left the room with out washing hands. High risk of being infected." , true, "Red");
             warned = true;
         }
 
@@ -57,7 +57,7 @@ public class QuestOne : MonoBehaviour
                 if (!warned)
                 {
                     warned = true;
-                    warningSystem.SetWarning("You removed or dindt have a mask in the room. High risk of being infected." , true);
+                    warningSystem.SetWarning("You removed or dindt have a mask in the room. High risk of being infected." , true, "Red");
                 }
             }
         }else if (PutOnMaskBeforeEntering && !PersonP.inRoom && !PersonP.inTube && !WasinRoom)
@@ -73,7 +73,7 @@ public class QuestOne : MonoBehaviour
             if (!warned)
             {
             warned = true;
-            warningSystem.SetWarning("You removed or dindt have a mask in the room. High risk of being infected." , true);
+            warningSystem.SetWarning("You removed or dindt have a mask in the room. High risk of being infected." , true, "Red");
             }
         }
         //if at this point the person hasnt failed he should be in the room. 
@@ -115,7 +115,7 @@ public class QuestOne : MonoBehaviour
         //Last step after removing the mask is to wash hands.
         if (WashedHandsAfterRemovingMask)
         {
-            warningSystem.SetWarning("Congratulations you finished Arogene Islolation." , true);
+            warningSystem.SetWarning("Congratulations you finished Arogene Islolation." , true, "Red");
         }        
     }
 }

@@ -21,11 +21,11 @@ public class WarningSystem : MonoBehaviour {
         if (Holder1.activeInHierarchy)
         {
             warningHolder = Holder1;
-            warningText = Holder1.transform.GetChild(0).transform.GetComponent<Text>();
+            warningText = Holder1.transform.GetChild(1).transform.GetComponent<Text>();
         }
         else if(Holder2.activeInHierarchy){
             warningHolder = Holder2;
-            warningText = Holder2.transform.GetChild(0).transform.GetComponent<Text>();
+            warningText = Holder2.transform.GetChild(1).transform.GetComponent<Text>();
 
         }
         Timer = 0;
@@ -43,7 +43,7 @@ public class WarningSystem : MonoBehaviour {
         if (Timer >= 1)
         {
             fadeCol -= Time.deltaTime * 0.25f;
-            warningText.color = new Vector4(1f, 0f, 0f, fadeCol);
+            warningText.color = new Vector4(warningText.color.r, warningText.color.g, warningText.color.b, fadeCol);
         }
         if (Timer >= 5)
         {
@@ -52,7 +52,7 @@ public class WarningSystem : MonoBehaviour {
 
     }
 
-    public void SetWarning(string textMessage, bool quest = false)
+    public void SetWarning(string textMessage, bool quest = false, string col = "Spaarne")
     {
         if (gameSettings != null)
         {
@@ -84,8 +84,23 @@ public class WarningSystem : MonoBehaviour {
             warningText.text = textMessage;
         }
         Timer = 0f;
-        fadeCol = 1f;   
-        warningText.color = new Vector4(1f, 0f, 0f, fadeCol);
+        fadeCol = 1f;
+        if (col == "Red")
+        {
+            warningText.color = new Vector4(Color.red.r, Color.red.g, Color.red.b, fadeCol);
+        }
+        else if (col == "Green")
+        {
+            warningText.color = new Vector4(0f, 1f, 0f, fadeCol);
+        }
+        else
+        {
+            warningText.color = new Vector4(29f / 255f, 156f / 255f, 155f / 255f, fadeCol);
+        }
+       
+
+        Debug.Log(col);
+
     }
 
 }

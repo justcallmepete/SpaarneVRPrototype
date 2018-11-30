@@ -33,7 +33,7 @@ public class InteractionManager : MonoBehaviour {
         }
         if (InteractionCanvas.activeInHierarchy == true)
         {
-            if (OVRInput.GetDown(teleportButton) || Input.GetKeyDown(teleportButtonKey) && SelectedInteraction.InteractionTask != "null")
+            if (OVRInput.GetDown(teleportButton) && SelectedInteraction.InteractionTask != "null" || Input.GetKeyDown(teleportButtonKey) && SelectedInteraction.InteractionTask != "null")
             {
                 LastActivity = SelectedInteraction.InteractionTask;
                 SelectedInteraction.Handle();
@@ -42,6 +42,7 @@ public class InteractionManager : MonoBehaviour {
                 {
                     InteractionCanvas.transform.GetChild(1).gameObject.SetActive(false);
                 }
+                InteractionCanvas.SetActive(false);
             }
 
         }
@@ -50,15 +51,13 @@ public class InteractionManager : MonoBehaviour {
             if (OVRInput.GetDown(teleportButton) && SelectedInteraction != null || Input.GetKeyDown(teleportButtonKey) && SelectedInteraction != null)
             {
                 LastHighlightedInteraction = SelectedInteraction.gameObject; 
-                InteractionCanvas.SetActive(true);
+                
                 if (SelectedInteraction.InteractionTask != "null")
                 {
+                    InteractionCanvas.SetActive(true);
                     InteractionCanvas.transform.GetChild(0).gameObject.SetActive(true);
                     InteractionCanvas.transform.GetChild(0).transform.GetChild(0).transform.GetComponent<Text>().text = SelectedInteraction.InteractionTask;
 
-                } else
-                {
-                    InteractionCanvas.transform.GetChild(0).gameObject.SetActive(false);
                 }
             }
         }
@@ -76,8 +75,14 @@ public class InteractionManager : MonoBehaviour {
 
     public void GetInteractionScript(GameObject interactionHit)
     {
-        string interactionScript = "Interaction" + interactionHit.name;
-        SelectedInteraction = interactionHit.GetComponent(interactionScript) as Interaction;
+        if (interactionHit != null)
+        {
+            string interactionScript = "Interaction" + interactionHit.name;
+            SelectedInteraction = interactionHit.GetComponent(interactionScript) as Interaction;
+        }else
+        {
+            SelectedInteraction = null;
+        }
     }
 
     public void DisableInteractionCanvas ()
