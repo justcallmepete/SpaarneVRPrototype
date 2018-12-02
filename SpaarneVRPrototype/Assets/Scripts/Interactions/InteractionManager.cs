@@ -37,7 +37,7 @@ public class InteractionManager : MonoBehaviour {
             {
                 LastActivity = SelectedInteraction.InteractionTask;
                 SelectedInteraction.Handle();
-                InteractionCanvas.transform.GetChild(0).transform.GetChild(0).transform.GetComponent<Text>().text = SelectedInteraction.InteractionTask;
+                InteractionCanvas.transform.GetChild(1).transform.GetComponent<Text>().text = SelectedInteraction.InteractionTask;
                 if ( SelectedInteraction.InteractionTask == "null")
                 {
                     InteractionCanvas.transform.GetChild(1).gameObject.SetActive(false);
@@ -56,7 +56,7 @@ public class InteractionManager : MonoBehaviour {
                 {
                     InteractionCanvas.SetActive(true);
                     InteractionCanvas.transform.GetChild(0).gameObject.SetActive(true);
-                    InteractionCanvas.transform.GetChild(0).transform.GetChild(0).transform.GetComponent<Text>().text = SelectedInteraction.InteractionTask;
+                    InteractionCanvas.transform.GetChild(1).transform.GetComponent<Text>().text = SelectedInteraction.InteractionTask;
 
                 }
             }

@@ -87,14 +87,17 @@ public class WarningSystem : MonoBehaviour {
         fadeCol = 1f;
         if (col == "Red")
         {
+            warningText.material.color = new Vector4(Color.red.r, Color.red.g, Color.red.b, fadeCol);
             warningText.color = new Vector4(Color.red.r, Color.red.g, Color.red.b, fadeCol);
         }
         else if (col == "Green")
         {
+            warningText.material.color = new Vector4(0f, 1f, 0f, fadeCol);
             warningText.color = new Vector4(0f, 1f, 0f, fadeCol);
         }
         else
         {
+            warningText.material.color = new Vector4(29f / 255f, 156f / 255f, 155f / 255f, fadeCol);
             warningText.color = new Vector4(29f / 255f, 156f / 255f, 155f / 255f, fadeCol);
         }
        

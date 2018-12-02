@@ -14,11 +14,25 @@ public class DrawOnTopScript : MonoBehaviour {
         if (startCheck == false)
         {
             startCheck = true;
-            Image image = GetComponent<Image>();
-            Material existingGlobalMat = image.materialForRendering;
-            Material updatedMaterial = new Material(existingGlobalMat);
-            updatedMaterial.SetInt("unity_GUIZTestMode", (int)comparison);
-            image.material = updatedMaterial;
+            if (GetComponent<Text>())
+            {
+                Text text = GetComponent<Text>();
+                Material existingGlobalMat = text.materialForRendering;
+                Material updatedMaterial = new Material(existingGlobalMat);
+                updatedMaterial.SetInt("unity_GUIZTestMode", (int)comparison);
+                text.material = updatedMaterial;
+            }
+            else if (GetComponent<Image>())
+            {
+                Image image = GetComponent<Image>();
+                Material existingGlobalMat = image.materialForRendering;
+                Material updatedMaterial = new Material(existingGlobalMat);
+                updatedMaterial.SetInt("unity_GUIZTestMode", (int)comparison);
+                image.material = updatedMaterial;
+            }
+           
+           
+           
         }
     }
 }
