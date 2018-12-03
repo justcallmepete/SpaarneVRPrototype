@@ -13411,6 +13411,52 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1556112178153190, guid: 1bf0ec8bab9e71d4a8ebb0c9671acdfa,
     type: 2}
   m_PrefabInternal: {fileID: 1585209017}
+--- !u!1 &1198315934
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1198315936}
+  - component: {fileID: 1198315935}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1198315935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1198315934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c45a6d2c3632e064c8e59b9f8c413e41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: 59f12c8bc70b55d4298340e9bf872f3e, type: 2}
+  questOne: {fileID: 1858658358}
+  currentStep: 0
+  finalStep: 0
+  timesFailed: 0
+  steps: 
+--- !u!4 &1198315936
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1198315934}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 50
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1205938512 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100002, guid: 2b0b39590bf6b8d4c883cabc7954dcc5,
@@ -21871,12 +21917,7 @@ MonoBehaviour:
   PersonP: {fileID: 1800821268}
   mouthMask: {fileID: 11400000, guid: 685cd397a1576cc4bab515ed403e83fc, type: 2}
   WashedHands: {fileID: 11400000, guid: 9fe1f3a67ab34bf45be0344fad662567, type: 2}
-  PutOnMaskBeforeEntering: 0
-  WasinRoom: 0
-  WashedHandsBeforeLeaving: 0
-  LeftAfterWashingHands: 0
-  RemovedMaskAfterLeaving: 0
-  WashedHandsAfterRemovingMask: 0
+  questSteps: 
   warned: 0
 --- !u!4 &1858658359
 Transform:
