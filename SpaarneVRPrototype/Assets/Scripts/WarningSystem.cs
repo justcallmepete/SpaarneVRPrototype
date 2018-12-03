@@ -2,34 +2,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class WarningSystem : MonoBehaviour {
     public GameSettings gameSettings;
     public GameObject warningHolder;
     public Text warningText;
-    public GameObject Holder1;
-    public GameObject Holder2;
+    public GameObject HolderPC;
+    public GameObject HolderVR;
+    public bool gotHolder = false;
     [SerializeField]
     private float Timer;
     private float fadeCol;
 
     private void Start()
-    {
-        
-
-        if (Holder1.activeInHierarchy)
-        {
-            warningHolder = Holder1;
-            warningText = Holder1.transform.GetChild(1).transform.GetComponent<Text>();
-        }
-        else if(Holder2.activeInHierarchy){
-            warningHolder = Holder2;
-            warningText = Holder2.transform.GetChild(1).transform.GetComponent<Text>();
-
-        }
-        Timer = 0;
-        Timer = 0f;
+    { 
+        Timer = 6f;
         fadeCol = 1f;
         if (GameObject.Find("GameSettings").transform.GetComponent<GameSettings>())
         {
@@ -39,22 +28,59 @@ public class WarningSystem : MonoBehaviour {
 
     private void Update()
     {
-        Timer += Time.deltaTime;
-        if (Timer >= 1)
+        if (!gotHolder)
         {
-            fadeCol -= Time.deltaTime * 0.25f;
-            warningText.color = new Vector4(warningText.color.r, warningText.color.g, warningText.color.b, fadeCol);
+            if (HolderPC.activeInHierarchy)
+            {
+                gotHolder = true;
+                warningHolder = HolderPC;
+                warningText = HolderPC.transform.GetChild(1).transform.GetComponent<Text>();
+            }
+            else if (HolderVR.activeInHierarchy)
+            {
+                gotHolder = true;
+                warningHolder = HolderVR;
+                warningText = HolderVR.transform.GetChild(0).transform.GetComponent<Text>();
+
+            }
         }
-        if (Timer >= 5)
+        else
         {
-            warningHolder.SetActive(false);
+            Timer += Time.deltaTime;
+            if (Timer >= 1)
+            {
+                fadeCol -= Time.deltaTime * 0.25f;
+                warningText.color = new Vector4(warningText.color.r, warningText.color.g, warningText.color.b, fadeCol);
+            }
+            if (Timer >= 5)
+            {
+                warningHolder.SetActive(false);
+            }
         }
 
     }
 
     public void SetWarning(string textMessage, bool quest = false, string col = "Spaarne")
     {
-        if (gameSettings != null)
+        Timer = 0f;
+        fadeCol = 1f;
+        if (col == "Red")
+        {
+            warningText.material.color = new Vector4(Color.red.r, Color.red.g, Color.red.b, fadeCol);
+            warningText.color = new Vector4(Color.red.r, Color.red.g, Color.red.b, fadeCol);
+        }
+        else if (col == "Green")
+        {
+            warningText.material.color = new Vector4(0f, 1f, 0f, fadeCol);
+            warningText.color = new Vector4(0f, 1f, 0f, fadeCol);
+        }
+        else
+        {
+            warningText.material.color = new Vector4(29f / 255f, 156f / 255f, 155f / 255f, fadeCol);
+            warningText.color = new Vector4(29f / 255f, 156f / 255f, 155f / 255f, fadeCol);
+        }
+
+        if (gameSettings != null && SceneManager.GetActiveScene().name != "MainMenu")
         {
             if (gameSettings.guide[0])
             {
@@ -83,26 +109,7 @@ public class WarningSystem : MonoBehaviour {
             warningHolder.SetActive(true);
             warningText.text = textMessage;
         }
-        Timer = 0f;
-        fadeCol = 1f;
-        if (col == "Red")
-        {
-            warningText.material.color = new Vector4(Color.red.r, Color.red.g, Color.red.b, fadeCol);
-            warningText.color = new Vector4(Color.red.r, Color.red.g, Color.red.b, fadeCol);
-        }
-        else if (col == "Green")
-        {
-            warningText.material.color = new Vector4(0f, 1f, 0f, fadeCol);
-            warningText.color = new Vector4(0f, 1f, 0f, fadeCol);
-        }
-        else
-        {
-            warningText.material.color = new Vector4(29f / 255f, 156f / 255f, 155f / 255f, fadeCol);
-            warningText.color = new Vector4(29f / 255f, 156f / 255f, 155f / 255f, fadeCol);
-        }
-       
-
-        Debug.Log(col);
+     
 
     }
 

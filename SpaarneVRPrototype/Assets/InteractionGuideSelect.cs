@@ -12,6 +12,7 @@ public class InteractionGuideSelect : Interaction {
         base.Start();
         startPos = this.transform.parent.transform.position;
         prikBordStats = GameObject.Find("Prikbord_Model").GetComponent<PrikBordStats>();
+        InteractionTask = "Select Guide";
     }
 
     public override void Handle()

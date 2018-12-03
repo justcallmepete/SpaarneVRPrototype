@@ -10,12 +10,7 @@ public class QuestOne : MonoBehaviour
     public PersonPosition PersonP;
     public SingleVariable mouthMask;
     public SingleVariable WashedHands;
-    public bool PutOnMaskBeforeEntering = false;
-    public bool WasinRoom = false;
-    public bool WashedHandsBeforeLeaving = false;
-    public bool LeftAfterWashingHands = false;
-    public bool RemovedMaskAfterLeaving = false;
-    public bool WashedHandsAfterRemovingMask = false;
+    public List<bool> questSteps = new List<bool>();
 
 
     public bool warned = false;
@@ -23,6 +18,11 @@ public class QuestOne : MonoBehaviour
     // Use this for initialization
 	void Start ()
     {
+        for (int i = 0; i < 6; i++)
+        {
+            questSteps.Add(false);
+        }
+      
         warningSystem = GameObject.Find("Manager").GetComponent<WarningSystem>();
 	}
 	
@@ -32,7 +32,7 @@ public class QuestOne : MonoBehaviour
         LastActivity = interactionManager.LastActivity;
         
         //Check if the person left the room with out washing hands. 
-        if(!PersonP.inRoom && WasinRoom && !WashedHandsBeforeLeaving && !warned)
+        if(!PersonP.inRoom && questSteps[1] && !questSteps[2] && !warned)
         {
             warningSystem.SetWarning("You left the room with out washing hands. High risk of being infected." , true, "Red");
             warned = true;
@@ -40,16 +40,16 @@ public class QuestOne : MonoBehaviour
 
         if(PersonP.inRoom && !warned)
         {
-            WasinRoom = true;
+            questSteps[1] = true;
         }
 
         //Arogene Isolatie
-        if (!PutOnMaskBeforeEntering)
+        if (!questSteps[0])
         {
             //Check if person is not in the room or tube and puts on mouthmask.
             if (!PersonP.inTube && !PersonP.inRoom && mouthMask.task)
-            { 
-                PutOnMaskBeforeEntering = true;
+            {
+                questSteps[0] = true;
             }
             //if the person doesnt have a mask but still enters the room he fails.
             else if (PersonP.inTube && !mouthMask.task || PersonP.inRoom && !mouthMask.task)
@@ -60,11 +60,11 @@ public class QuestOne : MonoBehaviour
                     warningSystem.SetWarning("You removed or dindt have a mask in the room. High risk of being infected." , true, "Red");
                 }
             }
-        }else if (PutOnMaskBeforeEntering && !PersonP.inRoom && !PersonP.inTube && !WasinRoom)
+        }else if (questSteps[0] && !PersonP.inRoom && !PersonP.inTube && !questSteps[1])
         {
             if(!mouthMask.task)
             {
-                PutOnMaskBeforeEntering = false;
+                questSteps[0] = false;
             }
         }
         //if the person removes or doesnt have a mask in the tube or room he fails.
@@ -77,43 +77,43 @@ public class QuestOne : MonoBehaviour
             }
         }
         //if at this point the person hasnt failed he should be in the room. 
-        else if (!warned && WasinRoom)
+        else if (!warned && questSteps[1])
         {
             //Before exiting the room Wash Hands
-            if (!WashedHandsBeforeLeaving && PersonP.inRoom)
+            if (!questSteps[2] && PersonP.inRoom)
             {
                 if (WashedHands.task)
                 {
-                    WashedHandsBeforeLeaving = true;
+                    questSteps[2] = true;
                     WashedHands.task = false;
                 }
             }
             //if the person does anything else in the room the washed hands status drops.
             else if (LastActivity != "Wash hands" && LastActivity != "Open door" &&  LastActivity != "Close door" && PersonP.inRoom)
             {
-                WashedHandsBeforeLeaving = false;
-            }else if(WashedHandsBeforeLeaving && !LeftAfterWashingHands)
+                questSteps[2] = false;
+            }else if(questSteps[2] && !questSteps[3])
             {
                 if(!PersonP.inRoom && !PersonP.inTube)
                 {
-                    LeftAfterWashingHands = true; 
+                    questSteps[3] = true; 
                 }
             }
-            else if (!PersonP.inRoom && !PersonP.inTube && !mouthMask.task && !RemovedMaskAfterLeaving)
+            else if (!PersonP.inRoom && !PersonP.inTube && !mouthMask.task && !questSteps[4])
             {
-                RemovedMaskAfterLeaving = true;
-            }else if (!WashedHandsAfterRemovingMask && RemovedMaskAfterLeaving)
+                questSteps[4] = true;
+            }else if (!questSteps[5] && questSteps[4])
             {
                 if (WashedHands.task && LastActivity == "Wash hands")
                 {
-                    WashedHandsAfterRemovingMask = true;
+                    questSteps[5] = true;
                     WashedHands.task = false;
                 }
             }
         }
 
         //Last step after removing the mask is to wash hands.
-        if (WashedHandsAfterRemovingMask)
+        if (questSteps[5])
         {
             warningSystem.SetWarning("Congratulations you finished Arogene Islolation." , true, "Red");
         }        
