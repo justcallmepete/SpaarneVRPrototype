@@ -1,0 +1,311 @@
+fileFormatVersion: 2
+guid: 276d526e8989a4bd9b269fb48c51c017
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: baags
+    100002: blue
+    100004: blue_edge
+    100006: //RootNode
+    100008: frame
+    100010: Lid
+    100012: mechanics
+    100014: mechanics1
+    100016: pCube46
+    100018: pCube46 1
+    100020: pCube50
+    100022: pCube50 1
+    100024: pCube54
+    100026: pCube54 1
+    100028: pCube58
+    100030: pCube75
+    100032: pCube75 1
+    100034: pCube77
+    100036: pCube78
+    100038: pCube79
+    100040: pCube80
+    100042: pCube81
+    100044: pCube83
+    100046: pCube83 1
+    100048: pCube84
+    100050: pCube85
+    100052: pCube91
+    100054: pCube92
+    100056: pCylinder63
+    100058: pCylinder66
+    100060: pCylinder67
+    100062: pCylinder68
+    100064: pCylinder69
+    100066: pCylinder70
+    100068: pCylinder71
+    100070: pCylinder72
+    100072: pCylinder72 1
+    100074: pCylinder74
+    100076: pCylinder74 1
+    100078: pCylinder76
+    100080: pCylinder77
+    100082: pCylinder78
+    100084: pCylinder80
+    100086: pCylinder81
+    100088: pCylinder82
+    100090: pCylinder83
+    100092: purple
+    100094: purple_edge
+    100096: wheels
+    400000: baags
+    400002: blue
+    400004: blue_edge
+    400006: //RootNode
+    400008: frame
+    400010: Lid
+    400012: mechanics
+    400014: mechanics1
+    400016: pCube46
+    400018: pCube46 1
+    400020: pCube50
+    400022: pCube50 1
+    400024: pCube54
+    400026: pCube54 1
+    400028: pCube58
+    400030: pCube75
+    400032: pCube75 1
+    400034: pCube77
+    400036: pCube78
+    400038: pCube79
+    400040: pCube80
+    400042: pCube81
+    400044: pCube83
+    400046: pCube83 1
+    400048: pCube84
+    400050: pCube85
+    400052: pCube91
+    400054: pCube92
+    400056: pCylinder63
+    400058: pCylinder66
+    400060: pCylinder67
+    400062: pCylinder68
+    400064: pCylinder69
+    400066: pCylinder70
+    400068: pCylinder71
+    400070: pCylinder72
+    400072: pCylinder72 1
+    400074: pCylinder74
+    400076: pCylinder74 1
+    400078: pCylinder76
+    400080: pCylinder77
+    400082: pCylinder78
+    400084: pCylinder80
+    400086: pCylinder81
+    400088: pCylinder82
+    400090: pCylinder83
+    400092: purple
+    400094: purple_edge
+    400096: wheels
+    2100000: lambert1
+    2100002: blinn9
+    2100004: blinn8
+    2100006: blinn3
+    2100008: blinn7
+    2300000: blue
+    2300002: blue_edge
+    2300004: pCube46
+    2300006: pCube46 1
+    2300008: pCube50
+    2300010: pCube50 1
+    2300012: pCube54
+    2300014: pCube54 1
+    2300016: pCube58
+    2300018: pCube75
+    2300020: pCube75 1
+    2300022: pCube77
+    2300024: pCube78
+    2300026: pCube79
+    2300028: pCube80
+    2300030: pCube81
+    2300032: pCube83 1
+    2300034: pCube85
+    2300036: pCube91
+    2300038: pCube92
+    2300040: pCylinder63
+    2300042: pCylinder66
+    2300044: pCylinder67
+    2300046: pCylinder68
+    2300048: pCylinder69
+    2300050: pCylinder70
+    2300052: pCylinder71
+    2300054: pCylinder72
+    2300056: pCylinder72 1
+    2300058: pCylinder74
+    2300060: pCylinder74 1
+    2300062: pCylinder76
+    2300064: pCylinder77
+    2300066: pCylinder78
+    2300068: pCylinder80
+    2300070: pCylinder81
+    2300072: pCylinder82
+    2300074: pCylinder83
+    2300076: purple
+    2300078: purple_edge
+    3300000: blue
+    3300002: blue_edge
+    3300004: pCube46
+    3300006: pCube46 1
+    3300008: pCube50
+    3300010: pCube50 1
+    3300012: pCube54
+    3300014: pCube54 1
+    3300016: pCube58
+    3300018: pCube75
+    3300020: pCube75 1
+    3300022: pCube77
+    3300024: pCube78
+    3300026: pCube79
+    3300028: pCube80
+    3300030: pCube81
+    3300032: pCube83 1
+    3300034: pCube85
+    3300036: pCube91
+    3300038: pCube92
+    3300040: pCylinder63
+    3300042: pCylinder66
+    3300044: pCylinder67
+    3300046: pCylinder68
+    3300048: pCylinder69
+    3300050: pCylinder70
+    3300052: pCylinder71
+    3300054: pCylinder72
+    3300056: pCylinder72 1
+    3300058: pCylinder74
+    3300060: pCylinder74 1
+    3300062: pCylinder76
+    3300064: pCylinder77
+    3300066: pCylinder78
+    3300068: pCylinder80
+    3300070: pCylinder81
+    3300072: pCylinder82
+    3300074: pCylinder83
+    3300076: purple
+    3300078: purple_edge
+    4300000: pCylinder74
+    4300002: pCube54
+    4300004: pCylinder72
+    4300006: pCube46
+    4300008: pCube50
+    4300010: pCube75
+    4300012: pCylinder74
+    4300014: pCube54
+    4300016: pCylinder72
+    4300018: pCube46
+    4300020: pCube50
+    4300022: pCube75
+    4300024: pCube77
+    4300026: pCylinder77
+    4300028: pCylinder81
+    4300030: pCube78
+    4300032: pCylinder82
+    4300034: pCube79
+    4300036: pCylinder83
+    4300038: pCube80
+    4300040: pCylinder78
+    4300042: pCylinder76
+    4300044: pCylinder67
+    4300046: pCylinder80
+    4300048: pCylinder63
+    4300050: pCylinder68
+    4300052: pCylinder71
+    4300054: pCylinder66
+    4300056: pCylinder69
+    4300058: pCylinder70
+    4300060: pCube85
+    4300062: pCube83
+    4300064: pCube58
+    4300066: pCube81
+    4300068: pCube91
+    4300070: pCube92
+    4300072: purple_edge
+    4300074: purple
+    4300076: blue
+    4300078: blue_edge
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 100
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,283 @@
+fileFormatVersion: 2
+guid: 64a4889ebeebc426ab1a5479ab4c99f0
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Door_5
+    100002: Door_7
+    100004: Door_handle_letf
+    100006: Door_handle_letf 1
+    100008: Door_handle_letf1
+    100010: Door_handle_letf11
+    100012: Door_handle_letf12
+    100014: Door_handle_letf13
+    100016: Door_handle_letf14
+    100018: Door_handle_letf15
+    100020: Door_handle_letf16
+    100022: Door_handle_letf17
+    100024: Door_handle_letf2
+    100026: Door_handle_letf3
+    100028: Door_handle_letf4
+    100030: Fosset
+    100032: //RootNode
+    100034: pCube19
+    100036: pCube24
+    100038: pCylinder14
+    100040: pCylinder18
+    100042: pCylinder36
+    100044: pSphere4
+    100046: right_door14
+    100048: right_door15
+    100050: right_door16
+    100052: right_door17
+    100054: right_door18
+    100056: right_door19
+    100058: right_door20
+    100060: right_door3
+    100062: right_door3 1
+    100064: right_door4
+    100066: right_door5
+    100068: right_door6
+    100070: right_door7
+    100072: SINK
+    100074: Small_doors
+    100076: Stankskydd
+    100078: tabletop
+    100080: tall_cabinet
+    100082: Top_cabinet
+    400000: Door_5
+    400002: Door_7
+    400004: Door_handle_letf
+    400006: Door_handle_letf 1
+    400008: Door_handle_letf1
+    400010: Door_handle_letf11
+    400012: Door_handle_letf12
+    400014: Door_handle_letf13
+    400016: Door_handle_letf14
+    400018: Door_handle_letf15
+    400020: Door_handle_letf16
+    400022: Door_handle_letf17
+    400024: Door_handle_letf2
+    400026: Door_handle_letf3
+    400028: Door_handle_letf4
+    400030: Fosset
+    400032: //RootNode
+    400034: pCube19
+    400036: pCube24
+    400038: pCylinder14
+    400040: pCylinder18
+    400042: pCylinder36
+    400044: pSphere4
+    400046: right_door14
+    400048: right_door15
+    400050: right_door16
+    400052: right_door17
+    400054: right_door18
+    400056: right_door19
+    400058: right_door20
+    400060: right_door3
+    400062: right_door3 1
+    400064: right_door4
+    400066: right_door5
+    400068: right_door6
+    400070: right_door7
+    400072: SINK
+    400074: Small_doors
+    400076: Stankskydd
+    400078: tabletop
+    400080: tall_cabinet
+    400082: Top_cabinet
+    2100000: lambert12
+    2100002: StingrayPBS7
+    2100004: lambert1
+    2100006: StingrayPBS10
+    2100008: StingrayPBS9
+    2300000: Door_handle_letf
+    2300002: Door_handle_letf 1
+    2300004: Door_handle_letf1
+    2300006: Door_handle_letf11
+    2300008: Door_handle_letf12
+    2300010: Door_handle_letf13
+    2300012: Door_handle_letf14
+    2300014: Door_handle_letf15
+    2300016: Door_handle_letf16
+    2300018: Door_handle_letf17
+    2300020: Door_handle_letf2
+    2300022: Door_handle_letf3
+    2300024: Door_handle_letf4
+    2300026: pCube19
+    2300028: pCube24
+    2300030: pCylinder14
+    2300032: pCylinder18
+    2300034: pCylinder36
+    2300036: pSphere4
+    2300038: right_door14
+    2300040: right_door15
+    2300042: right_door16
+    2300044: right_door17
+    2300046: right_door18
+    2300048: right_door19
+    2300050: right_door20
+    2300052: right_door3
+    2300054: right_door3 1
+    2300056: right_door4
+    2300058: right_door5
+    2300060: right_door6
+    2300062: right_door7
+    2300064: Stankskydd
+    2300066: tabletop
+    2300068: tall_cabinet
+    3300000: Door_handle_letf
+    3300002: Door_handle_letf 1
+    3300004: Door_handle_letf1
+    3300006: Door_handle_letf11
+    3300008: Door_handle_letf12
+    3300010: Door_handle_letf13
+    3300012: Door_handle_letf14
+    3300014: Door_handle_letf15
+    3300016: Door_handle_letf16
+    3300018: Door_handle_letf17
+    3300020: Door_handle_letf2
+    3300022: Door_handle_letf3
+    3300024: Door_handle_letf4
+    3300026: pCube19
+    3300028: pCube24
+    3300030: pCylinder14
+    3300032: pCylinder18
+    3300034: pCylinder36
+    3300036: pSphere4
+    3300038: right_door14
+    3300040: right_door15
+    3300042: right_door16
+    3300044: right_door17
+    3300046: right_door18
+    3300048: right_door19
+    3300050: right_door20
+    3300052: right_door3
+    3300054: right_door3 1
+    3300056: right_door4
+    3300058: right_door5
+    3300060: right_door6
+    3300062: right_door7
+    3300064: Stankskydd
+    3300066: tabletop
+    3300068: tall_cabinet
+    4300000: right_door3
+    4300002: Door_handle_letf
+    4300004: right_door3
+    4300006: Door_handle_letf
+    4300008: right_door4
+    4300010: right_door5
+    4300012: Door_handle_letf2
+    4300014: Door_handle_letf1
+    4300016: Door_handle_letf3
+    4300018: right_door7
+    4300020: right_door6
+    4300022: Door_handle_letf4
+    4300024: Door_handle_letf11
+    4300026: pCube24
+    4300028: right_door14
+    4300030: right_door15
+    4300032: Door_handle_letf12
+    4300034: right_door16
+    4300036: right_door17
+    4300038: Door_handle_letf13
+    4300040: Door_handle_letf14
+    4300042: right_door18
+    4300044: right_door19
+    4300046: Door_handle_letf15
+    4300048: Door_handle_letf16
+    4300050: Door_handle_letf17
+    4300052: right_door20
+    4300054: pCube19
+    4300056: Stankskydd
+    4300058: pCylinder14
+    4300060: pCylinder18
+    4300062: tall_cabinet
+    4300064: pCylinder36
+    4300066: pSphere4
+    4300068: tabletop
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 100
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
