@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 5661306766b0b447ca179e94e844df3b
+=======
+guid: 21cebba602b6f5b4fb0a828abc1a31af
+>>>>>>> InteractionManager
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2

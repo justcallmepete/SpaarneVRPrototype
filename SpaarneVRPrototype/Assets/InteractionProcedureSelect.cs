@@ -13,6 +13,7 @@ public class InteractionProcedureSelect : Interaction {
         base.Start();
         startPos = this.transform.parent.transform.position;
         prikBordStats = GameObject.Find("Prikbord_Model").GetComponent<PrikBordStats>();
+        InteractionTask = "Select Procedure";
     }
 
     public override void Handle()

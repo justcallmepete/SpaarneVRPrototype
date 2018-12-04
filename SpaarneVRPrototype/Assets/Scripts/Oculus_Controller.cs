@@ -94,7 +94,8 @@ public class Oculus_Controller : MonoBehaviour
                     LineTargetFollowUp.transform.localScale = new Vector3(LineTargetFollowUp.transform.localScale.x, 22f + ((Vector3.Magnitude(hit.point - controller.transform.position)) * 3f), LineTargetFollowUp.transform.localScale.z);
                     LineTargetM.color = new Color(Color.black.r, Color.black.g, Color.black.b,0.6f);
                     LineTargetFollowUpM.color = new Color(Color.black.r, Color.black.g, Color.black.b, 0.6f);
-                    
+                    interactionManager.GetInteractionScript(null);
+
                 }
                 else
                 {

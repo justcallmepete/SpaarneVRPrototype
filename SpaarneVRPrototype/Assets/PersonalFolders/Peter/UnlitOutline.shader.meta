@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 6f01c74da198041699e9c291e0b4d39b
+=======
+guid: cd4fc64952798e44f8708c4ee1f93bda
+>>>>>>> InteractionManager
 ShaderImporter:
   externalObjects: {}
   defaultTextures: []
