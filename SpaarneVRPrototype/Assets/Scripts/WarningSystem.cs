@@ -40,7 +40,7 @@ public class WarningSystem : MonoBehaviour {
             {
                 gotHolder = true;
                 warningHolder = HolderVR;
-                warningText = HolderVR.transform.GetChild(0).transform.GetComponent<Text>();
+                warningText = HolderVR.transform.GetChild(1).transform.GetComponent<Text>();
 
             }
         }
