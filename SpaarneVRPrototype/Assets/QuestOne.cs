@@ -115,7 +115,7 @@ public class QuestOne : MonoBehaviour
         //Last step after removing the mask is to wash hands.
         if (questSteps[5])
         {
-            warningSystem.SetWarning("Congratulations you finished Arogene Islolation." , true, "Green");
+            warningSystem.SetWarning("Congratulations you finished Arogene Islolation." , true, "Red");
         }        
     }
 }

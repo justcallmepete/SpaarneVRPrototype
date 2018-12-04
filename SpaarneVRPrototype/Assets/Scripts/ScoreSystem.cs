@@ -52,7 +52,7 @@ public class ScoreSystem : MonoBehaviour
         scoreTimer = new Timer();
         steps = questOne.questSteps;
         GenerateList(questOne.questSteps);
-        Invoke("InvokeTimer", 5);
+        InvokeTimer();
     }
 
     void Update()
@@ -176,13 +176,7 @@ public class ScoreSystem : MonoBehaviour
         public float GetTime()
         {
             Debug.Log("time taken for this step: " + currentTime);
-            if(currentTime <= 0)
-            {
-                return .1f;
-            } else
-            {
-                return currentTime;
-            }
+            return currentTime;
         }
     }
 
