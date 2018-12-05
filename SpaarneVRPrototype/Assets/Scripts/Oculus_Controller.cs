@@ -120,7 +120,7 @@ public class Oculus_Controller : MonoBehaviour
                 if (!Sound.isPlaying)
                 {
                     Sound.clip = (TeleportTargetSound);
-                    Sound.Play();
+                    //Sound.Play();
                 }
 
                 if (interactionManager.LastTeleportedToPoint != hit.transform.gameObject)
