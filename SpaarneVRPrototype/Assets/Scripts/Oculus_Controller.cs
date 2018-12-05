@@ -33,6 +33,8 @@ public class Oculus_Controller : MonoBehaviour
 
     public CursorLockMode wantedMode;
 
+    public float range;
+
     private void Start()
     {
         if (!XRSettings.enabled)
@@ -71,7 +73,7 @@ public class Oculus_Controller : MonoBehaviour
         RaycastHit hit;
         Ray r = new Ray(controller.transform.position, controller.transform.forward);
       
-        if (Physics.Raycast(r, out hit))
+        if (Physics.Raycast(r, out hit, range))
         {
             //positions and scales the targeting point and line. 
 
@@ -150,7 +152,7 @@ public class Oculus_Controller : MonoBehaviour
             LineTarget.SetActive(false);
             LineTargetFollowUp.SetActive(false);
             LineTarget.transform.GetChild(0).gameObject.SetActive(false);
-
+            interactionManager.LastHighlightedTeleporter.GetComponent<FixedTeleportSpot>().OutlineOff();
         }
     }
 
