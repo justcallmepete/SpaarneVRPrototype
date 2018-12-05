@@ -57,7 +57,7 @@ public class QuestOne : MonoBehaviour
                 if (!warned)
                 {
                     warned = true;
-                    warningSystem.SetWarning("You removed or dindt have a mask in the room. High risk of being infected." , true, "Red");
+                    warningSystem.SetWarning("You removed or didn't have a mask in the room. High risk of being infected." , true, "Red");
                 }
             }
         }else if (questSteps[0] && !PersonP.inRoom && !PersonP.inTube && !questSteps[1])
@@ -73,7 +73,7 @@ public class QuestOne : MonoBehaviour
             if (!warned)
             {
             warned = true;
-            warningSystem.SetWarning("You removed or dindt have a mask in the room. High risk of being infected." , true, "Red");
+            warningSystem.SetWarning("You removed or didn't have a mask in the room. High risk of being infected." , true, "Red");
             }
         }
         //if at this point the person hasnt failed he should be in the room. 

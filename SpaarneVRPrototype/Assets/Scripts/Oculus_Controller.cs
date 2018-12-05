@@ -149,10 +149,14 @@ public class Oculus_Controller : MonoBehaviour
         }
         else
         {
+            if(interactionManager.LastHighlightedTeleporter)
+            {
+                interactionManager.LastHighlightedTeleporter.GetComponent<FixedTeleportSpot>().OutlineOff();
+            }
             LineTarget.SetActive(false);
             LineTargetFollowUp.SetActive(false);
             LineTarget.transform.GetChild(0).gameObject.SetActive(false);
-            interactionManager.LastHighlightedTeleporter.GetComponent<FixedTeleportSpot>().OutlineOff();
+            
         }
     }
 
