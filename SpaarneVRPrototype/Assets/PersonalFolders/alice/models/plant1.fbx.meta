@@ -1,0 +1,403 @@
+fileFormatVersion: 2
+guid: 0083df0eec03a403583fc38a1eed2441
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: fernsTextured10Leaf
+    100002: fernsTextured10Main
+    100004: fernsTextured10MeshGroup
+    100006: fernsTextured11Leaf
+    100008: fernsTextured11Main
+    100010: fernsTextured11MeshGroup
+    100012: fernsTextured12Leaf
+    100014: fernsTextured12Main
+    100016: fernsTextured12MeshGroup
+    100018: fernsTextured1Leaf
+    100020: fernsTextured1Main
+    100022: fernsTextured1MeshGroup
+    100024: fernsTextured2Leaf
+    100026: fernsTextured2Main
+    100028: fernsTextured2MeshGroup
+    100030: fernsTextured3Leaf
+    100032: fernsTextured3Main
+    100034: fernsTextured3MeshGroup
+    100036: fernsTextured4Leaf
+    100038: fernsTextured4Main
+    100040: fernsTextured4MeshGroup
+    100042: fernsTextured5Leaf
+    100044: fernsTextured5Main
+    100046: fernsTextured5MeshGroup
+    100048: fernsTextured6Leaf
+    100050: fernsTextured6Main
+    100052: fernsTextured6MeshGroup
+    100054: fernsTextured7Leaf
+    100056: fernsTextured7Main
+    100058: fernsTextured7MeshGroup
+    100060: fernsTextured8Leaf
+    100062: fernsTextured8Main
+    100064: fernsTextured8MeshGroup
+    100066: fernsTextured9Leaf
+    100068: fernsTextured9Main
+    100070: fernsTextured9MeshGroup
+    100072: pCylinder3
+    100074: pCylinder4
+    100076: plant 1
+    100078: //RootNode
+    100080: pot
+    400000: fernsTextured10Leaf
+    400002: fernsTextured10Main
+    400004: fernsTextured10MeshGroup
+    400006: fernsTextured11Leaf
+    400008: fernsTextured11Main
+    400010: fernsTextured11MeshGroup
+    400012: fernsTextured12Leaf
+    400014: fernsTextured12Main
+    400016: fernsTextured12MeshGroup
+    400018: fernsTextured1Leaf
+    400020: fernsTextured1Main
+    400022: fernsTextured1MeshGroup
+    400024: fernsTextured2Leaf
+    400026: fernsTextured2Main
+    400028: fernsTextured2MeshGroup
+    400030: fernsTextured3Leaf
+    400032: fernsTextured3Main
+    400034: fernsTextured3MeshGroup
+    400036: fernsTextured4Leaf
+    400038: fernsTextured4Main
+    400040: fernsTextured4MeshGroup
+    400042: fernsTextured5Leaf
+    400044: fernsTextured5Main
+    400046: fernsTextured5MeshGroup
+    400048: fernsTextured6Leaf
+    400050: fernsTextured6Main
+    400052: fernsTextured6MeshGroup
+    400054: fernsTextured7Leaf
+    400056: fernsTextured7Main
+    400058: fernsTextured7MeshGroup
+    400060: fernsTextured8Leaf
+    400062: fernsTextured8Main
+    400064: fernsTextured8MeshGroup
+    400066: fernsTextured9Leaf
+    400068: fernsTextured9Main
+    400070: fernsTextured9MeshGroup
+    400072: pCylinder3
+    400074: pCylinder4
+    400076: plant 1
+    400078: //RootNode
+    400080: pot
+    2100000: fernsTextured12Shader1
+    2100002: fernsTextured12LeafShader1
+    2100004: fernsTextured11Shader1
+    2100006: fernsTextured11LeafShader1
+    2100008: fernsTextured10Shader1
+    2100010: fernsTextured10LeafShader2
+    2100012: fernsTextured9Shader1
+    2100014: fernsTextured9LeafShader1
+    2100016: fernsTextured8Shader2
+    2100018: fernsTextured8LeafShader1
+    2100020: fernsTextured7Shader1
+    2100022: fernsTextured7LeafShader1
+    2100024: fernsTextured6Shader1
+    2100026: fernsTextured6LeafShader1
+    2100028: fernsTextured5Shader1
+    2100030: fernsTextured5LeafShader1
+    2100032: fernsTextured4Shader1
+    2100034: fernsTextured4LeafShader1
+    2100036: fernsTextured3LeafShader1
+    2100038: fernsTextured3LeafShader2
+    2100040: fernsTextured2Shader1
+    2100042: fernsTextured2LeafShader2
+    2100044: fernsTextured1Shader1
+    2100046: fernsTextured1LeafShader1
+    2100048: lambert1
+    2300000: fernsTextured10Leaf
+    2300002: fernsTextured10Main
+    2300004: fernsTextured11Leaf
+    2300006: fernsTextured11Main
+    2300008: fernsTextured12Leaf
+    2300010: fernsTextured12Main
+    2300012: fernsTextured1Leaf
+    2300014: fernsTextured1Main
+    2300016: fernsTextured2Leaf
+    2300018: fernsTextured2Main
+    2300020: fernsTextured3Leaf
+    2300022: fernsTextured3Main
+    2300024: fernsTextured4Leaf
+    2300026: fernsTextured4Main
+    2300028: fernsTextured5Leaf
+    2300030: fernsTextured5Main
+    2300032: fernsTextured6Leaf
+    2300034: fernsTextured6Main
+    2300036: fernsTextured7Leaf
+    2300038: fernsTextured7Main
+    2300040: fernsTextured8Leaf
+    2300042: fernsTextured8Main
+    2300044: fernsTextured9Leaf
+    2300046: fernsTextured9Main
+    2300048: pCylinder3
+    2300050: pCylinder4
+    3300000: fernsTextured10Leaf
+    3300002: fernsTextured10Main
+    3300004: fernsTextured11Leaf
+    3300006: fernsTextured11Main
+    3300008: fernsTextured12Leaf
+    3300010: fernsTextured12Main
+    3300012: fernsTextured1Leaf
+    3300014: fernsTextured1Main
+    3300016: fernsTextured2Leaf
+    3300018: fernsTextured2Main
+    3300020: fernsTextured3Leaf
+    3300022: fernsTextured3Main
+    3300024: fernsTextured4Leaf
+    3300026: fernsTextured4Main
+    3300028: fernsTextured5Leaf
+    3300030: fernsTextured5Main
+    3300032: fernsTextured6Leaf
+    3300034: fernsTextured6Main
+    3300036: fernsTextured7Leaf
+    3300038: fernsTextured7Main
+    3300040: fernsTextured8Leaf
+    3300042: fernsTextured8Main
+    3300044: fernsTextured9Leaf
+    3300046: fernsTextured9Main
+    3300048: pCylinder3
+    3300050: pCylinder4
+    4300000: fernsTextured12Main
+    4300002: fernsTextured12Leaf
+    4300004: fernsTextured11Main
+    4300006: fernsTextured11Leaf
+    4300008: fernsTextured10Main
+    4300010: fernsTextured10Leaf
+    4300012: fernsTextured9Main
+    4300014: fernsTextured9Leaf
+    4300016: fernsTextured8Main
+    4300018: fernsTextured8Leaf
+    4300020: fernsTextured7Main
+    4300022: fernsTextured7Leaf
+    4300024: fernsTextured6Main
+    4300026: fernsTextured6Leaf
+    4300028: fernsTextured5Main
+    4300030: fernsTextured5Leaf
+    4300032: fernsTextured4Main
+    4300034: fernsTextured4Leaf
+    4300036: fernsTextured3Main
+    4300038: fernsTextured3Leaf
+    4300040: fernsTextured2Main
+    4300042: fernsTextured2Leaf
+    4300044: fernsTextured1Main
+    4300046: fernsTextured1Leaf
+    4300048: pCylinder3
+    4300050: pCylinder4
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fernsTextured10LeafShader2
+    second: {fileID: 2100000, guid: a5591bf305c8440b887234c8b1f11f20, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fernsTextured10Shader1
+    second: {fileID: 2100000, guid: 475408966331d4e6ebc88bc4c72bb495, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fernsTextured11LeafShader1
+    second: {fileID: 2100000, guid: 0cc4f9cc9cef74f929b4bfce79308188, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fernsTextured11Shader1
+    second: {fileID: 2100000, guid: 40d46dfad63d24a878110423d9520056, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fernsTextured12LeafShader1
+    second: {fileID: 2100000, guid: 1c4edc31e7bc9443895cbe5bef9fadd1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fernsTextured12Shader1
+    second: {fileID: 2100000, guid: 3ae25ae5781124195921a3a49f10d639, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fernsTextured1LeafShader1
+    second: {fileID: 2100000, guid: e3195ce8d0496484ea46edddb683c78f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fernsTextured1Shader1
+    second: {fileID: 2100000, guid: 2fb60d377a70f495a938a8d04e0238c8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fernsTextured2LeafShader2
+    second: {fileID: 2100000, guid: 73b7f14b28d0a4b42bd5dab4d74c756c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fernsTextured2Shader1
+    second: {fileID: 2100000, guid: 8c22a48b5c5394ca5bd7f8f04bc89c72, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fernsTextured3LeafShader1
+    second: {fileID: 2100000, guid: c8a42a1c794124db5937eab76af07613, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fernsTextured3LeafShader2
+    second: {fileID: 2100000, guid: 2358d777cbe064695850cb50c4a70fe5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fernsTextured4LeafShader1
+    second: {fileID: 2100000, guid: 7ed79fd6de8404bb6ac258623020804e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fernsTextured4Shader1
+    second: {fileID: 2100000, guid: e6512c87305ad40e0ac5fcccc778bf05, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fernsTextured5LeafShader1
+    second: {fileID: 2100000, guid: 3f2375ddb7b7a47fdb1ddfdd0b6c30b4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fernsTextured5Shader1
+    second: {fileID: 2100000, guid: 6986d29c58d36409394df7d4355c88dd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fernsTextured6LeafShader1
+    second: {fileID: 2100000, guid: da5693f23358a4ba9aecf903d7e84ab7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fernsTextured6Shader1
+    second: {fileID: 2100000, guid: 0a964851904884e6e88a27666e56a313, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fernsTextured7LeafShader1
+    second: {fileID: 2100000, guid: e5fce1a9e865840acbdd23ce684bb4cb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fernsTextured7Shader1
+    second: {fileID: 2100000, guid: 4d86c308c21ec40afa82d8cbe2b6dbc2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fernsTextured8LeafShader1
+    second: {fileID: 2100000, guid: 5253bdc892f24486abb3163567622ff5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fernsTextured8Shader2
+    second: {fileID: 2100000, guid: f5148d8175e464e7aa90d0f4898fab43, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fernsTextured9LeafShader1
+    second: {fileID: 2100000, guid: 349c4bf5ea54a44849d13f23c6477aaf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fernsTextured9Shader1
+    second: {fileID: 2100000, guid: bf635c73264974ac195423cee529145f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: b872d8bc33e3f4f8697ff46f488cc775, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: flowerpot_texture
+    second: {fileID: 2800000, guid: 5bc86739e3b2e4a4ebc21e19ca380bfe, type: 3}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 100
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
