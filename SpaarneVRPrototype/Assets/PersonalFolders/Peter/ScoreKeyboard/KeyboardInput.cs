@@ -1,7 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
+using System.Collections.Generic;
 
 public class KeyboardInput : MonoBehaviour {
 
@@ -12,12 +12,24 @@ public class KeyboardInput : MonoBehaviour {
 	private Text text;
 	private bool firstPress = false;
 
+	GraphicRaycaster m_Raycaster;
+	PointerEventData m_PointerEventData;
+	EventSystem m_EventSystem;
+
 	private void Awake()
 	{
 		foreach(Button b in buttons)
 		{
 			b.onClick.AddListener(delegate { ButtonPress(b.name); });
 		}
+	}
+
+	private void Start()
+	{
+		//Fetch the Raycaster from the GameObject (the Canvas)
+		m_Raycaster = GetComponent<GraphicRaycaster>();
+		//Fetch the Event System from the Scene
+		m_EventSystem = GetComponent<EventSystem>();
 	}
 
 	void ButtonPress(string button)
@@ -47,5 +59,4 @@ public class KeyboardInput : MonoBehaviour {
 		}
 		text.text = PlayerName;
 	}
-
 }

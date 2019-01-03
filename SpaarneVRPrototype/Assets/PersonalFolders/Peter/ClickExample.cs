@@ -1,21 +1,65 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
-public class ClickExample : MonoBehaviour {
+public class ClickExample : MonoBehaviour
+{
 
-	// Use this for initialization
-    public Renderer rend;
+	private Camera viewCamera;
 
-	void Start () {
-		
+	public Button currentButton;
+	private EventSystem eventSystem;
+
+	private void Start()
+	{
+		viewCamera = GetComponent<Camera>();
+		eventSystem = EventSystem.current;
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	    if (Input.GetKey(KeyCode.A))
-	    {
-	        rend.material.SetFloat("_OutlineWidth", 1.14f);
-        }
+
+	private void Update()
+	{
+		UpdateCursor();
+
+		if(Input.GetKey(KeyCode.P))
+		{
+			if (currentButton)
+			currentButton.onClick.Invoke();
+			Debug.Log("clicked");
+		}
 	}
+
+	private void UpdateCursor()
+	{
+		// Create a gaze ray pointing forward from the camera
+		Ray ray = new Ray(viewCamera.transform.position, viewCamera.transform.rotation * Vector3.forward);
+		RaycastHit hit;
+		if (Physics.Raycast(ray, out hit, 500f))
+		{
+			// If the ray hits something, set the position to the hit point
+			// and rotate based on the normal vector of the hit
+			Debug.Log("Hit object: " + hit.transform.name);
+			if (hit.transform.GetComponent<Button>())
+			{
+				currentButton = hit.transform.GetComponent<Button>();
+				currentButton.Select();
+			}
+			if (currentButton && hit.transform.gameObject != currentButton.gameObject)
+			{
+				eventSystem.SetSelectedGameObject(null);
+			}
+		}
+		else
+		{
+			if (currentButton)
+			{
+				eventSystem.SetSelectedGameObject(null);
+			}
+		}
+
+	}
+
+
+
 }

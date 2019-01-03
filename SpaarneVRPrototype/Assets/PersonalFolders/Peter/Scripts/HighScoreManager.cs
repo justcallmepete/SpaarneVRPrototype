@@ -7,27 +7,25 @@ using TMPro;
 
 public class HighScoreManager : MonoBehaviour
 {
-   // public Text testthing;
-    //public TextMeshProUGUI thingtwo;
     public TextMeshProUGUI scoreText;
-    //public textmeshpro
 
     [SerializeField]
     private List<ScoreValueObject> valueObjectList = new List<ScoreValueObject>();
 
+	public GameObject keyboardInput;
+
     void Start()
     {
-      //  scoreText.text = "SFDKFHDJKAFHDKJFHDKJAHFJDKA";
-        valueObjectList = LoadData();
-        //ScoreValueObject laura = new ScoreValueObject();
-        //laura.PlayerName = "Koen";
-        //laura.Score = 100;
-        //laura.QuestNumber = 1;
-        //SaveData(laura);
-        DisplayHighScore();
-    }
+		//ScoreValueObject test = new ScoreValueObject();
+		//test.PlayerName = "Player 1";
+		//test.QuestNumber = 1;
+		//test.Score = 500;
+		//SaveData(test);
+		valueObjectList = LoadData();
+		DisplayHighScore();
+	}
 
-    private List<ScoreValueObject> LoadData()
+	private List<ScoreValueObject> LoadData()
     {
         // Load Data
         string jsonToLoad = PlayerPrefs.GetString("Data");
@@ -40,18 +38,11 @@ public class HighScoreManager : MonoBehaviour
         ScoreValueObject[] _tempLoadListData = JSONHelper.FromJson<ScoreValueObject>(jsonToLoad);
         //Convert to List
         List<ScoreValueObject> loadListData = _tempLoadListData.OfType<ScoreValueObject>().ToList();
-        //Print Data
-        //for (int i = 0; i < loadListData.Count; i++)
-        //{
-        //    Debug.Log("Got: " + loadListData[i].PlayerName);
-        //}
         return loadListData;
     }
 
     public void SaveData(ScoreValueObject obj)
     {
-       // List<ScoreValueObject> loadListData = LoadData();
-
         if (SearchForPlayer(obj))
         {
             valueObjectList.Add(obj);
@@ -89,6 +80,8 @@ public class HighScoreManager : MonoBehaviour
 
     public void DisplayHighScore()
     {
+		if (!scoreText) return;
+
         string thing = "";
         // give me a list of the highest ranking people in descending order
         //List<int> scoreList = new List<int>();
@@ -102,4 +95,19 @@ public class HighScoreManager : MonoBehaviour
         scoreText.text = thing;
     }
 
+	public void ShowKeyboardInput()
+	{
+		if (!keyboardInput) return;
+
+		keyboardInput.SetActive(true);
+	}
+
+	public void InputScore(string name, int questID, int score)
+	{
+		ScoreValueObject newPlayer = new ScoreValueObject();
+		newPlayer.PlayerName = name;
+		newPlayer.QuestNumber = questID;
+		newPlayer.Score = score;
+		SaveData(newPlayer);
+	}
 }
