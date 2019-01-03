@@ -22,11 +22,10 @@ public class ClickExample : MonoBehaviour
 	{
 		UpdateCursor();
 
-		if(Input.GetKey(KeyCode.P))
+		if(Input.GetKeyDown(KeyCode.P))
 		{
 			if (currentButton)
 			currentButton.onClick.Invoke();
-			Debug.Log("clicked");
 		}
 	}
 
@@ -39,7 +38,6 @@ public class ClickExample : MonoBehaviour
 		{
 			// If the ray hits something, set the position to the hit point
 			// and rotate based on the normal vector of the hit
-			Debug.Log("Hit object: " + hit.transform.name);
 			if (hit.transform.GetComponent<Button>())
 			{
 				currentButton = hit.transform.GetComponent<Button>();

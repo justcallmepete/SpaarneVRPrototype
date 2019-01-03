@@ -446,6 +446,68 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 99559730}
   m_CullTransparentMesh: 0
+--- !u!1 &123940761
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 123940764}
+  - component: {fileID: 123940763}
+  - component: {fileID: 123940762}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &123940762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 123940761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c45a6d2c3632e064c8e59b9f8c413e41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: 59f12c8bc70b55d4298340e9bf872f3e, type: 2}
+  questOne: {fileID: 0}
+  currentStep: 0
+  finalStep: 0
+  timesFailed: 0
+  highScoreManager: {fileID: 123940763}
+  steps: 
+--- !u!114 &123940763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 123940761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6659e92cd86d7a49847d75608ff94cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 0}
+  valueObjectList: []
+  keyboardInput: {fileID: 841345572}
+--- !u!4 &123940764
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 123940761}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.020691, y: 1.27815, z: 3.7903693}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &137111115
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2328,38 +2390,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttons:
   - {fileID: 1844777189}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 1161835383}
-  - {fileID: 1764811609}
-  - {fileID: 170206747}
-  - {fileID: 2051583708}
-  - {fileID: 227813639}
-  - {fileID: 1491558954}
-  - {fileID: 474843650}
-  - {fileID: 1514515906}
-  - {fileID: 1406193353}
-  - {fileID: 803021436}
-  - {fileID: 682898698}
-  - {fileID: 552688004}
-  - {fileID: 721393261}
-  - {fileID: 1921956890}
-  - {fileID: 220245427}
-  - {fileID: 846663290}
-  - {fileID: 1535145265}
-  - {fileID: 48210382}
-  - {fileID: 193367516}
-  - {fileID: 137111115}
-  - {fileID: 1224226061}
   - {fileID: 712326023}
   text: {fileID: 862758703}
+  maxAmountOfCharacters: 15
+  scoreSystem: {fileID: 123940762}
 --- !u!114 &841345574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5191,6 +5225,8 @@ GameObject:
   - component: {fileID: 2041979804}
   - component: {fileID: 2041979803}
   - component: {fileID: 712326023}
+  - component: {fileID: 2041979806}
+  - component: {fileID: 2041979805}
   m_Layer: 9
   m_Name: Enter
   m_TagString: Untagged
@@ -5253,6 +5289,48 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2041979801}
   m_CullTransparentMesh: 0
+--- !u!114 &2041979805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2041979801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 9
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 712326023}
+          m_MethodName: Select
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
+--- !u!65 &2041979806
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2041979801}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 205.14879, y: 83.88096, z: 0.0066547394}
+  m_Center: {x: -0.22931357, y: -0.30192897, z: -0.00033187875}
 --- !u!114 &2051583708
 MonoBehaviour:
   m_ObjectHideFlags: 0

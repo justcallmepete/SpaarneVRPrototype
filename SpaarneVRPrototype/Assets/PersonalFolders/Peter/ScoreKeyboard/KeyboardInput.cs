@@ -1,20 +1,19 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.EventSystems;
 using System.Collections.Generic;
 
 public class KeyboardInput : MonoBehaviour {
 
 	public List<Button> buttons = new List<Button>();
 
-	string PlayerName;
+	string playerName = "";
 	[SerializeField]
 	private Text text;
 	private bool firstPress = false;
+	[SerializeField]
+	private int maxAmountOfCharacters = 15;
 
-	GraphicRaycaster m_Raycaster;
-	PointerEventData m_PointerEventData;
-	EventSystem m_EventSystem;
+	public ScoreSystem scoreSystem;
 
 	private void Awake()
 	{
@@ -22,14 +21,6 @@ public class KeyboardInput : MonoBehaviour {
 		{
 			b.onClick.AddListener(delegate { ButtonPress(b.name); });
 		}
-	}
-
-	private void Start()
-	{
-		//Fetch the Raycaster from the GameObject (the Canvas)
-		m_Raycaster = GetComponent<GraphicRaycaster>();
-		//Fetch the Event System from the Scene
-		m_EventSystem = GetComponent<EventSystem>();
 	}
 
 	void ButtonPress(string button)
@@ -42,21 +33,29 @@ public class KeyboardInput : MonoBehaviour {
 
 		if(button == "Backspace")
 		{
-			if (PlayerName.Length <= 0) return;
+			if (playerName.Length <= 0) return;
 
-			PlayerName = PlayerName.Substring(0, PlayerName.Length - 1);
+			playerName = playerName.Substring(0, playerName.Length - 1);
 		} else
 		if (button == "Enter")
 		{
+			Debug.Log("enter clicked");
 			// ToDo: Submit Score to List
+			if(playerName != "")
+			{
+				scoreSystem.SubmitScore(playerName);
+			}
 		}else
 		if (button == "Space")
 		{
-			PlayerName += " ";
+			if (playerName.Length < maxAmountOfCharacters)
+				playerName += " ";
 		}else
 		{
-			PlayerName += button;
+			if(playerName.Length < maxAmountOfCharacters)
+			playerName += button;
+			Debug.Log(button + " clicked");
 		}
-		text.text = PlayerName;
+		text.text = playerName;
 	}
 }

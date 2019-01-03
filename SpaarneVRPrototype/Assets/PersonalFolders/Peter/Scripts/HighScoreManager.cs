@@ -50,6 +50,7 @@ public class HighScoreManager : MonoBehaviour
             string jsonToSave = JSONHelper.ToJson(valueObjectList.ToArray());
             PlayerPrefs.SetString("Data", jsonToSave);
             PlayerPrefs.Save();
+			Debug.Log("saved data in json");
         }
     }
 
@@ -70,7 +71,7 @@ public class HighScoreManager : MonoBehaviour
             }
         }
 
-        if (player.Score > temp_Current)
+        if (player.Score >= temp_Current)
         {
             return true;
         }
@@ -104,10 +105,13 @@ public class HighScoreManager : MonoBehaviour
 
 	public void InputScore(string name, int questID, int score)
 	{
-		ScoreValueObject newPlayer = new ScoreValueObject();
-		newPlayer.PlayerName = name;
-		newPlayer.QuestNumber = questID;
-		newPlayer.Score = score;
+		ScoreValueObject newPlayer = new ScoreValueObject
+		{
+			PlayerName = name,
+			QuestNumber = questID,
+			Score = score
+		};
 		SaveData(newPlayer);
+		Debug.Log("save succesful");
 	}
 }

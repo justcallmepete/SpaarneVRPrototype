@@ -21,6 +21,7 @@ public class ScoreSystem : MonoBehaviour
 
     [Header("Player Data")]
     public FailureCounter data;
+	//public string playerName = "Missing";
 
     [Header("Quest settings")]
     public QuestOne questOne;
@@ -38,6 +39,9 @@ public class ScoreSystem : MonoBehaviour
     [Header("Score settings")]
     public float timesFailed = 0;
     private float finalScore = 0;
+
+	[SerializeField]
+	private HighScoreManager highScoreManager;
 
 
     public List<bool> steps;
@@ -144,7 +148,15 @@ public class ScoreSystem : MonoBehaviour
 
         finalScore -= (timesFailed * 5);
         Debug.Log("Final score is: " + finalScore);
+		// start highscore manager fill in name
+		highScoreManager.ShowKeyboardInput();
     }
+
+	public void SubmitScore(string playerName = "Missing")
+	{
+		Debug.Log("calling submit");
+		highScoreManager.InputScore(playerName, 1, (int)finalScore);
+	}
 
     private void InvokeTimer()
     {
