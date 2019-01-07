@@ -4,10 +4,12 @@ using UnityEngine;
 using System.Linq;
 using UnityEngine.UI;
 using TMPro;
+using System.IO;
 
 public class HighScoreManager : MonoBehaviour
 {
     public TextMeshProUGUI scoreText;
+    private string JSONPath = "/StreamingAssets/PlayerScores.json";
 
     [SerializeField]
     private List<ScoreValueObject> valueObjectList = new List<ScoreValueObject>();
@@ -16,11 +18,6 @@ public class HighScoreManager : MonoBehaviour
 
     void Start()
     {
-		//ScoreValueObject test = new ScoreValueObject();
-		//test.PlayerName = "Player 1";
-		//test.QuestNumber = 1;
-		//test.Score = 500;
-		//SaveData(test);
 		valueObjectList = LoadData();
 		DisplayHighScore();
 	}
@@ -28,10 +25,14 @@ public class HighScoreManager : MonoBehaviour
 	private List<ScoreValueObject> LoadData()
     {
         // Load Data
-        string jsonToLoad = PlayerPrefs.GetString("Data");
+        string filePath = Application.dataPath + JSONPath;
+        string jsonToLoad = File.ReadAllText(filePath);
+
+       // string jsonToLoad = PlayerPrefs.GetString("Data");
         Debug.Log(jsonToLoad);
         if (jsonToLoad == "")
         {
+           
             Debug.Log("error loading data");
         }
         //Load as Array
@@ -48,8 +49,11 @@ public class HighScoreManager : MonoBehaviour
             valueObjectList.Add(obj);
 
             string jsonToSave = JSONHelper.ToJson(valueObjectList.ToArray());
-            PlayerPrefs.SetString("Data", jsonToSave);
-            PlayerPrefs.Save();
+            //  PlayerPrefs.SetString("Data", jsonToSave);
+            // PlayerPrefs.Save();
+
+            string filePath = Application.dataPath + JSONPath;
+            File.WriteAllText(jsonToSave, filePath);
 			Debug.Log("saved data in json");
         }
     }
