@@ -6,29 +6,33 @@ public class QuestTwo : MonoBehaviour {
     
     public InteractionManager interactionManager;
     public WarningSystem warningSystem;
-    public PersonPosition personsP;
+
+    public PersonPosition personsPos;
+
     public SingleVariable gloves;
     public SingleVariable apron;
     public SingleVariable washedHands;
+
     public List<bool> questStepts = new List<bool>();
 
     public bool warned = false;
-	// Use this for initialization
-	void Start () {
-        for (int i = 0; i < 4; i++)
+
+	void Start ()
+    {
+        for (int i = 0; i < 8; i++)
         {
             questStepts.Add(false);
         }
 	}
 	
 	// Update is called once per frame
-	void Update () {
-
+	void Update ()
+    {
         if (warned)
         {
             if (!questStepts[0] && questStepts[1] || !questStepts[0] && !questStepts[1] || !questStepts[0] && questStepts[1])
             {
-                if (personsP.inRoom || personsP.inTube)
+                if (personsPos.inRoom || personsPos.inTube)
                 {
                     warned = true;
                     warningSystem.SetWarning("You removed or dindt have a apron and/or gloves in the room. High risk of being infected.", true, "Red");
@@ -44,26 +48,26 @@ public class QuestTwo : MonoBehaviour {
             }
             else if (!questStepts[2])
             {
-                if (personsP.inRoom || personsP.inTube)
+                if (personsPos.inRoom || personsPos.inTube)
                 {
                     questStepts[2] = true;
                 }
             }
             else if (!questStepts[3])
             {
-                if (personsP.inTube && !personsP.inRoom)
+                if (personsPos.inTube && !personsPos.inRoom)
                 {
                     questStepts[3] = true;
                 }
             }
             else if (!questStepts[4] && !questStepts[5] || questStepts[4] && !questStepts[5])
             {
-                if (personsP.inRoom && !gloves.task || personsP.inRoom && !apron.task)
+                if (personsPos.inRoom && !gloves.task || personsPos.inRoom && !apron.task)
                 {
                     warned = true;
                     warningSystem.SetWarning("You cant go back into the room with out the right equipment. High risk of being infected.", true, "Red");
                 }
-                else if (!personsP.inTube && !personsP.inRoom)
+                else if (!personsPos.inTube && !personsPos.inRoom)
                 {
                     warned = true;
                     warningSystem.SetWarning("You cant leave the room with your isolation clothing still on. High risk of being infected.", true, "Red");
@@ -84,12 +88,12 @@ public class QuestTwo : MonoBehaviour {
             }
             else if (!questStepts[6])
             {
-                if (personsP.inRoom)
+                if (personsPos.inRoom)
                 {
                     warned = true;
                     warningSystem.SetWarning("You cant go back into the room with out the right equipment. High risk of being infected.", true, "Red");
                 }
-                else if (!personsP.inTube && !personsP.inRoom)
+                else if (!personsPos.inTube && !personsPos.inRoom)
                 {
                     warned = true;
                     warningSystem.SetWarning("You cant leave the room with out washing hands. High risk of being infected.", true, "Red");
@@ -100,11 +104,11 @@ public class QuestTwo : MonoBehaviour {
                 }
             }else if (!questStepts[7])
             {
-                if (!personsP.inRoom && !personsP.inTube)
+                if (!personsPos.inRoom && !personsPos.inTube)
                 {
                     questStepts[7] = true;
                 }
-                else if (personsP.inRoom)
+                else if (personsPos.inRoom)
                 {
                     warned = true;
                     warningSystem.SetWarning("You cant enter the room with out the rigtht equipment. High risk of being infected.", true, "Red");
