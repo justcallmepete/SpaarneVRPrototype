@@ -44,6 +44,7 @@ public class KeyboardInput : MonoBehaviour {
 			if(playerName != "")
 			{
 				scoreSystem.SubmitScore(playerName);
+                transform.gameObject.SetActive(false);
 			}
 		}else
 		if (button == "Space")

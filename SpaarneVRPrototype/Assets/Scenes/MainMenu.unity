@@ -1622,6 +1622,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreText: {fileID: 1002064643}
   valueObjectList: []
+  keyboardInput: {fileID: 0}
 --- !u!4 &107350086
 Transform:
   m_ObjectHideFlags: 0
@@ -3220,16 +3221,51 @@ Prefab:
     - target: {fileID: 114229041346589732, guid: 3bba50c06ef89c94b9aa17dc4fabaa07,
         type: 2}
       propertyPath: m_havePropertiesChanged
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114229041346589732, guid: 3bba50c06ef89c94b9aa17dc4fabaa07,
         type: 2}
       propertyPath: m_isInputParsingRequired
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1146761200430486, guid: 3bba50c06ef89c94b9aa17dc4fabaa07, type: 2}
       propertyPath: m_Name
       value: VerticalTV5 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114229041346589732, guid: 3bba50c06ef89c94b9aa17dc4fabaa07,
+        type: 2}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114229041346589732, guid: 3bba50c06ef89c94b9aa17dc4fabaa07,
+        type: 2}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114229041346589732, guid: 3bba50c06ef89c94b9aa17dc4fabaa07,
+        type: 2}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114229041346589732, guid: 3bba50c06ef89c94b9aa17dc4fabaa07,
+        type: 2}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114229041346589732, guid: 3bba50c06ef89c94b9aa17dc4fabaa07,
+        type: 2}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114229041346589732, guid: 3bba50c06ef89c94b9aa17dc4fabaa07,
+        type: 2}
+      propertyPath: m_fontSize
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114229041346589732, guid: 3bba50c06ef89c94b9aa17dc4fabaa07,
+        type: 2}
+      propertyPath: m_fontSizeBase
+      value: 0.7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3bba50c06ef89c94b9aa17dc4fabaa07, type: 2}
@@ -10361,6 +10397,16 @@ Prefab:
     - target: {fileID: 1146761200430486, guid: 3bba50c06ef89c94b9aa17dc4fabaa07, type: 2}
       propertyPath: m_Name
       value: VerticalTV5 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114229041346589732, guid: 3bba50c06ef89c94b9aa17dc4fabaa07,
+        type: 2}
+      propertyPath: m_fontSize
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114229041346589732, guid: 3bba50c06ef89c94b9aa17dc4fabaa07,
+        type: 2}
+      propertyPath: m_fontSizeBase
+      value: 0.7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3bba50c06ef89c94b9aa17dc4fabaa07, type: 2}
@@ -17999,6 +18045,7 @@ MonoBehaviour:
   teleportButton: 8192
   TeleportTargetSound: {fileID: 8300000, guid: 18a6696a910a3f641aec6fcbb4cd48d2, type: 3}
   Sound: {fileID: 2080153937}
+  currentButton: {fileID: 0}
   interactionManager: {fileID: 2080153936}
   playerRig: {fileID: 176563299}
   MouseRig: {fileID: 348681535}

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.XR;
+using UnityEngine.EventSystems;
 
 public class Oculus_Controller : MonoBehaviour
 {
@@ -17,8 +18,9 @@ public class Oculus_Controller : MonoBehaviour
 
     public AudioClip TeleportTargetSound;
     public AudioSource Sound;
-    
 
+    public Button currentButton;
+    private EventSystem eventSystem;
 
     public InteractionManager interactionManager;
 
@@ -54,9 +56,15 @@ public class Oculus_Controller : MonoBehaviour
         }
     }
 
+    void Awake()
+    {
+        eventSystem = EventSystem.current;
+    }
+
     private void Update()
     {
         ControllerRaycast();
+        TestRaycast();
         HandleInput();
     }
 
@@ -65,6 +73,11 @@ public class Oculus_Controller : MonoBehaviour
         if (OVRInput.GetDown(teleportButton) || Input.GetKeyDown(teleportButtonKey))
         {
             interactionManager.TeleportToPosition(playerRig);
+
+            if (currentButton)
+            {
+                currentButton.onClick.Invoke();
+            }
         }
     }
 
@@ -160,6 +173,32 @@ public class Oculus_Controller : MonoBehaviour
         }
     }
 
-
+    void TestRaycast()
+    {
+        Ray r = new Ray(controller.transform.position, controller.transform.forward);
+        RaycastHit hit;
+        if (Physics.Raycast(r, out hit, 500f) && hit.transform.tag == "Score")
+        {
+            // If the ray hits something, set the position to the hit point
+            // and rotate based on the normal vector of the hit
+            if (hit.transform.GetComponent<Button>())
+            {
+                currentButton = hit.transform.GetComponent<Button>();
+                currentButton.Select();
+            }
+            if (currentButton && hit.transform.gameObject != currentButton.gameObject)
+            {
+                eventSystem.SetSelectedGameObject(null);
+            }
+        }
+        else
+        {
+            if (currentButton)
+            {
+                currentButton = null;
+                eventSystem.SetSelectedGameObject(null);
+            }
+        }
+    }
 
 }
