@@ -6,7 +6,6 @@ public class QuestTwo : MonoBehaviour {
     
     public InteractionManager interactionManager;
     public WarningSystem warningSystem;
-
     public PersonPosition personsPos;
 
     public SingleVariable gloves;
@@ -15,6 +14,7 @@ public class QuestTwo : MonoBehaviour {
 
     public List<bool> questStepts = new List<bool>();
 
+    public bool completed = false;
     public bool warned = false;
 
 	void Start ()
@@ -23,14 +23,16 @@ public class QuestTwo : MonoBehaviour {
         {
             questStepts.Add(false);
         }
-	}
+
+        warningSystem = GameObject.Find("Manager").GetComponent<WarningSystem>();
+    }
 	
 	// Update is called once per frame
 	void Update ()
     {
-        if (warned)
+        if (!warned)
         {
-            if (!questStepts[0] && questStepts[1] || !questStepts[0] && !questStepts[1] || !questStepts[0] && questStepts[1])
+            if (!questStepts[0] && questStepts[1] || !questStepts[0] && !questStepts[1] || questStepts[0] && !questStepts[1])
             {
                 if (personsPos.inRoom || personsPos.inTube)
                 {
@@ -48,7 +50,7 @@ public class QuestTwo : MonoBehaviour {
             }
             else if (!questStepts[2])
             {
-                if (personsPos.inRoom || personsPos.inTube)
+                if (personsPos.inRoom)
                 {
                     questStepts[2] = true;
                 }
@@ -113,8 +115,9 @@ public class QuestTwo : MonoBehaviour {
                     warned = true;
                     warningSystem.SetWarning("You cant enter the room with out the rigtht equipment. High risk of being infected.", true, "Red");
                 }
-            }else if (questStepts[7])
+            }else if (questStepts[7] && !completed)
             {
+                completed = true;
                 warningSystem.SetWarning("Congratulations you finished Contact Islolation.", true, "Green");
 
             }
