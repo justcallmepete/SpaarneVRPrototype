@@ -12,7 +12,7 @@ public class QuestOne : MonoBehaviour
     public SingleVariable WashedHands;
     public List<bool> questSteps = new List<bool>();
 
-
+    public bool completed = false;
     public bool warned = false;
 
     // Use this for initialization
@@ -24,7 +24,9 @@ public class QuestOne : MonoBehaviour
         }
       
         warningSystem = GameObject.Find("Manager").GetComponent<WarningSystem>();
-	}
+        
+        
+    }
 	
 	// Update is called once per frame
 	void Update ()
@@ -113,8 +115,9 @@ public class QuestOne : MonoBehaviour
         }
 
         //Last step after removing the mask is to wash hands.
-        if (questSteps[5])
+        if (questSteps[5] && !completed)
         {
+            completed = true;
             warningSystem.SetWarning("Congratulations you finished Arogene Islolation." , true, "Green");
         }        
     }
