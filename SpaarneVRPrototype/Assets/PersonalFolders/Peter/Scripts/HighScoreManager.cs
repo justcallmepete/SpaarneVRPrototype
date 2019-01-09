@@ -8,8 +8,8 @@ using System.IO;
 
 public class HighScoreManager : MonoBehaviour
 {
-    public TextMeshProUGUI scoreTextQuestOne;
-    public TextMeshProUGUI scoreTextQuestTwo;
+    public List<TextMeshProUGUI> scoreTextQuestOne = new List<TextMeshProUGUI>();
+    public List<TextMeshProUGUI> scoreTextQuestTwo = new List<TextMeshProUGUI>();
     private string JSONPath = "/PlayerScores.json";
     [SerializeField]
     private List<ScoreValueObject> valueObjectList = new List<ScoreValueObject>();
@@ -19,7 +19,8 @@ public class HighScoreManager : MonoBehaviour
     void Start()
     {
         valueObjectList = LoadData();
-        DisplayHighScore();
+        DisplayDescendingScores();
+        //  DisplayHighScore();
     }
 
     private List<ScoreValueObject> LoadData()
@@ -87,7 +88,7 @@ public class HighScoreManager : MonoBehaviour
 
     public void DisplayHighScore()
     {
-        if (!scoreTextQuestOne || !scoreTextQuestTwo) return;
+      //  if (!scoreTextQuestOne || !scoreTextQuestTwo) return;
         int maxChars = 8;
         string questOneString = "";
         string questTwoString = "";
@@ -111,8 +112,32 @@ public class HighScoreManager : MonoBehaviour
             //Debug.Log(VARIABLE.PlayerName);
             //  Debug.Log(VARIABLE.Score);
         }
-        scoreTextQuestOne.text = questOneString;
-        scoreTextQuestTwo.text = questTwoString;
+       // scoreTextQuestOne.text = questOneString;
+       // scoreTextQuestTwo.text = questTwoString;
+    }
+
+    private void DisplayDescendingScores()
+    {
+        if (!scoreTextQuestOne[0] || !scoreTextQuestTwo[0]) return;
+
+        // give me a list of the highest ranking people in descending order
+        var descendingList = valueObjectList.OrderByDescending(i => i.Score);
+        foreach (var scoreValueObject in descendingList)
+        {
+            if (scoreValueObject.QuestNumber == 1)
+            {
+                scoreTextQuestOne[0].text += scoreValueObject.PlayerName + "\n";
+                scoreTextQuestOne[1].text += ":\n";
+                scoreTextQuestOne[2].text += scoreValueObject.Score + "\n";
+            }
+            else if (scoreValueObject.QuestNumber == 2)
+            {
+                Debug.Log("quest2");
+                scoreTextQuestTwo[0].text += scoreValueObject.PlayerName + "\n";
+                scoreTextQuestTwo[1].text += ":\n";
+                scoreTextQuestTwo[2].text += scoreValueObject.Score + "\n";
+            }
+        }
     }
 
     public void ShowKeyboardInput()

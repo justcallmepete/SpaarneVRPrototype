@@ -11,7 +11,7 @@ public class KeyboardInput : MonoBehaviour {
 	private Text text;
 	private bool firstPress = false;
 	[SerializeField]
-	private int maxAmountOfCharacters = 15;
+	private int maxAmountOfCharacters = 6;
 
 	public ScoreSystem scoreSystem;
 
