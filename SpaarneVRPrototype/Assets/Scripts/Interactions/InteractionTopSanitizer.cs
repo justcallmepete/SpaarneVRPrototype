@@ -6,6 +6,7 @@ public class InteractionTopSanitizer : Interaction
 {
     public SingleVariable Gloves;
     public SingleVariable WashedHands;
+    public Animator anim;
 
     public override void Start()
     {
@@ -28,6 +29,8 @@ public class InteractionTopSanitizer : Interaction
             else
             {
                 WashedHands.task = true;
+                anim.SetTrigger("Pumping 0");
+
             }
            
         }

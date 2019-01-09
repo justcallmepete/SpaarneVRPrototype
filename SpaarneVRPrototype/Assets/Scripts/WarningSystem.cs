@@ -21,7 +21,7 @@ public class WarningSystem : MonoBehaviour {
     { 
         Timer = 6f;
         fadeCol = 1f;
-        if (GameObject.Find("GameSettings").transform.GetComponent<GameSettings>())
+        if (GameObject.Find("GameSettings"))
         {
             gameSettings = GameObject.Find("GameSettings").transform.GetComponent<GameSettings>();
         }

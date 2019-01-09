@@ -1395,7 +1395,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6659e92cd86d7a49847d75608ff94cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 1002064643}
+  scoreTextQuestOne: {fileID: 1002064643}
+  scoreTextQuestTwo: {fileID: 477752535}
   valueObjectList: []
   keyboardInput: {fileID: 0}
 --- !u!4 &107350086
@@ -3039,6 +3040,7 @@ MonoBehaviour:
   questsCanvasVR: []
   questsCanvasPC: []
   gameSettings: {fileID: 0}
+  scoreSystem: {fileID: 0}
   manualQuest: 0
 --- !u!1001 &347381453
 Prefab:
@@ -3813,6 +3815,12 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300012, guid: e283bf30750fe5447be55111464fb4ef, type: 3}
+--- !u!114 &477752535 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114229041346589732, guid: 3bba50c06ef89c94b9aa17dc4fabaa07,
+    type: 2}
+  m_PrefabInternal: {fileID: 251862525}
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
 --- !u!1 &479628908
 GameObject:
   m_ObjectHideFlags: 0

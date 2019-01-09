@@ -10,7 +10,7 @@ public class QuestSwitch : MonoBehaviour {
     public int manualQuest;
     // Use this for initialization
     void Start () {
-        if (GameObject.Find("GameSettings").transform.GetComponent<GameSettings>())
+        if (GameObject.Find("GameSettings"))
         {
             gameSettings = GameObject.Find("GameSettings").transform.GetComponent<GameSettings>();
 
