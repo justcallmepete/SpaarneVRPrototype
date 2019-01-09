@@ -22,7 +22,7 @@ public class QuestOne : MonoBehaviour
         {
             questSteps.Add(false);
         }
-      
+      Debug.Log("done");
         warningSystem = GameObject.Find("Manager").GetComponent<WarningSystem>();
         
         
