@@ -1794,6 +1794,7 @@ MonoBehaviour:
   - {fileID: 749937671}
   - {fileID: 738375553}
   gameSettings: {fileID: 0}
+  scoreSystem: {fileID: 1198315935}
   manualQuest: 0
 --- !u!4 &90391071
 Transform:
@@ -26075,7 +26076,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1198315935
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26094,6 +26095,7 @@ MonoBehaviour:
   timesFailed: 0
   highScoreManager: {fileID: 1198315937}
   steps: 
+  gameSettings: {fileID: 0}
 --- !u!4 &1198315936
 Transform:
   m_ObjectHideFlags: 0
@@ -26119,6 +26121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 0}
+  JSONPath: \StreamingAssets\PlayerScores.json
   valueObjectList: []
   keyboardInput: {fileID: 0}
 --- !u!1 &1205626141
@@ -42694,7 +42697,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a849d3805f7158644996337896df15e6, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a849d3805f7158644996337896df15e6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y

@@ -25,6 +25,9 @@ public class ScoreSystem : MonoBehaviour
 
     [Header("Quest settings")]
     public QuestOne questOne;
+
+    public QuestTwo questTwo;
+
     private bool questCompleted = false;
 
     [Header("Timer settings")]
@@ -43,19 +46,49 @@ public class ScoreSystem : MonoBehaviour
 	[SerializeField]
 	private HighScoreManager highScoreManager;
 
+    private int questnumber = 0;
 
     public List<bool> steps;
 
     public List<Step> stepList = new List<Step>();
 
+    public GameSettings gameSettings;
+
     void Start()
-    { 
+    {
+        if (GameObject.Find("GameSettings").transform.GetComponent<GameSettings>())
+        {
+            gameSettings = GameObject.Find("GameSettings").transform.GetComponent<GameSettings>();
+        }
+
         // create profile for the one playing otherwise
         // load profile that created
         timesFailed = data.counter;
         scoreTimer = new Timer();
-        steps = questOne.questSteps;
-        GenerateList(questOne.questSteps);
+        if (!gameSettings)
+        {
+            steps = questOne.questSteps;
+            Debug.Log(steps.Count);
+            GenerateList(questOne.questSteps);
+        }
+        else
+        {
+            if (gameSettings.procedure[0])
+            {
+                questnumber = 1;
+                steps = questOne.questSteps;
+                Debug.Log(steps.Count);
+                GenerateList(questOne.questSteps);
+            } if (gameSettings.procedure[1])
+            {
+                questnumber = 2;
+                steps = questTwo.questStepts;
+                Debug.Log(steps);
+                GenerateList(questTwo.questStepts);
+                
+            }
+        }
+            
         Invoke("InvokeTimer", 5);
     }
 
@@ -72,24 +105,31 @@ public class ScoreSystem : MonoBehaviour
 
     private void GenerateList(List<bool> list)
     {
+        Debug.Log("generated count: " + list.Count);
         for (int i = 0; i < list.Count; i++)
         {
+
             Step x = new Step(i);
+            Debug.Log("step x is: " +x);
             stepList.Add(x);
         }
 
         finalStep = list.Count-1;
-        Debug.Log("steps in the quest: " + stepList.Count);
     }
 
     private void CurrentStep()
     {
         if (questCompleted) return;
 
-        if (questOne)
-        {
-            steps = questOne.questSteps;
-        }
+        //if (first)
+        //{
+        //    steps = questOne.questSteps;
+        //}
+
+        //if (!first)
+        //{
+        //    steps = questTwo.questStepts;
+        //}
 
         if (steps[currentStep])
         {
@@ -104,7 +144,6 @@ public class ScoreSystem : MonoBehaviour
             {
                 scoreTimer.TimerStop();
                 Step test = stepList.Find(Step => Step.id == currentStep);
-                Debug.Log(test);
                 test.timeForStep = scoreTimer.GetTime();
                 currentStep++;
                 Invoke("InvokeTimer", .1f);
@@ -134,7 +173,7 @@ public class ScoreSystem : MonoBehaviour
     {
         // failure += 1;
         SceneManager.LoadScene(1);
-        data.counter += 1;
+       // data.counter += 1;
     }
 
     private void CalculateFinalScore()
@@ -154,8 +193,7 @@ public class ScoreSystem : MonoBehaviour
 
 	public void SubmitScore(string playerName = "Missing")
 	{
-		Debug.Log("calling submit");
-		highScoreManager.InputScore(playerName, 1, (int)finalScore);
+		highScoreManager.InputScore(playerName, questnumber, (int)finalScore);
 	}
 
     private void InvokeTimer()
