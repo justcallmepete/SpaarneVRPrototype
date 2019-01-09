@@ -56,7 +56,7 @@ public class ScoreSystem : MonoBehaviour
 
     void Start()
     {
-        if (GameObject.Find("GameSettings").transform.GetComponent<GameSettings>())
+        if (GameObject.Find("GameSettings"))
         {
             gameSettings = GameObject.Find("GameSettings").transform.GetComponent<GameSettings>();
         }
