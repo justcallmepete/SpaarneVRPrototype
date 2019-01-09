@@ -194,6 +194,7 @@ public class ScoreSystem : MonoBehaviour
 	public void SubmitScore(string playerName = "Missing")
 	{
 		highScoreManager.InputScore(playerName, questnumber, (int)finalScore);
+        SceneManager.LoadScene(0);
 	}
 
     private void InvokeTimer()
