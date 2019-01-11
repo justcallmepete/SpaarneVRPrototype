@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class InteractionDoor : Interaction {
     public InteractionDoor otherDoor;
+    public AudioClip openDoorSound;
+    public AudioClip closeDoorSound;
+    public AudioSource hingesSound;
     public bool doorIsOpen = false;
     public override void Start()
     {
@@ -25,6 +28,7 @@ public class InteractionDoor : Interaction {
                 InteractionTask = "Close door";
                 doorIsOpen = true;
                 transform.parent.parent.transform.Rotate(new Vector3(0, 1, 0), -90f);
+                hingesSound.PlayOneShot(openDoorSound);
             }
         }
         else
@@ -32,6 +36,7 @@ public class InteractionDoor : Interaction {
             InteractionTask = "Open door";
             doorIsOpen = false;
             transform.parent.parent.transform.Rotate(new Vector3(0, 1, 0), 90f);
+            hingesSound.PlayOneShot(closeDoorSound);
 
         }
               
