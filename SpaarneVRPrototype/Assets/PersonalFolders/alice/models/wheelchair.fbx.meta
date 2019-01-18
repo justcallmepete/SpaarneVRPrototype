@@ -1,0 +1,212 @@
+fileFormatVersion: 2
+guid: f8f70f0b1871a457da43cbba9bccc4cf
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: big_wheels
+    100002: cushiona
+    100004: footrests
+    100006: Frame
+    100008: group2
+    100010: pCube67
+    100012: pCube68
+    100014: pCube69
+    100016: pCube70
+    100018: pCube71
+    100020: pCube72
+    100022: pCube73
+    100024: pCube74
+    100026: pCylinder50
+    100028: pCylinder51
+    100030: pCylinder52
+    100032: pCylinder53
+    100034: pCylinder54
+    100036: pCylinder55
+    100038: pCylinder56
+    100040: pCylinder58
+    100042: pSphere1
+    100044: pTorus3
+    100046: pTorus4
+    100048: pTorus5
+    100050: pTorus6
+    100052: sheels
+    100054: //RootNode
+    400000: big_wheels
+    400002: cushiona
+    400004: footrests
+    400006: Frame
+    400008: group2
+    400010: pCube67
+    400012: pCube68
+    400014: pCube69
+    400016: pCube70
+    400018: pCube71
+    400020: pCube72
+    400022: pCube73
+    400024: pCube74
+    400026: pCylinder50
+    400028: pCylinder51
+    400030: pCylinder52
+    400032: pCylinder53
+    400034: pCylinder54
+    400036: pCylinder55
+    400038: pCylinder56
+    400040: pCylinder58
+    400042: pSphere1
+    400044: pTorus3
+    400046: pTorus4
+    400048: pTorus5
+    400050: pTorus6
+    400052: sheels
+    400054: //RootNode
+    2100000: lambert1
+    2100002: lambert9
+    2300000: Frame
+    2300002: pCube67
+    2300004: pCube68
+    2300006: pCube69
+    2300008: pCube70
+    2300010: pCube71
+    2300012: pCube72
+    2300014: pCube73
+    2300016: pCube74
+    2300018: pCylinder50
+    2300020: pCylinder51
+    2300022: pCylinder52
+    2300024: pCylinder53
+    2300026: pCylinder54
+    2300028: pCylinder55
+    2300030: pCylinder56
+    2300032: pCylinder58
+    2300034: pSphere1
+    2300036: pTorus3
+    2300038: pTorus4
+    2300040: pTorus5
+    2300042: pTorus6
+    3300000: Frame
+    3300002: pCube67
+    3300004: pCube68
+    3300006: pCube69
+    3300008: pCube70
+    3300010: pCube71
+    3300012: pCube72
+    3300014: pCube73
+    3300016: pCube74
+    3300018: pCylinder50
+    3300020: pCylinder51
+    3300022: pCylinder52
+    3300024: pCylinder53
+    3300026: pCylinder54
+    3300028: pCylinder55
+    3300030: pCylinder56
+    3300032: pCylinder58
+    3300034: pSphere1
+    3300036: pTorus3
+    3300038: pTorus4
+    3300040: pTorus5
+    3300042: pTorus6
+    4300000: pSphere1
+    4300002: Frame
+    4300004: pCylinder56
+    4300006: pCylinder54
+    4300008: pCube73
+    4300010: pCube69
+    4300012: pCube68
+    4300014: pCube70
+    4300016: pCylinder55
+    4300018: pCube74
+    4300020: pCylinder58
+    4300022: pCube67
+    4300024: pCube72
+    4300026: pCube71
+    4300028: pCylinder50
+    4300030: pTorus3
+    4300032: pTorus4
+    4300034: pTorus6
+    4300036: pTorus5
+    4300038: pCylinder52
+    4300040: pCylinder53
+    4300042: pCylinder51
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 100
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
