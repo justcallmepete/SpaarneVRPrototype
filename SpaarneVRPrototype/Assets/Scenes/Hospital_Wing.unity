@@ -967,8 +967,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   warningSystem: {fileID: 0}
-  InteractionTask: Open door
-  TextForWarning: 'This is the wrong isolation room. '
+  InteractionTask: Open de deur
+  TextForWarning: Dit is de verkeerde isolatie kamer.
 --- !u!65 &50786757
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2358,7 +2358,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   warningSystem: {fileID: 0}
-  InteractionTask: Put on gloves
+  InteractionTask: Doe handschoenen aan
   Gloves: {fileID: 11400000, guid: cc0d344a933df69468f80e86046d703b, type: 2}
 --- !u!1 &113956799
 GameObject:
@@ -5613,8 +5613,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   warningSystem: {fileID: 0}
-  InteractionTask: Open door
-  TextForWarning: 'The dialysis center is not the place to be for this training. '
+  InteractionTask: Open de deur
+  TextForWarning: Het dialyse centrum is geen plek om isolatie te trainen.
 --- !u!65 &247942360
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26706,8 +26706,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   warningSystem: {fileID: 0}
-  InteractionTask: Open door
-  TextForWarning: 'There is no reason to go into the broom closet. '
+  InteractionTask: Open de deur
+  TextForWarning: Je hebt geen reden om hier naar binnen te gaan.
 --- !u!1001 &1007737229
 Prefab:
   m_ObjectHideFlags: 0
@@ -31264,8 +31264,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   warningSystem: {fileID: 0}
-  InteractionTask: Open door
-  TextForWarning: 'There is no reason to go into the broom closet. '
+  InteractionTask: Open de deur
+  TextForWarning: Je hebt geen reden om hier naar binnen te gaan.
 --- !u!1 &1205951736
 GameObject:
   m_ObjectHideFlags: 0
@@ -39779,7 +39779,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   warningSystem: {fileID: 0}
-  InteractionTask: Put on gloves
+  InteractionTask: Doe handschoenen aan
   Gloves: {fileID: 11400000, guid: cc0d344a933df69468f80e86046d703b, type: 2}
 --- !u!1 &1539613323
 GameObject:
@@ -40857,11 +40857,10 @@ GameObject:
   - component: {fileID: 1619176935}
   - component: {fileID: 1619176938}
   - component: {fileID: 1619176937}
-  - component: {fileID: 1619176936}
   - component: {fileID: 1619176939}
   m_Layer: 0
   m_Name: GloveBoxPlacement
-  m_TagString: Interaction
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40880,22 +40879,6 @@ Transform:
   m_Father: {fileID: 215904468}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1619176936
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 114076436694547972, guid: ff5207782f0445c49987931c3c12f1c8,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1619176934}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22711ba7bda56d149b69a4aa817bac3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  warningSystem: {fileID: 0}
-  InteractionTask: null
-  size: M
-  gloveBoxHolderStats: {fileID: 941446488}
 --- !u!23 &1619176937
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -44967,8 +44950,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   warningSystem: {fileID: 0}
-  InteractionTask: Open door
-  TextForWarning: You can't leave without completing your assignment.
+  InteractionTask: Open de deur
+  TextForWarning: 'Je kan niet weg zonder je taak af te maken. '
 --- !u!65 &1780780111
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -48037,7 +48020,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   warningSystem: {fileID: 0}
-  InteractionTask: Put on gloves
+  InteractionTask: Doe handschoenen aan
   Gloves: {fileID: 11400000, guid: cc0d344a933df69468f80e86046d703b, type: 2}
 --- !u!1 &1887642927
 GameObject:
@@ -49260,11 +49243,10 @@ GameObject:
   - component: {fileID: 1963068814}
   - component: {fileID: 1963068818}
   - component: {fileID: 1963068817}
-  - component: {fileID: 1963068815}
   - component: {fileID: 1963068816}
   m_Layer: 0
   m_Name: MoveAbleSanitizer
-  m_TagString: Interaction
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -49283,21 +49265,6 @@ Transform:
   m_Father: {fileID: 768033867}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1963068815
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 114579231475080172, guid: ff5207782f0445c49987931c3c12f1c8,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1963068813}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac851ced53b4039498c49e8f0596a076, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  warningSystem: {fileID: 0}
-  InteractionTask: Move to holder
-  handSanStat: {fileID: 874074069}
 --- !u!65 &1963068816
 BoxCollider:
   m_ObjectHideFlags: 0

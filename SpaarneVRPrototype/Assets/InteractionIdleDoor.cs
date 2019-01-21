@@ -9,7 +9,7 @@ public class InteractionIdleDoor : Interaction
     public override void Start()
     {
         base.Start();
-        InteractionTask = "Open door";
+        InteractionTask = "Open de Deur";
     }
 
     public override void Handle()

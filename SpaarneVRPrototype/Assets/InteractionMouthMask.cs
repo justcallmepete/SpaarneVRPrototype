@@ -8,7 +8,7 @@ public class InteractionMouthMask : Interaction {
     public override void Start()
     {
         base.Start();
-        InteractionTask = "Put On Mouth Mask";
+        InteractionTask = "Doe masker op";
     }
 
     public override void Handle()

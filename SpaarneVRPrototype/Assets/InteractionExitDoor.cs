@@ -9,7 +9,7 @@ public class InteractionExitDoor : Interaction {
     {
         base.Start();
         gameSettings = GameObject.Find("GameSettings").GetComponent<GameSettings>();
-        InteractionTask = "Enter isolation wing";
+        InteractionTask = "Start infectie preventie training.";
     }
 
     public override void Handle()
@@ -36,14 +36,14 @@ public class InteractionExitDoor : Interaction {
             SceneManager.LoadScene("Hospital_Wing");
         }else if(!guideSelected && !procesSelected)
         {
-            warningSystem.SetWarning("Please select a Guide and Procedure with the Post it!", true,"Red");
+            warningSystem.SetWarning("Selecteer een procedure en een speelstijl op het prikbord.", true,"Red");
         }else if(!guideSelected)
         {
-            warningSystem.SetWarning("Please select a Guide with the Post it!", true, "Red");
+            warningSystem.SetWarning("Selecteer een speelstijl op het prikbord.", true, "Red");
         }
         else if (!procesSelected)
         {
-            warningSystem.SetWarning("Please select a Procedure with the Post it!", true, "Red");
+            warningSystem.SetWarning("Selecteer een procedure op het prikbord.", true, "Red");
         }
     }
 }

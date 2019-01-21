@@ -6,7 +6,7 @@ public class InteractionPackageMask : Interaction {
     public override void Start()
     {
         base.Start();
-        InteractionTask = "Open package";
+        InteractionTask = "Open verpakking";
     }
 
     public override void Handle()

@@ -52,7 +52,7 @@ public class QuestTwo : MonoBehaviour {
                 if (personsPos.inRoom || personsPos.inTube)
                 {
                     warned = true;
-                    warningSystem.SetWarning("You removed or dindt have a apron and/or gloves in the room. High risk of being infected.", true, "Red");
+                    warningSystem.SetWarning("Je hebt je schort en/of masker al af gedaan toen het niet moest.", true, "Red");
                 }
                 else if (apron.task && !questStepts[0])
                 {
@@ -82,12 +82,12 @@ public class QuestTwo : MonoBehaviour {
                 if (personsPos.inRoom && !gloves.task || personsPos.inRoom && !apron.task)
                 {
                     warned = true;
-                    warningSystem.SetWarning("You cant go back into the room with out the right equipment. High risk of being infected.", true, "Red");
+                    warningSystem.SetWarning("Je kan niet terug de kamer in zonder de juiste benodigdheden.", true, "Red");
                 }
                 else if (!personsPos.inTube && !personsPos.inRoom)
                 {
                     warned = true;
-                    warningSystem.SetWarning("You cant leave the room with your isolation clothing still on. High risk of being infected.", true, "Red");
+                    warningSystem.SetWarning("Je mag deze ruimte niet verlaten met je schort en/of handschoenen nog aan.", true, "Red");
                 }
                 else if (!questStepts[4] && !gloves.task)
                 {
@@ -96,7 +96,7 @@ public class QuestTwo : MonoBehaviour {
                 else if (!questStepts[4] && !apron.task)
                 {
                     warned = true;
-                    warningSystem.SetWarning("You cant remove the apron before the gloves. High risk of being infected.", true, "Red");
+                    warningSystem.SetWarning("Je mag niet je schort af doen voordat je handschoenen uit gedaan hebt.", true, "Red");
                 }
                 else if (questStepts[4] && !apron.task)
                 {
@@ -108,12 +108,12 @@ public class QuestTwo : MonoBehaviour {
                 if (personsPos.inRoom)
                 {
                     warned = true;
-                    warningSystem.SetWarning("You cant go back into the room with out the right equipment. High risk of being infected.", true, "Red");
+                    warningSystem.SetWarning("Je kan niet terug de kamer in zonder de juiste benodigdheden.", true, "Red");
                 }
                 else if (!personsPos.inTube && !personsPos.inRoom)
                 {
                     warned = true;
-                    warningSystem.SetWarning("You cant leave the room with out washing hands. High risk of being infected.", true, "Red");
+                    warningSystem.SetWarning("Je mag de kamer niet verlaten zonder je handen te wassen.", true, "Red");
                 }
                 else if (!questStepts[6] && washedHands.task)
                 {
@@ -128,12 +128,12 @@ public class QuestTwo : MonoBehaviour {
                 else if (personsPos.inRoom)
                 {
                     warned = true;
-                    warningSystem.SetWarning("You cant enter the room with out the rigtht equipment. High risk of being infected.", true, "Red");
+                    warningSystem.SetWarning("Je kan niet terug de kamer in zonder de juiste benodigdheden.", true, "Red");
                 }
             }else if (questStepts[7] && !completed)
             {
                 completed = true;
-                warningSystem.SetWarning("Congratulations you finished Contact Islolation.", true, "Green");
+                warningSystem.SetWarning("Gefeliciteerd je hebt Contact Islolation afgerond.", true, "Green");
 
             }
         }

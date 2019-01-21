@@ -16,10 +16,7 @@ public class InteractionGloveBox : Interaction {
     {
         if (!UnlockedBox)
         {
-            InteractionTask = "OpenBox";
-        }else
-        {
-            InteractionTask = "Throw Away";
+            InteractionTask = "Open Handschoenendoos";
         }
     }
 
@@ -31,21 +28,7 @@ public class InteractionGloveBox : Interaction {
         {
             UnlockedBox = true;
             transform.GetChild(0).gameObject.SetActive(true);
-            InteractionTask = "Throw Away";
-        }
-        else
-        {
-            if (thrash.isThereACanOpen())
-            {
-                if (size == "S") { this.transform.parent.GetComponent<GloveBoxHolderStats>().posS = false; }
-                if (size == "M") { this.transform.parent.GetComponent<GloveBoxHolderStats>().posM = false; }
-                if (size == "L") { this.transform.parent.GetComponent<GloveBoxHolderStats>().posL = false; }
-                this.gameObject.SetActive(false);
-            }
-            else
-            {
-                warningSystem.SetWarning("You cant throw this away if the garbage bin is closed.");
-            }
+           
         }
     }
 }

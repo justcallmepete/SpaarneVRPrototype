@@ -11,14 +11,14 @@ public class InteractionThrashBag : Interaction {
     {
         if (Gloves.task)
         {
-            InteractionTask = "Remove Gloves";
+            InteractionTask = "Verwijder Handschoenen";
         }
         else if (Apron.task) {
-            InteractionTask = "Remove Apron";
+            InteractionTask = "Verwijder Schort";
         }
         else if (MouthMask.task)
         {
-            InteractionTask = "Remove Mouth Mask";
+            InteractionTask = "Verwijder Mondmasker";
         }
         else
         {
@@ -32,24 +32,24 @@ public class InteractionThrashBag : Interaction {
         base.Handle();
         if (thrash.LidOpen)
         {
-            if (InteractionTask == "Remove Gloves")
+            if (InteractionTask == "Verwijder Handschoenen")
             {
                 Gloves.task = false;
             }
-            else if (InteractionTask == "Remove Mouth Mask")
+            else if (InteractionTask == "Verwijder Mondmasker")
             {
                 MouthMask.task = false;
             }
-            else if (InteractionTask == "Remove Apron")
+            else if (InteractionTask == "Verwijder Schort")
             {
                 Apron.task = false;
             }else
             {
-                warningSystem.SetWarning("You have nothing to throw away.");
+                warningSystem.SetWarning("Je hebt niets om weg te gooien.");
             } 
         }else
         {
-            warningSystem.SetWarning("You cant throw stuff in a closed bin.");
+            warningSystem.SetWarning("De prullenbak is dicht.");
         }
     }
 }

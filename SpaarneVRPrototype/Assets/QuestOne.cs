@@ -51,7 +51,7 @@ public class QuestOne : MonoBehaviour
         //Check if the person left the room with out washing hands. 
         if(!PersonP.inRoom && questSteps[1] && !questSteps[2] && !warned)
         {
-            warningSystem.SetWarning("You left the room with out washing hands. High risk of being infected." , true, "Red");
+            warningSystem.SetWarning("Je bent weg gegaan zonder je handen te wassen." , true, "Red");
             warned = true;
         }
 
@@ -74,7 +74,7 @@ public class QuestOne : MonoBehaviour
                 if (!warned)
                 {
                     warned = true;
-                    warningSystem.SetWarning("You removed or didn't have a mask in the room. High risk of being infected." , true, "Red");
+                    warningSystem.SetWarning("Je hebt je masker al afgedaan voordat het moest." , true, "Red");
                 }
             }
         }else if (questSteps[0] && !PersonP.inRoom && !PersonP.inTube && !questSteps[1])
@@ -90,7 +90,7 @@ public class QuestOne : MonoBehaviour
             if (!warned)
             {
             warned = true;
-            warningSystem.SetWarning("You removed or didn't have a mask in the room. High risk of being infected." , true, "Red");
+            warningSystem.SetWarning("Je hebt je masker al afgedaan voordat het moest" , true, "Red");
             }
         }
         //if at this point the person hasnt failed he should be in the room. 
@@ -106,7 +106,7 @@ public class QuestOne : MonoBehaviour
                 }
             }
             //if the person does anything else in the room the washed hands status drops.
-            else if (LastActivity != "Wash hands" && LastActivity != "Open door" &&  LastActivity != "Close door" && PersonP.inRoom)
+            else if (LastActivity != "Was handen" && LastActivity != "Open de Deur" &&  LastActivity != "Sluit de Deur" && PersonP.inRoom)
             {
                 questSteps[2] = false;
             }else if(questSteps[2] && !questSteps[3])
@@ -121,7 +121,7 @@ public class QuestOne : MonoBehaviour
                 questSteps[4] = true;
             }else if (!questSteps[5] && questSteps[4])
             {
-                if (WashedHands.task && LastActivity == "Wash hands")
+                if (WashedHands.task && LastActivity == "Was handen")
                 {
                     questSteps[5] = true;
                     WashedHands.task = false;
@@ -133,7 +133,7 @@ public class QuestOne : MonoBehaviour
         if (questSteps[5] && !completed)
         {
             completed = true;
-            warningSystem.SetWarning("Congratulations you finished Arogene Islolation." , true, "Green");
+            warningSystem.SetWarning("Gefeliciteerd je hebt Arogene Islolatie afgerond." , true, "Green");
         }        
     }
 }

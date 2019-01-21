@@ -8,7 +8,7 @@ public class InteractionApron : Interaction
 	
 	public override void Start () {
         base.Start();
-        InteractionTask = "Put on Apron";
+        InteractionTask = "Doe een schort aan";
 	}
 
     public override void Handle()
@@ -19,7 +19,7 @@ public class InteractionApron : Interaction
             apron.task = true;
         }else
         {
-            warningSystem.SetWarning("You already have a apron on.");
+            warningSystem.SetWarning("Je hebt al een schort aan.");
         }
 
     }

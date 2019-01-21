@@ -59,7 +59,7 @@ public class IntroHandler : MonoBehaviour {
         {
             if (!firstmessage)
             {
-                warningSystem.SetWarning("Welcome, Feel free to look around.");
+                warningSystem.SetWarning("Welkom, Bij de infectie preventie training. Kijk gerust even rond.");
                 firstmessage = true;
                 activeAudioPlayer.PlayOneShot(welcomeSound);
             }
@@ -79,7 +79,7 @@ public class IntroHandler : MonoBehaviour {
                 //Debug.Log(Vector3.Magnitude(movementAttachment.transform.position - new Vector3(EndWalking.transform.position.x, movementAttachment.transform.position.y, EndWalking.transform.position.z)));
                 if (Vector3.Magnitude(movementAttachment.transform.position - new Vector3(EndWalking.transform.position.x, movementAttachment.transform.position.y, EndWalking.transform.position.z)) < 0.085f)
                 {
-                    warningSystem.SetWarning("Don't forget to read the clipboard.");
+                    warningSystem.SetWarning("Lees hier goed de instructies en ga vervolgens verder.");
                     done = true;
                     activeAudioPlayer.PlayOneShot(introSound);
                 }

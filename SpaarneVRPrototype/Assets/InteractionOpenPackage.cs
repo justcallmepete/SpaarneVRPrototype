@@ -8,7 +8,7 @@ public class InteractionOpenPackage : Interaction {
     public override void Start()
     {
         base.Start();
-        InteractionTask = "Throw Away";
+        InteractionTask = "Gooi weg";
         thrash = GameObject.Find("AllThrash").GetComponent<AllThrashStatus>();
     }
 
@@ -20,7 +20,7 @@ public class InteractionOpenPackage : Interaction {
             gameObject.SetActive(false);
         }else
         {
-            warningSystem.SetWarning("You cant throw stuff in a closed bin.");
+            warningSystem.SetWarning("Je kan niets weg gooien in een gesloten prullenbak.");
         }
     }
 }

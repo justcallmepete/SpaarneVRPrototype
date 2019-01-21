@@ -1553,7 +1553,6 @@ GameObject:
   - component: {fileID: 144834662}
   - component: {fileID: 144834665}
   - component: {fileID: 144834664}
-  - component: {fileID: 144834663}
   m_Layer: 2
   m_Name: Image
   m_TagString: Untagged
@@ -1580,21 +1579,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 250, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &144834663
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 114838597121584468, guid: 7219b9e4d97bd44428f882f7ea651e22,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 144834661}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68fc9d6eec2816f4ea84bbc95abc741b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startCheck: 0
-  comparison: 0
-  apply: 0
 --- !u!114 &144834664
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1608,7 +1592,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: face03a8f6358cc46b0c6f367588a4e1, type: 2}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5882353}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -4638,31 +4622,31 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400010, guid: 5ec25c68d12e8445095d9149dc799189, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.629
+      value: -2.8517716
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: 5ec25c68d12e8445095d9149dc799189, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.0030946
+      value: -0.007932067
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: 5ec25c68d12e8445095d9149dc799189, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.055
+      value: 3.7618968
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: 5ec25c68d12e8445095d9149dc799189, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0.006052246
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: 5ec25c68d12e8445095d9149dc799189, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.86602545
+      value: 0.7184986
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: 5ec25c68d12e8445095d9149dc799189, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: 0.02015594
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: 5ec25c68d12e8445095d9149dc799189, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.49999994
+      value: 0.69521
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: 5ec25c68d12e8445095d9149dc799189, type: 3}
       propertyPath: m_RootOrder
@@ -4682,7 +4666,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: 5ec25c68d12e8445095d9149dc799189, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 120
+      value: 91.867004
       objectReference: {fileID: 0}
     - target: {fileID: 2300004, guid: 5ec25c68d12e8445095d9149dc799189, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -4751,6 +4735,14 @@ Prefab:
     - target: {fileID: 2300002, guid: 5ec25c68d12e8445095d9149dc799189, type: 3}
       propertyPath: m_CastShadows
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: 5ec25c68d12e8445095d9149dc799189, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -2.1420002
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: 5ec25c68d12e8445095d9149dc799189, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 1.108
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ec25c68d12e8445095d9149dc799189, type: 3}
@@ -6674,7 +6666,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &830257478
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10599,7 +10591,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: face03a8f6358cc46b0c6f367588a4e1, type: 2}
+  m_Material: {fileID: 2100000, guid: 5ebc2f60630de8b45a2f2920e91b334d, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
@@ -11143,7 +11135,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1278758577
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11513,8 +11505,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   warningSystem: {fileID: 0}
-  InteractionTask: Leave Hospital
-  TextForWarning: You can just remove the headset if you want to leave.
+  InteractionTask: Verlaat ziekenhuis
+  TextForWarning: Doe de headset af als je weg wilt.
 --- !u!65 &1343655654
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13378,7 +13370,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1607594435
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14775,7 +14767,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Tell me what to do.
+  m_Text: Vertel me wat ik moet doen.
 --- !u!222 &1769697092
 CanvasRenderer:
   m_ObjectHideFlags: 0

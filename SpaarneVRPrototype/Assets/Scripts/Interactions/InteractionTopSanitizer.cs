@@ -11,7 +11,7 @@ public class InteractionTopSanitizer : Interaction
     public override void Start()
     {
         base.Start();
-        InteractionTask = "Wash hands";
+        InteractionTask = "Was handen";
     }
 
     public override void Handle()
@@ -19,12 +19,12 @@ public class InteractionTopSanitizer : Interaction
         base.Handle();
         if (Gloves.task)
         {
-            warningSystem.SetWarning("You cant wash your hands with gloves on.");
+            warningSystem.SetWarning("Je kan je handen niet wassen met handschoenen aan.");
         }else
         {
             if (WashedHands.task)
             {
-                warningSystem.SetWarning("You just washed your hands...");
+                warningSystem.SetWarning("Je hebt je handen net gewassen...");
             }
             else
             {

@@ -11,7 +11,7 @@ public class InteractionDoor : Interaction {
     public override void Start()
     {
         base.Start();
-        InteractionTask = "Open door";
+        InteractionTask = "Open de Deur";
 
     }
 
@@ -22,10 +22,10 @@ public class InteractionDoor : Interaction {
         {
             if (otherDoor.doorIsOpen)
             {
-                warningSystem.SetWarning("Close other door first. We dont want disease spread.");
+                warningSystem.SetWarning("Sluit andere deur eerst. We willen geen ziekte verspreiding.");
             }else
             {
-                InteractionTask = "Close door";
+                InteractionTask = "Sluit de Deur";
                 doorIsOpen = true;
                 transform.parent.parent.transform.Rotate(new Vector3(0, 1, 0), -90f);
                 hingesSound.PlayOneShot(openDoorSound);
@@ -33,7 +33,7 @@ public class InteractionDoor : Interaction {
         }
         else
         {
-            InteractionTask = "Open door";
+            InteractionTask = "Open de Deur";
             doorIsOpen = false;
             transform.parent.parent.transform.Rotate(new Vector3(0, 1, 0), 90f);
             hingesSound.PlayOneShot(closeDoorSound);
