@@ -3,7 +3,16 @@ guid: 475e847a3ae470b46aad24da313f5a9c
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - EndWalking: {instanceID: 0}
+  - movementAttachment: {instanceID: 0}
+  - PlayerVR: {instanceID: 0}
+  - PlayerPC: {instanceID: 0}
+  - controller: {instanceID: 0}
+  - warningSystem: {instanceID: 0}
+  - welcomeSound: {fileID: 8300000, guid: ad833499ec693af4a989ddf187f98c2e, type: 3}
+  - introSound: {fileID: 8300000, guid: 563057f9b2c3af14598f407d26dfe52d, type: 3}
+  - mainMenuSound: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

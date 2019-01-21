@@ -15,8 +15,13 @@ public class IntroHandler : MonoBehaviour {
     public float waitDelay = 4f;
     public float timer = 0;
     public bool firstmessage = false;
-	// Use this for initialization
-	void Start () {
+
+    public AudioClip welcomeSound;
+    public AudioClip introSound;
+    public AudioSource mainMenuSound;
+
+    // Use this for initialization
+    void Start () {
         warningSystem = GameObject.Find("Manager").GetComponent<WarningSystem>();
         
     }
@@ -44,6 +49,7 @@ public class IntroHandler : MonoBehaviour {
             {
                 warningSystem.SetWarning("Welcome, Feel free to look around.");
                 firstmessage = true;
+                mainMenuSound.PlayOneShot(welcomeSound);
             }
             controller.SetActive(false);
             warningSystem.transform.GetComponent<Oculus_Controller>().enabled = false;
@@ -63,6 +69,7 @@ public class IntroHandler : MonoBehaviour {
                 {
                     warningSystem.SetWarning("Don't forget to read the clipboard.");
                     done = true;
+                    mainMenuSound.PlayOneShot(introSound);
                 }
 
 
