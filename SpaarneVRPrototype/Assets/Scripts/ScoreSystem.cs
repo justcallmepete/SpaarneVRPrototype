@@ -47,14 +47,18 @@ public class ScoreSystem : MonoBehaviour
 	private HighScoreManager highScoreManager;
 
     private int questnumber = 0;
-
     public List<bool> steps;
 
     public List<Step> stepList = new List<Step>();
 
     public GameSettings gameSettings;
 
-    void Start()
+	private void Awake()
+	{
+		
+	}
+
+	void Start()
     {
         if (GameObject.Find("GameSettings"))
         {
@@ -76,17 +80,25 @@ public class ScoreSystem : MonoBehaviour
             if (gameSettings.procedure[0])
             {
                 questnumber = 1;
-                steps = questOne.questSteps;
+               // steps = questOne.questSteps;
                 Debug.Log(steps.Count);
-                GenerateList(questOne.questSteps);
+				for(int i = 0; i <6; i++)
+				{
+					steps.Add(false);
+				}
+                GenerateList(steps);
+				steps = questOne.questSteps;
             } if (gameSettings.procedure[1])
             {
                 questnumber = 2;
-                steps = questTwo.questStepts;
+				for (int i = 0; i < 8; i++)
+				{
+					steps.Add(false);
+				}
                 Debug.Log(steps);
-                GenerateList(questTwo.questStepts);
-                
-            }
+                GenerateList(steps);
+				steps = questTwo.questStepts;
+			}
         }
             
         Invoke("InvokeTimer", 5);
@@ -121,17 +133,15 @@ public class ScoreSystem : MonoBehaviour
     {
         if (questCompleted) return;
 
-        //if (first)
-        //{
-        //    steps = questOne.questSteps;
-        //}
+		if (questnumber == 1)
+		{
+			steps = questOne.questSteps;
+		}else if (questnumber == 2)
+		{
+			steps = questTwo.questStepts;
+		}
 
-        //if (!first)
-        //{
-        //    steps = questTwo.questStepts;
-        //}
-
-        if (steps[currentStep])
+		if (steps[currentStep])
         {
             if (currentStep == finalStep)
             {
@@ -194,6 +204,7 @@ public class ScoreSystem : MonoBehaviour
 	public void SubmitScore(string playerName = "Missing")
 	{
 		highScoreManager.InputScore(playerName, questnumber, (int)finalScore);
+		data.counter = 0;
         SceneManager.LoadScene(0);
 	}
 
