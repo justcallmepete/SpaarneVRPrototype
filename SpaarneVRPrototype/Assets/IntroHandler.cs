@@ -18,12 +18,24 @@ public class IntroHandler : MonoBehaviour {
 
     public AudioClip welcomeSound;
     public AudioClip introSound;
-    public AudioSource mainMenuSound;
+
+    public AudioSource VRAudioPlayer;
+    public AudioSource ComputerAudioPlayer;
+    public AudioSource activeAudioPlayer;
+
 
     // Use this for initialization
     void Start () {
         warningSystem = GameObject.Find("Manager").GetComponent<WarningSystem>();
-        
+
+        if (VRAudioPlayer.gameObject.activeInHierarchy)
+        {
+            activeAudioPlayer = VRAudioPlayer;
+        }
+        else
+        {
+            activeAudioPlayer = ComputerAudioPlayer;
+        }
     }
 	
 	// Update is called once per frame
@@ -49,7 +61,7 @@ public class IntroHandler : MonoBehaviour {
             {
                 warningSystem.SetWarning("Welcome, Feel free to look around.");
                 firstmessage = true;
-                mainMenuSound.PlayOneShot(welcomeSound);
+                activeAudioPlayer.PlayOneShot(welcomeSound);
             }
             controller.SetActive(false);
             warningSystem.transform.GetComponent<Oculus_Controller>().enabled = false;
@@ -69,7 +81,7 @@ public class IntroHandler : MonoBehaviour {
                 {
                     warningSystem.SetWarning("Don't forget to read the clipboard.");
                     done = true;
-                    mainMenuSound.PlayOneShot(introSound);
+                    activeAudioPlayer.PlayOneShot(introSound);
                 }
 
 

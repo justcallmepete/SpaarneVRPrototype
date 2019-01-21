@@ -13,7 +13,7 @@ MonoImporter:
   - welcomeSound: {fileID: 8300000, guid: ad833499ec693af4a989ddf187f98c2e, type: 3}
   - introSound: {fileID: 8300000, guid: 563057f9b2c3af14598f407d26dfe52d, type: 3}
   - mainMenuSound: {instanceID: 0}
-  executionOrder: 0
+  executionOrder: 600
   icon: {instanceID: 0}
   userData: 
   assetBundleName: 

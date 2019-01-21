@@ -55,7 +55,15 @@ public class WarningSystem : MonoBehaviour {
                 fadeCol -= Time.deltaTime * 0.25f;
                 fadeColI -= Time.deltaTime * 0.15f;
                 warningText.color = new Vector4(warningText.color.r, warningText.color.g, warningText.color.b, fadeCol);
-                warningImage.color = new Vector4(Color.white.r, Color.white.g, Color.white.b, fadeColI);
+                if (warningHolder == HolderVR)
+                {
+                    warningImage.material.color = new Vector4(Color.white.r, Color.white.g, Color.white.b, fadeColI);
+                }
+                else
+                {
+                    warningImage.color = new Vector4(Color.white.r, Color.white.g, Color.white.b, fadeColI);
+                }
+                
             }
             if (Timer >= 5)
             {
@@ -70,7 +78,14 @@ public class WarningSystem : MonoBehaviour {
         Timer = 0f;
         fadeCol = 1f;
         fadeColI = 0.6f;
-        warningImage.color = new Vector4(Color.white.r,Color.white.g,Color.white.b,fadeColI);
+        if (warningHolder == HolderVR)
+        {
+            warningImage.material.color = new Vector4(Color.white.r, Color.white.g, Color.white.b, fadeColI);
+        }
+        else
+        {
+            warningImage.color = new Vector4(Color.white.r, Color.white.g, Color.white.b, fadeColI);
+        }
         if (col == "Red")
         {
             warningText.material.color = new Vector4(Color.red.r, Color.red.g, Color.red.b, fadeCol);
