@@ -10,6 +10,7 @@ public class GameSettings : MonoBehaviour {
 
     [SerializeField]
     private Vector3 backFromRoomPos;
+
     // Use this for initialization
     void Awake()
     {

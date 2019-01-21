@@ -6,11 +6,15 @@ public class InteractionThrashBag : Interaction {
     public ThrashStatus thrash;
     public SingleVariable Gloves;
     public SingleVariable MouthMask;
+    public SingleVariable Apron;
     public void Update()
     {
         if (Gloves.task)
         {
             InteractionTask = "Remove Gloves";
+        }
+        else if (Apron.task) {
+            InteractionTask = "Remove Apron";
         }
         else if (MouthMask.task)
         {
@@ -30,16 +34,19 @@ public class InteractionThrashBag : Interaction {
         {
             if (InteractionTask == "Remove Gloves")
             {
-               Gloves.task = false;
-                if (MouthMask.task)
-                {
-                    InteractionTask = "Remove Mouth Mask";
-                }
+                Gloves.task = false;
             }
             else if (InteractionTask == "Remove Mouth Mask")
-                {
-                    MouthMask.task = false;
-                } 
+            {
+                MouthMask.task = false;
+            }
+            else if (InteractionTask == "Remove Apron")
+            {
+                Apron.task = false;
+            }else
+            {
+                warningSystem.SetWarning("You have nothing to throw away.");
+            } 
         }else
         {
             warningSystem.SetWarning("You cant throw stuff in a closed bin.");

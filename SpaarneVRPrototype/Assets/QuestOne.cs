@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class QuestOne : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class QuestOne : MonoBehaviour
 
     public bool completed = false;
     public bool warned = false;
+    public float timer = 0;
 
     // Use this for initialization
 	void Start ()
@@ -31,6 +33,19 @@ public class QuestOne : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
+        if (!warned)
+        {
+            timer = 0;
+        }
+        if (warned)
+        {
+            timer += Time.deltaTime;
+            if(timer > 4)
+            {
+                //load scene
+                SceneManager.LoadScene("Hospital_Wing");
+            }
+        }
         LastActivity = interactionManager.LastActivity;
         
         //Check if the person left the room with out washing hands. 
